@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import AboutPanelExpandToggle from "./AboutPanel/AboutPanelExpandToggle";
 import AboutMeContent from "./AboutPanel/AboutMeContent";
 import { getShelfItemDetailModule } from "./AboutPanel/ShelfItemDetails";
 import LightboxImage from "./LightboxImage";
@@ -7,6 +8,7 @@ import { aboutData } from "../data/portfolio/aboutData";
 
 const AboutPanel = ({ selectedShelfItem }) => {
     const [activeLanguage, setActiveLanguage] = useState("EN");
+    const [isExpanded, setIsExpanded] = useState(false);
     const selectedModule = selectedShelfItem
         ? getShelfItemDetailModule(selectedShelfItem)
         : null;
@@ -21,17 +23,31 @@ const AboutPanel = ({ selectedShelfItem }) => {
             ? aboutData.paragraphsFA
             : aboutData.paragraphsEN;
     const aboutMeDirection = activeLanguage === "FA" ? "rtl" : "ltr";
+    const isAboutMeFarsi = !isShowingDetailModule && activeLanguage === "FA";
+    const panelTitle = isAboutMeFarsi ? "درباره من" : title;
+
+    const visibleTags = isShowingDetailModule
+        ? tags
+        : activeLanguage === "FA"
+          ? aboutData.tagsFA
+          : aboutData.tagsEN;
 
     return (
         <aside
             className={[
                 "about-panel",
                 isShowingDetailModule ? "is-showing-detail-module" : "",
+                isExpanded ? "is-expanded" : "",
             ]
                 .filter(Boolean)
                 .join(" ")}
             aria-labelledby="about-panel-title"
         >
+            <AboutPanelExpandToggle
+                isExpanded={isExpanded}
+                onToggle={() => setIsExpanded((currentValue) => !currentValue)}
+            />
+
             <div className="about-panel-card" key={contentKey}>
                 <div className="about-panel-scroll">
                     <div
@@ -104,10 +120,17 @@ const AboutPanel = ({ selectedShelfItem }) => {
 
                     <div className="about-panel-heading" key={contentKey}>
                         <h2
-                            className="about-panel-title"
+                            className={[
+                                "about-panel-title",
+                                isAboutMeFarsi ? "is-farsi-text" : "",
+                            ]
+                                .filter(Boolean)
+                                .join(" ")}
                             id="about-panel-title"
+                            dir={isAboutMeFarsi ? "rtl" : undefined}
+                            lang={isAboutMeFarsi ? "fa" : undefined}
                         >
-                            {title}
+                            {panelTitle}
                         </h2>
                         {selectedModule?.subtitle && (
                             <p className="about-panel-subtitle">
@@ -134,13 +157,20 @@ const AboutPanel = ({ selectedShelfItem }) => {
                         </div>
                     </div>
 
-                    {tags.length > 0 && (
+                    {visibleTags.length > 0 && (
                         <ul
-                            className="about-panel-tags"
+                            className={[
+                                "about-panel-tags",
+                                isAboutMeFarsi ? "is-farsi-text" : "",
+                            ]
+                                .filter(Boolean)
+                                .join(" ")}
                             key={`${contentKey}-tags`}
                             aria-label="Skills"
+                            dir={isAboutMeFarsi ? "rtl" : undefined}
+                            lang={isAboutMeFarsi ? "fa" : undefined}
                         >
-                            {tags.map((tag) => (
+                            {visibleTags.map((tag) => (
                                 <li key={tag}>{tag}</li>
                             ))}
                         </ul>

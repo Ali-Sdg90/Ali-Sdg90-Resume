@@ -19,6 +19,15 @@
     animation-delay: 70ms;
 }
 
+.about-panel.is-expanded {
+    .about-panel-avatar-wrap {
+        grid-area: avatar;
+        width: min(about-panel-cqw(214), 100%);
+        align-self: start;
+        margin: 0 auto about-panel-cqw(4);
+    }
+}
+
 .about-panel-avatar-frame {
     width: 100%;
     height: 100%;

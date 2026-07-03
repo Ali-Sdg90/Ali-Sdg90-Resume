@@ -9,6 +9,16 @@
     animation-delay: 50ms;
 }
 
+.about-panel.is-expanded {
+    .about-panel-topbar {
+        position: absolute;
+        top: about-panel-cqw(28);
+        right: about-panel-cqw(21);
+        z-index: 2;
+        margin: 0;
+    }
+}
+
 .about-panel-language-toggle {
     position: relative;
     display: inline-flex;
@@ -103,6 +113,22 @@
     animation-delay: 90ms;
 }
 
+.about-panel.is-expanded {
+    .about-panel-heading {
+        grid-area: heading;
+        align-self: start;
+        margin: 0;
+    }
+
+    .about-panel-title {
+        font-size: about-panel-cqw(29);
+    }
+
+    .about-panel-subtitle {
+        font-size: about-panel-cqw(15);
+    }
+}
+
 .about-panel-copy {
     min-height: 0;
     height: 100%;
@@ -132,6 +158,11 @@
     list-style: none;
     animation-delay: 200ms;
 
+    &[dir="rtl"] {
+        direction: rtl;
+        justify-content: flex-start;
+    }
+
     li {
         min-height: about-panel-cqw(28);
         display: inline-flex;
@@ -148,6 +179,15 @@
         font-size: about-panel-cqw(14);
         line-height: 1.1;
         white-space: nowrap;
+    }
+}
+
+.about-panel.is-expanded {
+    .about-panel-tags {
+        grid-area: tags;
+        align-self: start;
+        align-content: start;
+        margin-top: 0;
     }
 }
 
@@ -174,10 +214,60 @@
     display: block;
 }
 
+.about-panel.is-expanded {
+    .about-panel-copy-shell {
+        grid-area: copy;
+        min-height: 0;
+        height: 100%;
+        margin-right: 0;
+        overflow: hidden;
+    }
+
+    .about-panel-copy {
+        height: 100%;
+        padding: about-panel-cqw(46) about-panel-cqw(4) 0 0;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+    }
+
+    .about-panel-text {
+        gap: about-panel-cqw(14);
+        max-width: about-panel-cqw(560);
+        padding-right: about-panel-cqw(10);
+
+        p {
+            font-size: about-panel-cqw(16);
+            line-height: 1.58;
+        }
+    }
+
+    .about-panel-detail p {
+        font-size: about-panel-cqw(16);
+    }
+
+    .about-panel-tags li {
+        font-size: about-panel-cqw(15);
+    }
+}
+
 .about-panel.is-showing-detail-module {
     .about-panel-copy {
         height: auto;
         overflow: visible;
+    }
+}
+
+.about-panel.is-expanded.is-showing-detail-module {
+    .about-panel-copy {
+        height: 100%;
+        overflow-y: auto;
     }
 }
 
