@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.8.1...v1.8.2) (2026-07-03)
+
+
+### Bug Fixes
+
+* add support for Persian language in AboutPanel and related components, trying to write about me section text... ([8cb7ef5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/8cb7ef5bd982a2fa13813922a3fe7cd1e7abd1be))
+
 ## [1.8.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.8.0...v1.8.1) (2026-07-02)
 
 
