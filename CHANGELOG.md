@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.8.2...v1.8.3) (2026-07-03)
+
+
+### Bug Fixes
+
+* finalize AboutPanel content, start of adding bigger sized about section mode ([769546c](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/769546cd461ce17b2c946f8612c9ec0d0472fe3a))
+
 ## [1.8.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.8.1...v1.8.2) (2026-07-03)
 
 
