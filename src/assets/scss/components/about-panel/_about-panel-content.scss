@@ -186,6 +186,11 @@
     gap: about-panel-cqw(13);
     padding-right: about-panel-cqw(8);
 
+    &[dir="rtl"] {
+        direction: rtl;
+        text-align: right;
+    }
+
     p {
         margin: 0;
         color: rgba(218, 231, 247, 0.86);

@@ -10,16 +10,8 @@ $color-shelf-dark: #5b321c;
 $color-shelf: #9a5a2f;
 $color-shelf-light: #d08a4a;
 
-// Todo: later add a switch between two font when adding switch language feature
-
-// Persian Version
-// $font-family-base: "Vazirmatn", "Inter", "Segoe UI", Arial, sans-serif;
-
-// English Version
 $font-family-base: "Geist", "Inter", "Segoe UI", Arial, sans-serif;
-
-// Testing single font-family
-// $font-family-base: "Geist";
+$font-family-farsi: "Vazirmatn", "Inter", "Segoe UI", Arial, sans-serif;
 
 $radius-sm: 6px;
 $radius-md: 8px;

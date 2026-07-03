@@ -18,6 +18,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.is-farsi-text {
+    font-family: $font-family-farsi;
+}
+
 button,
 input,
 textarea,

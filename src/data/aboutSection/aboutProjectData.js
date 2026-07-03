@@ -58,10 +58,7 @@ export const aboutProjectData = {
         year: "20XX",
         summary:
             "Placeholder summary text for this project. This content will be replaced with the real project description later.",
-        links: [
-            { label: "Placeholder Link", url: "" },
-            { label: "Placeholder Link", url: "" },
-        ],
+        links: [{ label: "Placeholder Link", url: "" }],
         tech: ["Placeholder", "Placeholder", "Placeholder"],
         features: [
             "Placeholder feature item",
