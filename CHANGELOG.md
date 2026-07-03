@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.8.3...v1.9.0) (2026-07-03)
+
+
+### Features
+
+* implement expandable AboutPanel with language support and styling adjustments ([e7634d2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/e7634d26fca712aa9c55e1165b0681fec6fd1e05))
+
 ## [1.8.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.8.2...v1.8.3) (2026-07-03)
 
 
