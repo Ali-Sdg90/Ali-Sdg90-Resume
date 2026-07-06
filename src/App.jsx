@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react";
 
-import DynamicBackground from "./components/DynamicBackground";
-import AboutPanel from "./components/AboutPanel";
-import Intro from "./components/Intro";
-import MobileWipNotice from "./components/MobileWipNotice";
+import AboutPanel from "./components/AboutPanel/AboutPanel";
+import Intro from "./components/Intro/Intro";
+import DynamicBackground from "./components/layout/DynamicBackground";
+import MobileWipNotice from "./components/layout/MobileWipNotice";
 import Shelf from "./components/Shelf/Shelf";
 import { shelfSections } from "./data/portfolio/shelfSections";
 import { getShelfItemId } from "./utils/getShelfItemId";

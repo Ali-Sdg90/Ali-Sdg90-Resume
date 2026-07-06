@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import AboutPanelExpandToggle from "./AboutPanel/AboutPanelExpandToggle";
-import AboutMeContent from "./AboutPanel/AboutMeContent";
-import CustomScrollbar from "./CustomScrollbar";
-import { getShelfItemDetailModule } from "./AboutPanel/ShelfItemDetails";
-import LightboxImage from "./LightboxImage";
-import { aboutData } from "../data/portfolio/aboutData";
+import AboutPanelExpandToggle from "./AboutPanelExpandToggle";
+import AboutMeContent from "./AboutMeContent";
+import { getShelfItemDetailModule } from "./ShelfItemDetails";
+import CustomScrollbar from "../ui/CustomScrollbar";
+import LightboxImage from "../ui/LightboxImage";
+import { aboutData } from "../../data/portfolio/aboutData";
 
 const AboutPanel = ({ selectedShelfItem }) => {
     const [activeLanguage, setActiveLanguage] = useState("EN");

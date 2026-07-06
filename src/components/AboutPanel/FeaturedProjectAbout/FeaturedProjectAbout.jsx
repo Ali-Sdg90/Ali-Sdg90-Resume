@@ -8,7 +8,7 @@ import {
     FaPenNib,
 } from "react-icons/fa6";
 
-import LightboxImage from "../../LightboxImage";
+import LightboxImage from "../../ui/LightboxImage";
 
 const sectionIcons = {
     features: FaListCheck,

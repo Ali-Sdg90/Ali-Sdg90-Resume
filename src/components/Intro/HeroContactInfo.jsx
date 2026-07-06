@@ -1,4 +1,4 @@
-import { contactItems, socialItems } from "../data/portfolio/profileLinks";
+import { contactItems, socialItems } from "../../data/portfolio/profileLinks";
 
 const HeroContactInfo = () => {
     return (
