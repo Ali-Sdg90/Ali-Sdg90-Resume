@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.10.1...v1.11.0) (2026-07-06)
+
+
+### Features
+
+* re-arranged AboutPanel and ShelfItemDetails components and others ([3acd31d](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/3acd31de01678b966ffd61e9636cf73868431d24))
+
 ## [1.10.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.10.0...v1.10.1) (2026-07-06)
 
 
