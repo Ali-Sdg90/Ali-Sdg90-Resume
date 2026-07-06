@@ -68,8 +68,8 @@
     top: 50%;
     left: about-panel-cqw(-5);
     z-index: 6;
-    width: about-panel-cqw(32);
-    height: about-panel-cqw(74);
+    width: about-panel-cqw(26);
+    height: about-panel-cqw(80);
     display: inline-grid;
     place-items: center;
     padding: 0;
@@ -124,7 +124,7 @@
         display: block;
         width: about-panel-cqw(16);
         height: about-panel-cqw(16);
-        margin-left: about-panel-cqw(3);
+        margin-left: about-panel-cqw(9);
         color: #8fd8ff;
         filter: drop-shadow(0 0 about-panel-cqw(5) rgba(22, 136, 255, 0.5));
         animation: about-panel-expand-icon-breathe 2.8s $ease-out infinite;
@@ -133,7 +133,7 @@
     &:hover,
     &:focus-visible {
         color: $color-text;
-        width: about-panel-cqw(34);
+        width: about-panel-cqw(28);
         filter: drop-shadow(0 0 about-panel-cqw(10) rgba(22, 136, 255, 0.36));
 
         &::before {
@@ -237,7 +237,7 @@
     grid-template-rows: auto auto auto minmax(0, 1fr) auto;
     overflow: hidden;
     padding: about-panel-cqw(28) about-panel-cqw(30) about-panel-cqw(23);
-    padding-right: about-panel-cqw(21);
+    padding-right: about-panel-cqw(12);
 }
 
 @keyframes about-panel-data-sweep {

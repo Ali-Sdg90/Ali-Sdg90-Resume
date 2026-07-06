@@ -1,6 +1,99 @@
 @use "../../base/variables" as *;
 @use "about-panel-units" as *;
 
+@mixin about-panel-hidden-native-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    &::-webkit-scrollbar-button,
+    &::-webkit-scrollbar-button:single-button,
+    &::-webkit-scrollbar-button:decrement,
+    &::-webkit-scrollbar-button:increment,
+    &::-webkit-scrollbar-button:start,
+    &::-webkit-scrollbar-button:end {
+        display: none;
+        width: 0;
+        height: 0;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+}
+
+@mixin about-panel-custom-scrollbar {
+    --custom-scrollbar-track-top: #{about-panel-cqw(2)};
+    --custom-scrollbar-track-bottom: #{about-panel-cqw(2)};
+
+    position: relative;
+    min-height: 0;
+    height: 100%;
+
+    .custom-scrollbar__viewport {
+        @include about-panel-hidden-native-scrollbar;
+    }
+
+    .custom-scrollbar__track {
+        position: absolute;
+        top: var(--custom-scrollbar-track-top);
+        right: about-panel-cqw(4);
+        bottom: var(--custom-scrollbar-track-bottom);
+        width: about-panel-cqw(7);
+        border-radius: about-panel-cqw(999);
+        background:
+            linear-gradient(
+                90deg,
+                transparent 0 about-panel-cqw(2),
+                rgba(59, 160, 255, 0.2) about-panel-cqw(2) about-panel-cqw(5),
+                transparent about-panel-cqw(5) 100%
+            ),
+            rgba(4, 17, 36, 0.12);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity $motion-fast $ease-out;
+    }
+
+    &[data-scrollable="true"] {
+        .custom-scrollbar__track {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+
+    .custom-scrollbar__thumb {
+        position: absolute;
+        top: var(--custom-scrollbar-thumb-top, 0);
+        left: 50%;
+        width: about-panel-cqw(4);
+        height: var(--custom-scrollbar-thumb-height, 60%);
+        border-radius: about-panel-cqw(999);
+        background: #1688ff;
+        box-shadow: none;
+        cursor: default;
+        transform: translateX(-50%);
+        transition:
+            background-color $motion-fast $ease-out,
+            opacity $motion-fast $ease-out;
+        touch-action: none;
+    }
+
+    .custom-scrollbar__thumb:hover,
+    .custom-scrollbar__thumb:active {
+        background: #2f98ff;
+    }
+
+    .custom-scrollbar__thumb:active {
+        cursor: default;
+    }
+}
+
 .about-panel-topbar {
     display: flex;
     justify-content: flex-end;
@@ -132,21 +225,17 @@
 .about-panel-copy {
     min-height: 0;
     height: 100%;
-    padding: about-panel-cqw(6) 0;
+    box-sizing: border-box;
+    padding: about-panel-cqw(3) about-panel-cqw(24) about-panel-cqw(6) 0;
     display: grid;
     align-content: start;
     gap: about-panel-cqw(14);
     overflow-y: auto;
     overscroll-behavior: contain;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+    overflow-anchor: none;
+    scroll-behavior: auto;
+    @include about-panel-hidden-native-scrollbar;
     animation-delay: 130ms;
-
-    &::-webkit-scrollbar {
-        display: none;
-        width: 0;
-        height: 0;
-    }
 }
 
 .about-panel-tags {
@@ -154,6 +243,7 @@
     flex-wrap: wrap;
     gap: about-panel-cqw(8) about-panel-cqw(8);
     margin-top: about-panel-cqw(16);
+    margin-right: about-panel-cqw(18);
     padding: 0;
     list-style: none;
     animation-delay: 200ms;
@@ -210,8 +300,14 @@
 .about-panel-copy-shell {
     position: relative;
     min-height: 0;
+    height: 100%;
     margin-right: about-panel-cqw(10);
     display: block;
+    margin-right: 0 !important;
+}
+
+.about-panel-copy-scrollbar {
+    @include about-panel-custom-scrollbar;
 }
 
 .about-panel.is-expanded {
@@ -223,24 +319,26 @@
         overflow: hidden;
     }
 
+    .about-panel-copy-scrollbar {
+        .custom-scrollbar__track {
+            right: about-panel-cqw(10);
+        }
+    }
+
     .about-panel-copy {
-        height: 100%;
-        padding: about-panel-cqw(46) about-panel-cqw(4) 0 0;
+        --about-panel-expanded-copy-offset: #{about-panel-cqw(42)};
+        height: calc(100% - var(--about-panel-expanded-copy-offset));
+        margin: var(--about-panel-expanded-copy-offset) about-panel-cqw(6) 0
+            about-panel-cqw(4);
+        padding: 0 about-panel-cqw(26) 0 about-panel-cqw(4);
         overflow-y: auto;
         overscroll-behavior: contain;
-        scrollbar-width: none;
-
-        &::-webkit-scrollbar {
-            display: none;
-            width: 0;
-            height: 0;
-        }
+        @include about-panel-hidden-native-scrollbar;
     }
 
     .about-panel-text {
         gap: about-panel-cqw(14);
         max-width: about-panel-cqw(560);
-        padding-right: about-panel-cqw(10);
 
         p {
             font-size: about-panel-cqw(16);
@@ -257,24 +355,22 @@
     }
 }
 
-.about-panel.is-showing-detail-module {
+.about-panel.is-expanded.is-showing-detail-module {
     .about-panel-copy {
-        height: auto;
-        overflow: visible;
+        overflow-y: auto;
     }
 }
 
-.about-panel.is-expanded.is-showing-detail-module {
-    .about-panel-copy {
-        height: 100%;
-        overflow-y: auto;
+.about-panel.is-showing-detail-module {
+    .about-panel-scroll {
+        overflow: hidden;
+        @include about-panel-hidden-native-scrollbar;
     }
 }
 
 .about-panel-text {
     display: grid;
     gap: about-panel-cqw(13);
-    padding-right: about-panel-cqw(8);
 
     &[dir="rtl"] {
         direction: rtl;

@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import AboutPanelExpandToggle from "./AboutPanel/AboutPanelExpandToggle";
 import AboutMeContent from "./AboutPanel/AboutMeContent";
+import CustomScrollbar from "./CustomScrollbar";
 import { getShelfItemDetailModule } from "./AboutPanel/ShelfItemDetails";
 import LightboxImage from "./LightboxImage";
 import { aboutData } from "../data/portfolio/aboutData";
@@ -140,7 +141,12 @@ const AboutPanel = ({ selectedShelfItem }) => {
                     </div>
 
                     <div className="about-panel-copy-shell">
-                        <div className="about-panel-copy" key={contentKey}>
+                        <CustomScrollbar
+                            className="about-panel-copy-scrollbar"
+                            contentKey={contentKey}
+                            viewportClassName="about-panel-copy"
+                            key={contentKey}
+                        >
                             {DetailComponent ? (
                                 <DetailComponent
                                     item={selectedShelfItem.item}
@@ -154,7 +160,7 @@ const AboutPanel = ({ selectedShelfItem }) => {
                                     paragraphs={aboutMeParagraphs}
                                 />
                             )}
-                        </div>
+                        </CustomScrollbar>
                     </div>
 
                     {visibleTags.length > 0 && (
