@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.0...v1.11.1) (2026-07-06)
+
+
+### Bug Fixes
+
+* featured cards get there scrollbar back ([7d0c848](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/7d0c8482662c5b750286fa934ed25dc3032fea44))
+
 # [1.11.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.10.1...v1.11.0) (2026-07-06)
 
 
