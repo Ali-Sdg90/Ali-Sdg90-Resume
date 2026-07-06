@@ -38,6 +38,11 @@ import viteLogo from "../../assets/images/thumbnails/tech-stack/vite_logo.jpg";
 import eslintLogo from "../../assets/images/thumbnails/tech-stack/eslint_logo.jpg";
 import prettierLogo from "../../assets/images/thumbnails/tech-stack/prettier_logo.jpg";
 import semanticReleaseLogo from "../../assets/images/thumbnails/tech-stack/semantic-release_logo.jpg";
+import azureLogo from "../../assets/images/thumbnails/tech-stack/azure_logo.jpg";
+import axiosLogo from "../../assets/images/thumbnails/tech-stack/axios_logo.jpg";
+import ollamaLogo from "../../assets/images/thumbnails/tech-stack/ollama_logo.jpg";
+import routerLogo from "../../assets/images/thumbnails/tech-stack/router_logo.jpg";
+import swaggerLogo from "../../assets/images/thumbnails/tech-stack/swagger_logo.jpg";
 
 export const shelfSections = [
     {
@@ -273,12 +278,11 @@ export const shelfSections = [
             { id: "gitGithub", title: "Git/GitHub", image: gitLogo },
             { id: "firebase", title: "Firebase", image: firebaseLogo },
             { id: "chartjs", title: "Chart.js", image: chartJsLogo },
-            { id: "githubPages", title: "GitHub Pages", image: "" },
-            { id: "ollama", title: "Ollama", image: "" },
-            { id: "azureDevops", title: "Azure DevOps", image: "" },
-            { id: "reactRouter", title: "React Router", image: "" },
-            { id: "axios", title: "Axios", image: "" },
-            { id: "swagger", title: "Swagger", image: "" },
+            { id: "ollama", title: "Ollama", image: ollamaLogo },
+            { id: "azureDevops", title: "Azure DevOps", image: azureLogo },
+            { id: "reactRouter", title: "React Router", image: routerLogo },
+            { id: "axios", title: "Axios", image: axiosLogo },
+            { id: "swagger", title: "Swagger", image: swaggerLogo },
         ],
     },
     {
