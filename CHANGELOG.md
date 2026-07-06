@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.1...v1.11.2) (2026-07-06)
+
+
+### Bug Fixes
+
+* fix tech stack thumbnails images and add new items images ([9604215](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/960421519163225c56e37e33615ddb067ee8ba18))
+
 ## [1.11.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.0...v1.11.1) (2026-07-06)
 
 
