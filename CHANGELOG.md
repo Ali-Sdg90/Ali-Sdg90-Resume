@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.10.0...v1.10.1) (2026-07-06)
+
+
+### Bug Fixes
+
+* fix expandable to full about me section form deselecting about card, improve scrollbar animations, add temp resume ([1654268](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/16542689a895c2291593327cf54935190133a391))
+
 # [1.10.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.9.0...v1.10.0) (2026-07-06)
 
 
