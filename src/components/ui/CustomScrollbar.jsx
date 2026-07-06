@@ -3,7 +3,7 @@ import { useCallback, useLayoutEffect, useRef } from "react";
 const THUMB_HEIGHT_PERCENT = 60;
 const MAX_THUMB_TOP_PERCENT = 100 - THUMB_HEIGHT_PERCENT;
 const LINE_SCROLL_PX = 16;
-const WHEEL_SCROLL_DURATION_MS = 240;
+const WHEEL_SCROLL_DURATION_MS = 300;
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
@@ -180,6 +180,8 @@ const CustomScrollbar = ({
             event.preventDefault();
             event.stopPropagation();
 
+            rootRef.current?.setAttribute("data-dragging", "true");
+
             const thumbRect = event.currentTarget.getBoundingClientRect();
             dragOffsetRef.current = event.clientY - thumbRect.top;
 
@@ -188,6 +190,7 @@ const CustomScrollbar = ({
                 scrollToPointer(moveEvent.clientY, false);
             };
             const handlePointerUp = () => {
+                rootRef.current?.setAttribute("data-dragging", "false");
                 window.removeEventListener("pointermove", handlePointerMove);
                 window.removeEventListener("pointerup", handlePointerUp);
             };

@@ -38,7 +38,9 @@ const App = () => {
     };
 
     const handleAboutMeSelect = () => {
-        setSelectedShelfItem(null);
+        setSelectedShelfItem((currentItem) =>
+            currentItem ? null : currentItem,
+        );
     };
 
     return (

@@ -3,6 +3,12 @@ import HeroContactInfo from "./HeroContactInfo";
 const RESUME_URL = "/resume/ali-sadeghi-resume-en.pdf";
 
 const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
+    const handleAboutMeClick = () => {
+        if (isAboutMeActive) return;
+
+        onAboutMeSelect();
+    };
+
     return (
         <>
             <div className="intro-top-section">
@@ -55,7 +61,7 @@ const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
                             .join(" ")}
                         type="button"
                         aria-pressed={isAboutMeActive}
-                        onClick={onAboutMeSelect}
+                        onClick={handleAboutMeClick}
                     >
                         About Me
                     </button>

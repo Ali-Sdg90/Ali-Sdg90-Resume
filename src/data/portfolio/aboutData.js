@@ -1,7 +1,8 @@
 import profileImage from "../../assets/images/ali-images/ali-profile.jpg";
 
 export const aboutData = {
-    title: "About me",
+    titleEn: "About me",
+    titleFa: "درباره من",
     image: {
         src: profileImage,
         alt: "Ali Sadeghi",
@@ -35,13 +36,7 @@ export const aboutData = {
         "Of course, this depends a lot on the environment and team structure. I work better in places where people trust me, give me space, allow me to grow, and do not see me only as someone who completes tasks. In that kind of environment, I can contribute more and help the team grow too.",
         "In the end, what I am looking for is not just a job position. I want to be somewhere I can grow, create impact, and spend my energy building things that genuinely make something better, whether that is a product, a system, or the way a team works.",
     ],
-    tagsEN: ["React", "TypeScript", "Node.js", "AI Workflows", "Automation"],
-    tagsFA: [
-        "ری‌اکت",
-        "تایپ‌اسکریپت",
-        "نود جی‌اس",
-        "جریان‌های کاری AI",
-        "اتوماسیون",
-    ],
+    tagsEN: ["React", "JavaScript", "SCSS", "Automation", "AI Workflows"],
+    tagsFA: ["React", "JavaScript", "SCSS", "Automation", "AI Workflows"],
     tags: ["React", "TypeScript", "Node.js", "AI Workflows", "Automation"],
 };

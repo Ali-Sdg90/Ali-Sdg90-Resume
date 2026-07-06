@@ -83,12 +83,12 @@ const DetailSectionTitle = ({ children, type }) => {
     );
 };
 
-const FeaturesCard = ({ features = [] }) => {
+const FeaturesCard = ({ features = [], title = "Features" }) => {
     if (!features.length) return null;
 
     return (
         <section className="featured-project-card">
-            <DetailSectionTitle type="features">Features</DetailSectionTitle>
+            <DetailSectionTitle type="features">{title}</DetailSectionTitle>
             <ul className="featured-project-features">
                 {features.map((feature) => (
                     <li key={feature}>
@@ -131,7 +131,7 @@ const ProjectGallery = ({ images = [], title }) => {
     );
 };
 
-const ProjectStory = ({ story }) => {
+const ProjectStory = ({ story, title = "Story" }) => {
     const paragraphs = story
         ?.split("\n\n")
         .map((paragraph) => paragraph.trim())
@@ -141,7 +141,7 @@ const ProjectStory = ({ story }) => {
 
     return (
         <section className="featured-project-section">
-            <DetailSectionTitle type="story">Story</DetailSectionTitle>
+            <DetailSectionTitle type="story">{title}</DetailSectionTitle>
             <div className="featured-project-story">
                 {paragraphs.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
@@ -151,7 +151,7 @@ const ProjectStory = ({ story }) => {
     );
 };
 
-const FeaturedProjectAbout = ({ detail }) => {
+const FeaturedProjectAbout = ({ detail, item, section }) => {
     if (!detail) {
         return (
             <div className="featured-project-about">
@@ -163,17 +163,26 @@ const FeaturedProjectAbout = ({ detail }) => {
         );
     }
 
+    const shouldHideSummary = section?.id === "tech-stack";
+    const summary =
+        section?.id === "achievements" ? item?.meta : detail.summary;
+
     return (
         <div className="featured-project-about">
-            <p className="featured-project-summary">{detail.summary}</p>
+            {!shouldHideSummary && summary && (
+                <p className="featured-project-summary">{summary}</p>
+            )}
             <ProjectLinks links={detail.links} />
             <TechChips tech={detail.tech} />
-            <FeaturesCard features={detail.features} />
+            <FeaturesCard
+                features={detail.features}
+                title={detail.featuresTitle}
+            />
             <ProjectGallery
                 images={detail.galleryImages}
                 title={detail.title}
             />
-            <ProjectStory story={detail.story} />
+            <ProjectStory story={detail.story} title={detail.storyTitle} />
         </div>
     );
 };

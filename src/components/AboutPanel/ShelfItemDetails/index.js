@@ -1,19 +1,15 @@
 import placeholderImage from "../../../assets/images/global/placeholder.jpg";
+import { getAboutCareerById } from "../../../data/aboutSection/aboutCareerData";
+import { getAboutImpactById } from "../../../data/aboutSection/aboutImpactData";
 import { getAboutProjectById } from "../../../data/aboutSection/aboutProjectData";
-import { careerDetailModules } from "../CareerDetails";
+import { getAboutTechStackById } from "../../../data/aboutSection/aboutTechStackData";
 import FeaturedProjectAbout from "../FeaturedProjectAbout";
-import GenericShelfItemDetail from "./GenericShelfItemDetail";
-
-const sectionTags = {
-    projects: ["Project", "Case Study", "Build Notes"],
-    achievements: ["Impact", "Evidence", "Context"],
-    "tech-stack": ["Tooling", "Stack", "Usage"],
-};
 
 const sectionSubtitles = {
     projects: "Project detail placeholder",
     achievements: "Impact detail placeholder",
     "tech-stack": "Technology detail placeholder",
+    "career-journey": "Career detail placeholder",
 };
 
 const getGenericImage = (item, section) => {
@@ -56,19 +52,60 @@ export const getShelfItemDetailModule = ({ item, section }) => {
             },
             tags: [],
             detail: projectDetail,
+            detailVariant: "featured",
             Component: FeaturedProjectAbout,
         };
     }
 
     if (section.id === "career-journey") {
-        return careerDetailModules[item.id] ?? null;
+        const careerDetail = getAboutCareerById(item.id);
+
+        return {
+            title: careerDetail?.title ?? item.title,
+            subtitle: item.meta,
+            image: getGenericImage(item, section),
+            tags: [],
+            detail: careerDetail,
+            detailVariant: "compact",
+            Component: FeaturedProjectAbout,
+        };
+    }
+
+    if (section.id === "achievements") {
+        const impactDetail = getAboutImpactById(item.id);
+
+        return {
+            title: impactDetail?.title ?? item.title,
+            subtitle: "",
+            image: getGenericImage(item, section),
+            tags: [],
+            detail: impactDetail,
+            detailVariant: "compact",
+            Component: FeaturedProjectAbout,
+        };
+    }
+
+    if (section.id === "tech-stack") {
+        const techDetail = getAboutTechStackById(item.id);
+
+        return {
+            title: techDetail?.title ?? item.title,
+            subtitle: "",
+            image: getGenericImage(item, section),
+            tags: [],
+            detail: techDetail,
+            detailVariant: "compact",
+            Component: FeaturedProjectAbout,
+        };
     }
 
     return {
         title: item.title,
         subtitle: sectionSubtitles[section.id] ?? `${section.label} detail`,
         image: getGenericImage(item, section),
-        tags: sectionTags[section.id] ?? [section.label, "Details", "Notes"],
-        Component: GenericShelfItemDetail,
+        tags: [],
+        detail: null,
+        detailVariant: "compact",
+        Component: FeaturedProjectAbout,
     };
 };

@@ -13,6 +13,8 @@ const AboutPanel = ({ selectedShelfItem }) => {
         ? getShelfItemDetailModule(selectedShelfItem)
         : null;
     const isShowingDetailModule = Boolean(selectedModule);
+    const isSimpleDetailModule = selectedModule?.detailVariant === "simple";
+    const isCompactDetailModule = selectedModule?.detailVariant === "compact";
     const [isExpanded, setIsExpanded] = useState(false);
     const [wasShowingDetailModule, setWasShowingDetailModule] = useState(
         isShowingDetailModule,
@@ -27,7 +29,13 @@ const AboutPanel = ({ selectedShelfItem }) => {
         setWasShowingDetailModule(isShowingDetailModule);
     }
 
-    const { title, image, tags = [] } = selectedModule ?? aboutData;
+    const {
+        title,
+        titleEn,
+        titleFa,
+        image,
+        tags = [],
+    } = selectedModule ?? aboutData;
     const DetailComponent = selectedModule?.Component;
     const contentKey = selectedShelfItem
         ? `${selectedShelfItem.section.id}-${selectedShelfItem.item.title}`
@@ -38,7 +46,11 @@ const AboutPanel = ({ selectedShelfItem }) => {
             : aboutData.paragraphsEN;
     const aboutMeDirection = activeLanguage === "FA" ? "rtl" : "ltr";
     const isAboutMeFarsi = !isShowingDetailModule && activeLanguage === "FA";
-    const panelTitle = isAboutMeFarsi ? "درباره من" : title;
+    const panelTitle = isShowingDetailModule
+        ? title
+        : isAboutMeFarsi
+          ? titleFa
+          : titleEn;
 
     const visibleTags = isShowingDetailModule
         ? tags
@@ -51,6 +63,8 @@ const AboutPanel = ({ selectedShelfItem }) => {
             className={[
                 "about-panel",
                 isShowingDetailModule ? "is-showing-detail-module" : "",
+                isSimpleDetailModule ? "is-simple-detail-module" : "",
+                isCompactDetailModule ? "is-compact-detail-module" : "",
                 isExpanded ? "is-expanded" : "",
             ]
                 .filter(Boolean)
@@ -145,6 +159,17 @@ const AboutPanel = ({ selectedShelfItem }) => {
                             lang={isAboutMeFarsi ? "fa" : undefined}
                         >
                             {panelTitle}
+                            {!isShowingDetailModule && (
+                                <>
+                                    {" "}
+                                    <span
+                                        style={{ cursor: "help" }}
+                                        title="I know it is a bit too long. I will shorten it later"
+                                    >
+                                        *
+                                    </span>
+                                </>
+                            )}
                         </h2>
                         {selectedModule?.subtitle && (
                             <p className="about-panel-subtitle">
