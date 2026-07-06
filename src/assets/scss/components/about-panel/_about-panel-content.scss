@@ -398,33 +398,6 @@
         overflow: hidden;
         @include about-panel-hidden-native-scrollbar;
     }
-
-    &:not(.is-expanded) {
-        .about-panel-scroll:has(
-            .about-panel-copy-scrollbar[data-scrollable="false"]
-        ) {
-            grid-template-rows: auto auto auto auto auto;
-            align-content: start;
-        }
-
-        .about-panel-copy-shell:has(
-            .about-panel-copy-scrollbar[data-scrollable="false"]
-        ) {
-            height: auto;
-            min-height: 0;
-        }
-
-        .about-panel-copy-scrollbar[data-scrollable="false"] {
-            height: auto;
-            min-height: 0;
-
-            .about-panel-copy {
-                height: auto;
-                padding-bottom: 0;
-                overflow: visible;
-            }
-        }
-    }
 }
 
 .about-panel.is-simple-detail-module {
@@ -460,15 +433,9 @@
 
 .about-panel.is-compact-detail-module {
     &:not(.is-expanded) {
-        .about-panel-scroll:has(
-            .about-panel-copy-scrollbar[data-scrollable="false"]
-        ) {
-            grid-template-rows: auto auto auto;
-        }
-
         .about-panel-copy-shell {
-            height: auto;
-            min-height: 0;
+            height: 100%;
+            min-height: about-panel-cqw(148);
         }
     }
 }
