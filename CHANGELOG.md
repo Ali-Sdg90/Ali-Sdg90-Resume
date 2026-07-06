@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.9.0...v1.10.0) (2026-07-06)
+
+
+### Features
+
+* add custom scrollbar component and integrate into AboutPanel ([70018bb](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/70018bbef27ade4939fc8719e510662cd011a207))
+
 # [1.9.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.8.3...v1.9.0) (2026-07-03)
 
 
