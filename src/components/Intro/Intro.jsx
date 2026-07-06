@@ -1,6 +1,8 @@
 import HeroContactInfo from "./HeroContactInfo";
 
-const Intro = () => {
+const RESUME_URL = "/resume/ali-sadeghi-resume-en.pdf";
+
+const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
     return (
         <>
             <div className="intro-top-section">
@@ -34,11 +36,29 @@ const Intro = () => {
                 </p>
 
                 <div className="hero-actions">
-                    <a className="hero-button primary">
+                    <a
+                        className="hero-button primary"
+                        href={RESUME_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         View Resume <span aria-hidden="true">-&gt;</span>
                     </a>
 
-                    <a className="hero-button secondary">About Me</a>
+                    <button
+                        className={[
+                            "hero-button",
+                            "secondary",
+                            isAboutMeActive ? "is-active" : "",
+                        ]
+                            .filter(Boolean)
+                            .join(" ")}
+                        type="button"
+                        aria-pressed={isAboutMeActive}
+                        onClick={onAboutMeSelect}
+                    >
+                        About Me
+                    </button>
                 </div>
             </div>
 

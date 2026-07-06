@@ -119,6 +119,7 @@
         margin-bottom: 0;
 
         .hero-button {
+            position: relative;
             flex: 0 0 auto;
             min-height: intro-cqw(44);
             padding: intro-cqw(12) intro-cqw(16);
@@ -131,27 +132,55 @@
             border: max(1px, intro-cqw(1)) solid rgba(67, 150, 255, 0.34);
             background: rgba(6, 18, 34, 0.74);
             box-shadow: 0 0 intro-cqw(22) rgba(0, 132, 255, 0.16);
+            cursor: pointer;
             font-size: intro-cqw(15.5);
+            font-family: inherit;
             font-weight: 400;
             line-height: 1;
+            text-decoration: none;
             white-space: nowrap;
             transition:
                 border-color $motion-fast $ease-out,
-                background $motion-fast $ease-out;
+                background $motion-fast $ease-out,
+                transform $motion-fast $ease-out;
 
             span {
                 font-size: intro-cqw(16);
                 line-height: 1;
+                transition: transform $motion-fast $ease-out;
             }
 
             &:hover,
             &:focus-visible {
                 border-color: rgba(67, 150, 255, 0.78);
+                background: rgba(10, 32, 60, 0.82);
+                transform: scale(1.02);
+            }
+
+            &:active {
+                transform: scale(1);
+            }
+
+            &:focus-visible {
+                outline: intro-cqw(2) solid rgba(88, 182, 255, 0.68);
+                outline-offset: intro-cqw(3);
             }
 
             &.primary {
                 background: linear-gradient(135deg, #0068ff, #1688ff);
                 border-color: transparent;
+
+                &:hover,
+                &:focus-visible {
+                    background: linear-gradient(135deg, #0872ff, #2692ff);
+                }
+            }
+
+            &.secondary {
+                &.is-active {
+                    border-color: rgba(67, 150, 255, 0.78);
+                    background: rgba(10, 32, 60, 0.82);
+                }
             }
         }
     }
@@ -216,7 +245,7 @@
                 color: #1688ff;
                 border-color: rgba(67, 150, 255, 0.62);
                 background: rgba(12, 40, 76, 0.58);
-                transform: translateY(intro-cqw(-2));
+                transform: scale(1.02);
             }
 
             svg {

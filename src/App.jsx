@@ -37,6 +37,10 @@ const App = () => {
         );
     };
 
+    const handleAboutMeSelect = () => {
+        setSelectedShelfItem(null);
+    };
+
     return (
         <>
             {/* TEMPORARY: Remove this wrapper class with the mobile WIP gate. */}
@@ -45,7 +49,10 @@ const App = () => {
 
                 <main className="portfolio-hero" aria-labelledby="hero-title">
                     <section className="hero-intro">
-                        <Intro />
+                        <Intro
+                            isAboutMeActive={!selectedShelfItem}
+                            onAboutMeSelect={handleAboutMeSelect}
+                        />
                     </section>
 
                     <section className="hero-shelf">

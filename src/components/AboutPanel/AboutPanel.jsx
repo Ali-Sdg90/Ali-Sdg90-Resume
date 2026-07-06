@@ -9,11 +9,24 @@ import { aboutData } from "../../data/portfolio/aboutData";
 
 const AboutPanel = ({ selectedShelfItem }) => {
     const [activeLanguage, setActiveLanguage] = useState("EN");
-    const [isExpanded, setIsExpanded] = useState(false);
     const selectedModule = selectedShelfItem
         ? getShelfItemDetailModule(selectedShelfItem)
         : null;
     const isShowingDetailModule = Boolean(selectedModule);
+    const [isExpanded, setIsExpanded] = useState(false);
+    const [wasShowingDetailModule, setWasShowingDetailModule] = useState(
+        isShowingDetailModule,
+    );
+    const shouldCollapseFromDetail =
+        wasShowingDetailModule && !isShowingDetailModule;
+
+    if (shouldCollapseFromDetail) {
+        setIsExpanded(false);
+        setWasShowingDetailModule(false);
+    } else if (wasShowingDetailModule !== isShowingDetailModule) {
+        setWasShowingDetailModule(isShowingDetailModule);
+    }
+
     const { title, image, tags = [] } = selectedModule ?? aboutData;
     const DetailComponent = selectedModule?.Component;
     const contentKey = selectedShelfItem

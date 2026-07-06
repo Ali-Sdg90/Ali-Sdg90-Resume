@@ -57,7 +57,11 @@
             rgba(4, 17, 36, 0.12);
         opacity: 0;
         pointer-events: none;
-        transition: opacity $motion-fast $ease-out;
+        transition:
+            top $motion-medium $ease-out,
+            right $motion-medium $ease-out,
+            bottom $motion-medium $ease-out,
+            opacity $motion-medium $ease-out;
     }
 
     &[data-scrollable="true"] {
@@ -79,6 +83,8 @@
         cursor: default;
         transform: translateX(-50%);
         transition:
+            top $motion-medium $ease-out,
+            height $motion-medium $ease-out,
             background-color $motion-fast $ease-out,
             opacity $motion-fast $ease-out;
         touch-action: none;
@@ -194,7 +200,7 @@
 }
 
 .about-panel-heading,
-.about-panel-copy,
+.about-panel-copy-scrollbar,
 .about-panel-tags {
     animation: about-panel-content-enter 760ms $ease-out both;
 }
@@ -235,7 +241,6 @@
     overflow-anchor: none;
     scroll-behavior: auto;
     @include about-panel-hidden-native-scrollbar;
-    animation-delay: 130ms;
 }
 
 .about-panel-tags {
@@ -308,6 +313,7 @@
 
 .about-panel-copy-scrollbar {
     @include about-panel-custom-scrollbar;
+    animation-delay: 130ms;
 }
 
 .about-panel.is-expanded {
