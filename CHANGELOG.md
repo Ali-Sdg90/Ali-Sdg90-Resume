@@ -1,3 +1,10 @@
+## [1.11.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.2...v1.11.3) (2026-07-09)
+
+
+### Bug Fixes
+
+* add todos for project completion and progress tracking, move fa en btn to better place for about cards, use better method for loading farsi font ([db1bbd6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/db1bbd6c10db27751559d7ad010e013cfebe8f3f))
+
 ## [1.11.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.1...v1.11.2) (2026-07-06)
 
 
