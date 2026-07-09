@@ -7,6 +7,36 @@ import CustomScrollbar from "../ui/CustomScrollbar";
 import LightboxImage from "../ui/LightboxImage";
 import { aboutData } from "../../data/portfolio/aboutData";
 
+const AboutPanelLanguageToggle = ({ activeLanguage, onLanguageChange }) => (
+    <div
+        className={[
+            "about-panel-language-toggle",
+            activeLanguage === "FA" ? "is-fa-active" : "is-en-active",
+        ]
+            .filter(Boolean)
+            .join(" ")}
+        aria-label="Language"
+    >
+        <span className="about-panel-language-thumb" aria-hidden="true" />
+        {["EN", "FA"].map((language) => (
+            <button
+                className={[
+                    "about-panel-language-option",
+                    activeLanguage === language ? "is-active" : "",
+                ]
+                    .filter(Boolean)
+                    .join(" ")}
+                key={language}
+                type="button"
+                aria-pressed={activeLanguage === language}
+                onClick={() => onLanguageChange(language)}
+            >
+                {language}
+            </button>
+        ))}
+    </div>
+);
+
 const AboutPanel = ({ selectedShelfItem }) => {
     const [activeLanguage, setActiveLanguage] = useState("EN");
     const selectedModule = selectedShelfItem
@@ -57,6 +87,12 @@ const AboutPanel = ({ selectedShelfItem }) => {
         : activeLanguage === "FA"
           ? aboutData.tagsFA
           : aboutData.tagsEN;
+    const languageToggle = (
+        <AboutPanelLanguageToggle
+            activeLanguage={activeLanguage}
+            onLanguageChange={setActiveLanguage}
+        />
+    );
 
     return (
         <aside
@@ -78,46 +114,15 @@ const AboutPanel = ({ selectedShelfItem }) => {
 
             <div className="about-panel-card" key={contentKey}>
                 <div className="about-panel-scroll">
-                    <div
-                        className="about-panel-topbar"
-                        key={`${contentKey}-language`}
-                        aria-label="Panel controls"
-                    >
+                    {!isShowingDetailModule && (
                         <div
-                            className={[
-                                "about-panel-language-toggle",
-                                activeLanguage === "FA"
-                                    ? "is-fa-active"
-                                    : "is-en-active",
-                            ]
-                                .filter(Boolean)
-                                .join(" ")}
-                            aria-label="Language"
+                            className="about-panel-topbar"
+                            key={`${contentKey}-language`}
+                            aria-label="Panel controls"
                         >
-                            <span
-                                className="about-panel-language-thumb"
-                                aria-hidden="true"
-                            />
-                            {["EN", "FA"].map((language) => (
-                                <button
-                                    className={[
-                                        "about-panel-language-option",
-                                        activeLanguage === language
-                                            ? "is-active"
-                                            : "",
-                                    ]
-                                        .filter(Boolean)
-                                        .join(" ")}
-                                    key={language}
-                                    type="button"
-                                    aria-pressed={activeLanguage === language}
-                                    onClick={() => setActiveLanguage(language)}
-                                >
-                                    {language}
-                                </button>
-                            ))}
+                            {languageToggle}
                         </div>
-                    </div>
+                    )}
 
                     <div className="about-panel-avatar-wrap">
                         <div className="about-panel-avatar-frame">
@@ -190,6 +195,8 @@ const AboutPanel = ({ selectedShelfItem }) => {
                                     item={selectedShelfItem.item}
                                     section={selectedShelfItem.section}
                                     detail={selectedModule.detail}
+                                    activeLanguage={activeLanguage}
+                                    languageToggle={languageToggle}
                                 />
                             ) : (
                                 <AboutMeContent

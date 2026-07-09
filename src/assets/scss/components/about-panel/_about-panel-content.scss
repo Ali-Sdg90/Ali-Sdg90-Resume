@@ -370,12 +370,28 @@
 }
 
 .about-panel.is-expanded.is-showing-detail-module {
+    .about-panel-scroll {
+        row-gap: about-panel-cqw(10);
+        padding-top: about-panel-cqw(22);
+        padding-bottom: about-panel-cqw(18);
+    }
+
+    .about-panel-avatar-wrap {
+        margin-top: 0;
+    }
+
     .about-panel-copy {
+        --about-panel-expanded-copy-offset: #{about-panel-cqw(14)};
+
         overflow-y: auto;
     }
 }
 
 .about-panel.is-showing-detail-module {
+    .about-panel-title {
+        margin-top: about-panel-cqw(4);
+    }
+
     &:not(.is-expanded) {
         .about-panel-topbar {
             position: absolute;
@@ -390,7 +406,12 @@
         }
 
         .about-panel-avatar-wrap {
-            margin-top: about-panel-cqw(36);
+            margin-top: about-panel-cqw(24);
+        }
+
+        .about-panel-copy {
+            height: calc(100% + #{about-panel-cqw(6)});
+            margin-top: about-panel-cqw(-6);
         }
     }
 

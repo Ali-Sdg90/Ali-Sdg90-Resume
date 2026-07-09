@@ -116,6 +116,13 @@
     gap: about-panel-cqw(12);
 }
 
+.featured-project-story-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: about-panel-cqw(10);
+}
+
 .featured-project-card {
     padding: about-panel-cqw(14);
     border: 1px solid rgba(22, 136, 255, 0.48);
@@ -255,4 +262,9 @@
     display: flex;
     flex-direction: column;
     gap: about-panel-cqw(12);
+
+    &[dir="rtl"] {
+        direction: rtl;
+        text-align: right;
+    }
 }

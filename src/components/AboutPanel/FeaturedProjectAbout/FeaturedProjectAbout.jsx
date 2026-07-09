@@ -131,8 +131,18 @@ const ProjectGallery = ({ images = [], title }) => {
     );
 };
 
-const ProjectStory = ({ story, title = "Story" }) => {
-    const paragraphs = story
+const ProjectStory = ({
+    activeLanguage,
+    languageToggle,
+    story,
+    storyFA,
+    title = "Story",
+    titleFA,
+}) => {
+    const isFarsi = activeLanguage === "FA" && storyFA;
+    const visibleStory = isFarsi ? storyFA : story;
+    const visibleTitle = isFarsi ? (titleFA ?? title) : title;
+    const paragraphs = visibleStory
         ?.split("\n\n")
         .map((paragraph) => paragraph.trim())
         .filter(Boolean);
@@ -141,8 +151,22 @@ const ProjectStory = ({ story, title = "Story" }) => {
 
     return (
         <section className="featured-project-section">
-            <DetailSectionTitle type="story">{title}</DetailSectionTitle>
-            <div className="featured-project-story">
+            <div className="featured-project-story-header">
+                <DetailSectionTitle type="story">
+                    {visibleTitle}
+                </DetailSectionTitle>
+                {languageToggle}
+            </div>
+            <div
+                className={[
+                    "featured-project-story",
+                    isFarsi ? "is-farsi-text" : "",
+                ]
+                    .filter(Boolean)
+                    .join(" ")}
+                dir={isFarsi ? "rtl" : undefined}
+                lang={isFarsi ? "fa" : undefined}
+            >
                 {paragraphs.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                 ))}
@@ -151,7 +175,13 @@ const ProjectStory = ({ story, title = "Story" }) => {
     );
 };
 
-const FeaturedProjectAbout = ({ detail, item, section }) => {
+const FeaturedProjectAbout = ({
+    activeLanguage,
+    detail,
+    item,
+    languageToggle,
+    section,
+}) => {
     if (!detail) {
         return (
             <div className="featured-project-about">
@@ -182,7 +212,14 @@ const FeaturedProjectAbout = ({ detail, item, section }) => {
                 images={detail.galleryImages}
                 title={detail.title}
             />
-            <ProjectStory story={detail.story} title={detail.storyTitle} />
+            <ProjectStory
+                activeLanguage={activeLanguage}
+                languageToggle={languageToggle}
+                story={detail.story}
+                storyFA={detail.storyFA}
+                title={detail.storyTitle}
+                titleFA={detail.storyTitleFA}
+            />
         </div>
     );
 };
