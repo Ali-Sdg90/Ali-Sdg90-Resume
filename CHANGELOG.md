@@ -1,3 +1,10 @@
+## [1.11.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.6...v1.11.7) (2026-07-10)
+
+
+### Bug Fixes
+
+* finalize the csi section, make about card img 10% smaller, improve gallery func, make lighthouse bigger in smaller images, add csi gallery images, commented tags in career cards, gn :D ([d9b86e3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d9b86e38eaa3808decb6f6cfa51ad7d0fae92743))
+
 ## [1.11.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.5...v1.11.6) (2026-07-10)
 
 
