@@ -1,3 +1,10 @@
+## [1.11.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.7...v1.11.8) (2026-07-10)
+
+
+### Bug Fixes
+
+* add about me btn cute animation, slightly improved the intro text, made it more ali :) ([c3257ee](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/c3257ee7f40caf4dd2d18631e1c571961f5ebeed))
+
 ## [1.11.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.6...v1.11.7) (2026-07-10)
 
 
