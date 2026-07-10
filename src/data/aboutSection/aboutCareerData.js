@@ -3,26 +3,27 @@ export const aboutCareerData = {
         id: "cs-internship",
         title: "CS Internship",
         summary:
-            "Started as a web intern and grew into coordinator, technical mentor, governance contributor, process designer, and internal tool builder within the CS Internship program.",
+            "Technical Mentor and System Designer at CS Internship, focused on mentoring web interns, redesigning program processes, and building internal tools that helped the program scale.",
+
         tech: [
-            "Program Coordination",
             "Technical Mentorship",
-            "Community Management",
             "Process Design",
-            "Governance",
-            "Automation",
-            "Internal Tools",
+            "Program Operations",
+            "Workflow Automation",
+            "React",
+            "Telegram Bots",
+            "Azure Boards",
         ],
+
         featuresTitle: "Focus Areas",
         features: [
-            "Coordinated and onboarded new interns into the program",
-            "Led technical sessions for web-track interns",
-            "Reviewed interns' technical progress and guided their work",
-            "Contributed to governance meetings and program-level decisions",
-            "Redesigned onboarding, mentorship, intern activity, and role definition processes",
-            "Built internal tools to reduce repetitive work and improve program operations",
-            "Helped make the program more organized, scalable, automated, and community-driven",
+            "Mentored 30+ web development interns through technical coaching and progress reviews",
+            "Personally onboarded 8 interns into the program and supported their early journey",
+            "Led the redesign of the program entry process over a 6-month period with the governance team",
+            "Designed and improved internal systems, workflows, roles, and operating processes",
+            "Built 5 internal automation tools for queue management, club feedback, scheduling, and admin operations",
         ],
+
         storyTitle: "Story",
         storyEN: `I started my path in CS as an intern. I completed the web track, and around the middle of my study period, I got the opportunity to also take part in the program as someone who could contribute to its management and improvement.
 

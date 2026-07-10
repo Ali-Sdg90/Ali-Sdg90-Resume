@@ -115,7 +115,7 @@ export const aboutImpactData = {
     },
     internalTools: {
         id: "internalTools",
-        title: "9",
+        title: "5",
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],

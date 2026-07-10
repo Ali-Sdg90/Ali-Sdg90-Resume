@@ -215,7 +215,10 @@ const ProjectStory = ({
                         ? storyHeights.expanded
                         : storyHeights.collapsed,
                 }}
-                transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
+                transition={{
+                    duration: isExpanded ? 1.5 : 1,
+                    ease: [0.22, 1, 0.36, 1],
+                }}
                 onAnimationComplete={() => {
                     if (!isExpanded) setIsStoryClamped(true);
                 }}
