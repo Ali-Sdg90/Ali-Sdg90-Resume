@@ -1,3 +1,10 @@
+## [1.11.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.3...v1.11.4) (2026-07-10)
+
+
+### Bug Fixes
+
+* refactor about section data that it has related link, with extended or collapse for stories, add base data for CSI, improve some other styling problems ([ffe7002](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/ffe700211714c5031edc4ef911f085b21956b50a))
+
 ## [1.11.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.2...v1.11.3) (2026-07-09)
 
 
