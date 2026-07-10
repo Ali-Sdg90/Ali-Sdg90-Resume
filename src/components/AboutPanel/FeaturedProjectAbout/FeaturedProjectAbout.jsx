@@ -108,7 +108,7 @@ const FeaturesCard = ({ features = [], title = "Features" }) => {
     );
 };
 
-const ProjectGallery = ({ images = [], title }) => {
+const DetailGallery = ({ images = [], title }) => {
     if (!images.length) return null;
 
     return (
@@ -348,10 +348,7 @@ const FeaturedProjectAbout = ({
                 features={detail.features}
                 title={detail.featuresTitle}
             />
-            <ProjectGallery
-                images={detail.galleryImages}
-                title={detail.title}
-            />
+            <DetailGallery images={detail.galleryImages} title={detail.title} />
             <ProjectStory
                 activeLanguage={activeLanguage}
                 languageToggle={languageToggle}

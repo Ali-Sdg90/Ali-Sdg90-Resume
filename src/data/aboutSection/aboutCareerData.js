@@ -24,6 +24,8 @@ export const aboutCareerData = {
             "Built 5 internal automation tools for queue management, club feedback, scheduling, and admin operations",
         ],
 
+        galleryImages: ["hi", "hi", "hi"],
+
         storyTitle: "Story",
         storyEN: `I started my path in CS as an intern. I completed the web track, and around the middle of my study period, I got the opportunity to also take part in the program as someone who could contribute to its management and improvement.
 
@@ -106,6 +108,7 @@ Being able to make the program more organized, scalable, automated, and truly mo
         tech: ["Placeholder"],
         featuresTitle: "Focus Areas",
         features: ["Placeholder"],
+        galleryImages: [],
         storyTitle: "Story",
         storyEN: "Placeholder",
         storyFA: "Placeholder",
@@ -124,6 +127,7 @@ Being able to make the program more organized, scalable, automated, and truly mo
         tech: ["Placeholder"],
         featuresTitle: "Focus Areas",
         features: ["Placeholder"],
+        galleryImages: [],
         storyTitle: "Story",
         storyEN: "Placeholder",
         storyFA: "Placeholder",
@@ -142,6 +146,7 @@ Being able to make the program more organized, scalable, automated, and truly mo
         tech: ["Placeholder"],
         featuresTitle: "Focus Areas",
         features: ["Placeholder"],
+        galleryImages: [],
         storyTitle: "Story",
         storyEN: "Placeholder",
         storyFA: "Placeholder",

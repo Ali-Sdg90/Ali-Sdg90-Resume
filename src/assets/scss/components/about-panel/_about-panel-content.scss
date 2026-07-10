@@ -364,6 +364,36 @@
         font-size: about-panel-cqw(16);
     }
 
+    .about-panel-row-detail-summary,
+    .about-panel-row-detail-title {
+        font-size: about-panel-cqw(16);
+    }
+
+    .about-panel-row-detail-facts {
+        dt {
+            font-size: about-panel-cqw(12);
+        }
+
+        dd {
+            font-size: about-panel-cqw(15);
+        }
+    }
+
+    .about-panel-row-detail-list li {
+        font-size: about-panel-cqw(14);
+        line-height: 1.42;
+    }
+
+    .about-panel-detail-stats {
+        dt {
+            font-size: about-panel-cqw(12);
+        }
+
+        dd {
+            font-size: about-panel-cqw(16);
+        }
+    }
+
     .about-panel-tags li {
         font-size: about-panel-cqw(15);
     }

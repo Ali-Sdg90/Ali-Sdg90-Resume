@@ -432,3 +432,34 @@
     line-height: 1.3;
     font-weight: 550;
 }
+
+.about-panel.is-expanded {
+    .featured-project-summary,
+    .featured-project-story p {
+        font-size: about-panel-cqw(16);
+        line-height: 1.56;
+    }
+
+    .featured-project-section-title {
+        font-size: about-panel-cqw(16);
+    }
+
+    .featured-project-link,
+    .featured-project-tech li,
+    .featured-project-story-toggle {
+        font-size: about-panel-cqw(13);
+    }
+
+    .featured-project-features li {
+        font-size: about-panel-cqw(14);
+        line-height: 1.42;
+    }
+
+    .featured-project-related-link-label {
+        font-size: about-panel-cqw(12);
+    }
+
+    .featured-project-related-link-text {
+        font-size: about-panel-cqw(14);
+    }
+}
