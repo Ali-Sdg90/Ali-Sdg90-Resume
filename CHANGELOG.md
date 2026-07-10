@@ -1,3 +1,10 @@
+## [1.11.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.5...v1.11.6) (2026-07-10)
+
+
+### Bug Fixes
+
+* update font sizes and styles in about panel and featured project components; add galleryImages to career data ([216e5bf](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/216e5bfd199638a6e9fd1e205766b2aaf56cdaae))
+
 ## [1.11.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.4...v1.11.5) (2026-07-10)
 
 
