@@ -201,9 +201,19 @@
 }
 
 .featured-project-gallery {
+    --gallery-columns: 3;
+
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(var(--gallery-columns), minmax(0, 1fr));
     gap: about-panel-cqw(9);
+
+    &[style*="--gallery-columns: 2"] {
+        width: calc((200% - #{about-panel-cqw(9)}) / 3);
+    }
+
+    &[style*="--gallery-columns: 1"] {
+        width: calc((100% - #{about-panel-cqw(18)}) / 3);
+    }
 }
 
 .featured-project-gallery-button {
@@ -434,10 +444,15 @@
 }
 
 .about-panel.is-expanded {
-    .featured-project-summary,
-    .featured-project-story p {
+    .featured-project-summary {
         font-size: about-panel-cqw(16);
         line-height: 1.56;
+    }
+
+    .featured-project-story p,
+    .featured-project-story-content.is-clamped p {
+        font-size: about-panel-cqw(15);
+        line-height: 1.48;
     }
 
     .featured-project-section-title {

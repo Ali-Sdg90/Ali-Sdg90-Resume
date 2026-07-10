@@ -65,17 +65,17 @@ const ProjectLinks = ({ links = [] }) => {
     );
 };
 
-const TechChips = ({ tech = [] }) => {
-    if (!tech.length) return null;
+// const TechChips = ({ tech = [] }) => {
+//     if (!tech.length) return null;
 
-    return (
-        <ul className="featured-project-tech" aria-label="Tech stack">
-            {tech.map((techItem) => (
-                <li key={techItem}>{techItem}</li>
-            ))}
-        </ul>
-    );
-};
+//     return (
+//         <ul className="featured-project-tech" aria-label="Tech stack">
+//             {tech.map((techItem) => (
+//                 <li key={techItem}>{techItem}</li>
+//             ))}
+//         </ul>
+//     );
+// };
 
 const DetailSectionTitle = ({ children, type }) => {
     const Icon = sectionIcons[type] ?? FaLayerGroup;
@@ -108,13 +108,18 @@ const FeaturesCard = ({ features = [], title = "Features" }) => {
     );
 };
 
-const DetailGallery = ({ images = [], title }) => {
+const DetailGallery = ({ columns = 3, images = [], title }) => {
     if (!images.length) return null;
+
+    const galleryColumns = Math.min(3, Math.max(1, columns));
 
     return (
         <section className="featured-project-section">
             <DetailSectionTitle type="gallery">Gallery</DetailSectionTitle>
-            <div className="featured-project-gallery">
+            <div
+                className="featured-project-gallery"
+                style={{ "--gallery-columns": galleryColumns }}
+            >
                 {images.map((imageSrc, imageIndex) => (
                     <LightboxImage
                         image={{
@@ -343,12 +348,16 @@ const FeaturedProjectAbout = ({
                 <p className="featured-project-summary">{summary}</p>
             )}
             <ProjectLinks links={detail.links} />
-            <TechChips tech={detail.tech} />
+            {/* <TechChips tech={detail.tech} /> */}
+            <DetailGallery
+                columns={detail.galleryColumns}
+                images={detail.galleryImages}
+                title={detail.title}
+            />
             <FeaturesCard
                 features={detail.features}
                 title={detail.featuresTitle}
             />
-            <DetailGallery images={detail.galleryImages} title={detail.title} />
             <ProjectStory
                 activeLanguage={activeLanguage}
                 languageToggle={languageToggle}

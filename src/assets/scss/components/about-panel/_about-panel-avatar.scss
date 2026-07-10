@@ -112,6 +112,7 @@
 
 .about-panel.is-showing-detail-module {
     .about-panel-avatar-wrap {
+        width: about-panel-cqw(180);
         border-radius: about-panel-cqw(18);
         box-shadow:
             0 0 0 1px rgba(0, 8, 18, 0.82),
@@ -130,5 +131,11 @@
             transform $motion-medium $ease-out,
             visibility 0s linear $motion-medium;
         visibility: hidden;
+    }
+}
+
+.about-panel.is-expanded.is-showing-detail-module {
+    .about-panel-avatar-wrap {
+        width: min(about-panel-cqw(193), 100%);
     }
 }
