@@ -4,8 +4,6 @@ const RESUME_URL = "/resume/ali-sadeghi-resume-en.pdf";
 
 const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
     const handleAboutMeClick = () => {
-        if (isAboutMeActive) return;
-
         onAboutMeSelect();
     };
 
@@ -32,8 +30,8 @@ const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
                 <p className="hero-role">Software Engineer</p>
 
                 <p className="hero-copy">
-                    I build polished web projects, useful tools, and reliable
-                    systems.
+                    I love building polished web projects, useful tools, and
+                    reliable systems.
                     <br />
                     Crafted with care, curiosity, and{" "}
                     <a href="https://youtu.be/8TycTsfTcY8" target="_blank">

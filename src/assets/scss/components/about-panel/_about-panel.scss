@@ -229,6 +229,10 @@
     }
 }
 
+.about-panel.is-about-me-pulsing {
+    animation: about-panel-about-me-pulse 420ms $ease-out both;
+}
+
 .about-panel-scroll {
     position: relative;
     width: var(--about-panel-content-width);
@@ -253,6 +257,25 @@
     100% {
         opacity: 0;
         transform: translateX(70%) skewX(-8deg);
+    }
+}
+
+@keyframes about-panel-about-me-pulse {
+    0%,
+    100% {
+        filter: brightness(1);
+        transform: scale(1);
+    }
+
+    45% {
+        filter: brightness(1.1);
+        transform: scale(1.012);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-panel.is-about-me-pulsing {
+        animation: none;
     }
 }
 

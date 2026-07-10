@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import AboutPanelExpandToggle from "./AboutPanelExpandToggle";
 import AboutMeContent from "./AboutMeContent";
@@ -37,7 +37,7 @@ const AboutPanelLanguageToggle = ({ activeLanguage, onLanguageChange }) => (
     </div>
 );
 
-const AboutPanel = ({ selectedShelfItem }) => {
+const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
     const [activeLanguage, setActiveLanguage] = useState("EN");
     const selectedModule = selectedShelfItem
         ? getShelfItemDetailModule(selectedShelfItem)
@@ -46,11 +46,40 @@ const AboutPanel = ({ selectedShelfItem }) => {
     const isSimpleDetailModule = selectedModule?.detailVariant === "simple";
     const isCompactDetailModule = selectedModule?.detailVariant === "compact";
     const [isExpanded, setIsExpanded] = useState(false);
+    const aboutPanelRef = useRef(null);
+    const handledAboutMePulseRef = useRef(aboutMePulse);
     const [wasShowingDetailModule, setWasShowingDetailModule] = useState(
         isShowingDetailModule,
     );
     const shouldCollapseFromDetail =
         wasShowingDetailModule && !isShowingDetailModule;
+
+    useEffect(() => {
+        if (aboutMePulse === handledAboutMePulseRef.current) return undefined;
+
+        handledAboutMePulseRef.current = aboutMePulse;
+
+        if (!aboutMePulse || isShowingDetailModule) return undefined;
+
+        const aboutPanel = aboutPanelRef.current;
+
+        if (!aboutPanel) return undefined;
+
+        aboutPanel.classList.remove("is-about-me-pulsing");
+        void aboutPanel.offsetWidth;
+        aboutPanel.classList.add("is-about-me-pulsing");
+
+        const handleAnimationEnd = () => {
+            aboutPanel.classList.remove("is-about-me-pulsing");
+        };
+
+        aboutPanel.addEventListener("animationend", handleAnimationEnd, {
+            once: true,
+        });
+
+        return () =>
+            aboutPanel.removeEventListener("animationend", handleAnimationEnd);
+    }, [aboutMePulse, isShowingDetailModule]);
 
     if (shouldCollapseFromDetail) {
         setIsExpanded(false);
@@ -106,6 +135,7 @@ const AboutPanel = ({ selectedShelfItem }) => {
                 .filter(Boolean)
                 .join(" ")}
             aria-labelledby="about-panel-title"
+            ref={aboutPanelRef}
         >
             <AboutPanelExpandToggle
                 isExpanded={isExpanded}

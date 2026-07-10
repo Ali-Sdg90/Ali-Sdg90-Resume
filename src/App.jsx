@@ -13,6 +13,7 @@ setDocumentTitle();
 
 const App = () => {
     const [selectedShelfItem, setSelectedShelfItem] = useState(null);
+    const [aboutMePulse, setAboutMePulse] = useState(0);
 
     const selectedShelfItemDetail = useMemo(() => {
         if (!selectedShelfItem) return null;
@@ -41,6 +42,14 @@ const App = () => {
         setSelectedShelfItem((currentItem) =>
             currentItem ? null : currentItem,
         );
+
+        if (!selectedShelfItem) {
+            triggerAboutMePulse();
+        }
+    };
+
+    const triggerAboutMePulse = () => {
+        setAboutMePulse((currentPulse) => currentPulse + 1);
     };
 
     return (
@@ -64,7 +73,10 @@ const App = () => {
                         />
                     </section>
 
-                    <AboutPanel selectedShelfItem={selectedShelfItemDetail} />
+                    <AboutPanel
+                        selectedShelfItem={selectedShelfItemDetail}
+                        aboutMePulse={aboutMePulse}
+                    />
                 </main>
             </div>
 
