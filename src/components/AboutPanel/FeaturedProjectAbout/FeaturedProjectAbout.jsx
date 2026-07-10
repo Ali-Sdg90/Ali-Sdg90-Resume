@@ -1,10 +1,14 @@
+import { useId, useLayoutEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import {
     FaArrowUpRightFromSquare,
     FaCheck,
+    FaChevronDown,
     FaGithub,
     FaImages,
     FaLayerGroup,
     FaListCheck,
+    FaLink,
     FaPenNib,
 } from "react-icons/fa6";
 
@@ -14,6 +18,7 @@ const sectionIcons = {
     features: FaListCheck,
     gallery: FaImages,
     story: FaPenNib,
+    relatedLinks: FaLink,
 };
 
 const ProjectLinks = ({ links = [] }) => {
@@ -134,18 +139,54 @@ const ProjectGallery = ({ images = [], title }) => {
 const ProjectStory = ({
     activeLanguage,
     languageToggle,
-    story,
+    storyEN,
     storyFA,
     title = "Story",
     titleFA,
 }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const [isStoryClamped, setIsStoryClamped] = useState(true);
+    const [storyHeights, setStoryHeights] = useState({
+        collapsed: 0,
+        expanded: 0,
+    });
+    const storyContentRef = useRef(null);
+    const storyId = useId();
     const isFarsi = activeLanguage === "FA" && storyFA;
-    const visibleStory = isFarsi ? storyFA : story;
+    const visibleStory = isFarsi ? storyFA : storyEN;
     const visibleTitle = isFarsi ? (titleFA ?? title) : title;
     const paragraphs = visibleStory
         ?.split("\n\n")
         .map((paragraph) => paragraph.trim())
         .filter(Boolean);
+
+    useLayoutEffect(() => {
+        const storyContent = storyContentRef.current;
+
+        if (!storyContent) return undefined;
+
+        const measureStory = () => {
+            const firstParagraph = storyContent.querySelector("p");
+            const paragraphStyles = firstParagraph
+                ? window.getComputedStyle(firstParagraph)
+                : null;
+            const lineHeight = paragraphStyles
+                ? Number.parseFloat(paragraphStyles.lineHeight)
+                : 0;
+
+            setStoryHeights({
+                collapsed: Math.min(storyContent.scrollHeight, lineHeight * 3),
+                expanded: storyContent.scrollHeight,
+            });
+        };
+
+        measureStory();
+
+        const resizeObserver = new ResizeObserver(measureStory);
+        resizeObserver.observe(storyContent);
+
+        return () => resizeObserver.disconnect();
+    }, [visibleStory]);
 
     if (!paragraphs?.length) return null;
 
@@ -157,20 +198,116 @@ const ProjectStory = ({
                 </DetailSectionTitle>
                 {languageToggle}
             </div>
-            <div
+            <motion.div
                 className={[
                     "featured-project-story",
+                    isExpanded ? "is-expanded" : "is-collapsed",
                     isFarsi ? "is-farsi-text" : "",
                 ]
                     .filter(Boolean)
                     .join(" ")}
                 dir={isFarsi ? "rtl" : undefined}
                 lang={isFarsi ? "fa" : undefined}
+                id={storyId}
+                initial={false}
+                animate={{
+                    height: isExpanded
+                        ? storyHeights.expanded
+                        : storyHeights.collapsed,
+                }}
+                transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
+                onAnimationComplete={() => {
+                    if (!isExpanded) setIsStoryClamped(true);
+                }}
             >
-                {paragraphs.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                ))}
-            </div>
+                <div
+                    className={[
+                        "featured-project-story-content",
+                        isStoryClamped ? "is-clamped" : "",
+                    ]
+                        .filter(Boolean)
+                        .join(" ")}
+                >
+                    {paragraphs.map((paragraph) => (
+                        <p key={paragraph}>{paragraph}</p>
+                    ))}
+                </div>
+                <div
+                    className="featured-project-story-measure"
+                    aria-hidden="true"
+                    ref={storyContentRef}
+                >
+                    {paragraphs.map((paragraph) => (
+                        <p key={paragraph}>{paragraph}</p>
+                    ))}
+                </div>
+            </motion.div>
+            <button
+                className="featured-project-story-toggle"
+                type="button"
+                aria-expanded={isExpanded}
+                aria-controls={storyId}
+                onClick={() => {
+                    if (!isExpanded) setIsStoryClamped(false);
+                    setIsExpanded((current) => !current);
+                }}
+            >
+                <span>{isExpanded ? "Collapse story" : "Expand story"}</span>
+                <FaChevronDown aria-hidden="true" />
+            </button>
+        </section>
+    );
+};
+
+const RelatedLinks = ({ links = [] }) => {
+    const visibleLinks = links.filter(
+        (link) => link.label || link.text || link.url,
+    );
+
+    if (!visibleLinks.length) return null;
+
+    return (
+        <section className="featured-project-section">
+            <DetailSectionTitle type="relatedLinks">
+                Related links
+            </DetailSectionTitle>
+            <ul className="featured-project-related-links">
+                {visibleLinks.map((link, index) => {
+                    const content = (
+                        <>
+                            <span className="featured-project-related-link-copy">
+                                <span className="featured-project-related-link-label">
+                                    {link.label}
+                                </span>
+                                <span className="featured-project-related-link-text">
+                                    {link.text}
+                                </span>
+                            </span>
+                            <FaArrowUpRightFromSquare aria-hidden="true" />
+                        </>
+                    );
+
+                    return (
+                        <li key={`${link.label}-${index}`}>
+                            {link.url ? (
+                                <a
+                                    className="featured-project-related-link"
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    title={link.text}
+                                >
+                                    {content}
+                                </a>
+                            ) : (
+                                <div className="featured-project-related-link is-disabled">
+                                    {content}
+                                </div>
+                            )}
+                        </li>
+                    );
+                })}
+            </ul>
         </section>
     );
 };
@@ -215,11 +352,14 @@ const FeaturedProjectAbout = ({
             <ProjectStory
                 activeLanguage={activeLanguage}
                 languageToggle={languageToggle}
-                story={detail.story}
+                storyEN={detail.storyEN}
                 storyFA={detail.storyFA}
                 title={detail.storyTitle}
                 titleFA={detail.storyTitleFA}
             />
+            {detail.hasRelatedLinks && (
+                <RelatedLinks links={detail.relatedLinks} />
+            )}
         </div>
     );
 };
