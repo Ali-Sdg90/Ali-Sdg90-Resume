@@ -1,3 +1,10 @@
+## [1.11.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.4...v1.11.5) (2026-07-10)
+
+
+### Bug Fixes
+
+* improve and maybe finalize csi about data, before changing font size of all about card in expand mode to be bigger and add gallery to career cards ([0c8febb](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/0c8febbebeb040396e9379f70c0b957312125129))
+
 ## [1.11.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.3...v1.11.4) (2026-07-10)
 
 
