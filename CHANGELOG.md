@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.8...v1.12.0) (2026-07-13)
+
+
+### Features
+
+* add large image for lighthouse view for cards, create new lighthouse view source, add waving animation to hand in intro ([0816532](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/08165329614238f93287629eaadc407786233bee))
+
 ## [1.11.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.7...v1.11.8) (2026-07-10)
 
 
