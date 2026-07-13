@@ -1,21 +1,21 @@
-- remove un-used woff2 files
+- [ ] remove un-used woff2 files
 
-- Write repo readme.md file
+- [ ] Write repo readme.md file
 
-- check lighthouse for improvements in performance and accessibility
+- [ ] check lighthouse for improvements in performance and accessibility
 
-- improve SEO of the site
+- [ ] improve SEO of the site
 
-- Maybe add Agentic browsing and robot file
+- [ ] Maybe add Agentic browsing and robot file
 
-- add correct site favicon
+- [ ] add correct site favicon
 
-- create makefile files
+- [ ] create makefile files
 
-- do super dooper checking with agents for project structure and code quality at the end of the project
+- [ ] do super dooper checking with agents for project structure and code quality at the end of the project
 
-- use the link of the portfolio in the resume.pdf file and my social medias
+- [ ] use the link of the portfolio in the resume.pdf file and my social medias
 
-- pad your back, ali you created something really cool and useful for your future. proud of you me in past and future :D
+- [ ] pad your back, ali you created something really cool and useful for your future. proud of you me in past and future :D
 
-- maybe add a lower resolution shelf image for initial load?
+- [ ] maybe add a lower resolution shelf image for initial load?
