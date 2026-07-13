@@ -13,11 +13,15 @@ const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
                 <p className="hero-greeting" aria-label="Hey there!">
                     <span className="hero-greeting-label hero-greeting-default">
                         <span className="hero-greeting-text">Hey there!</span>
-                        <span aria-hidden="true">{"\u{1F44B}"}</span>
+                        <span className="hero-greeting-hand" aria-hidden="true">
+                            {"\u{1F44B}"}
+                        </span>
                     </span>
                     <span className="hero-greeting-label hero-greeting-hover">
                         <span className="hero-greeting-text">Aloha!</span>
-                        <span aria-hidden="true">{"\u{1F44B}"}</span>
+                        <span className="hero-greeting-hand" aria-hidden="true">
+                            {"\u{1F44B}"}
+                        </span>
                     </span>
                 </p>
 

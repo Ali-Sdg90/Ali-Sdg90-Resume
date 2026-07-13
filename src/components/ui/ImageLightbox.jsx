@@ -13,8 +13,12 @@ const getFallbackText = (image) => {
 const ImageLightbox = ({ image, onClose }) => {
     const [isClosing, setIsClosing] = useState(false);
     const [hasImageError, setHasImageError] = useState(false);
-    const [imageAspectRatio, setImageAspectRatio] = useState(16 / 9);
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
+    const [imageAspectRatio, setImageAspectRatio] = useState(
+        image.width && image.height ? image.width / image.height : 16 / 9,
+    );
     const fallbackText = getFallbackText(image);
+    const lightboxSrc = image.lightboxSrc ?? image.src;
 
     const requestClose = useCallback(() => {
         setIsClosing(true);
@@ -75,7 +79,10 @@ const ImageLightbox = ({ image, onClose }) => {
                 <FaXmark aria-hidden="true" />
             </button>
             <div
-                className="about-panel-lightbox-frame"
+                className={[
+                    "about-panel-lightbox-frame",
+                    isImageLoaded ? "is-image-loaded" : "is-image-loading",
+                ].join(" ")}
                 style={{
                     "--lightbox-image-aspect-ratio": imageAspectRatio,
                 }}
@@ -89,22 +96,38 @@ const ImageLightbox = ({ image, onClose }) => {
                         {fallbackText}
                     </div>
                 ) : (
-                    <img
-                        className="about-panel-lightbox-image"
-                        src={image.src}
-                        alt={image.alt}
-                        onLoad={(event) => {
-                            const { naturalWidth, naturalHeight } =
-                                event.currentTarget;
+                    <>
+                        {!isImageLoaded && (
+                            <div
+                                className="about-panel-lightbox-loader"
+                                role="status"
+                                aria-label="Loading high-resolution image"
+                            >
+                                <span className="about-panel-lightbox-loader-ring" />
+                                <span className="about-panel-lightbox-loader-text">
+                                    Loading high-resolution image
+                                </span>
+                            </div>
+                        )}
+                        <img
+                            className="about-panel-lightbox-image"
+                            src={lightboxSrc}
+                            alt={image.alt}
+                            onLoad={(event) => {
+                                const { naturalWidth, naturalHeight } =
+                                    event.currentTarget;
 
-                            if (naturalWidth && naturalHeight) {
-                                setImageAspectRatio(
-                                    naturalWidth / naturalHeight,
-                                );
-                            }
-                        }}
-                        onError={() => setHasImageError(true)}
-                    />
+                                if (naturalWidth && naturalHeight) {
+                                    setImageAspectRatio(
+                                        naturalWidth / naturalHeight,
+                                    );
+                                }
+
+                                setIsImageLoaded(true);
+                            }}
+                            onError={() => setHasImageError(true)}
+                        />
+                    </>
                 )}
             </div>
         </div>,

@@ -65,6 +65,14 @@
         user-select: none;
     }
 
+    .hero-greeting-hand {
+        display: inline-block;
+        transform-origin: 70% 75%;
+        animation: hero-greeting-wave 3.6s cubic-bezier(0.45, 0, 0.25, 1)
+            infinite;
+        will-change: transform;
+    }
+
     h1 {
         color: $color-text;
         font-size: intro-cqw(75.2);
@@ -253,5 +261,47 @@
                 height: intro-cqw(21);
             }
         }
+    }
+}
+
+@keyframes hero-greeting-wave {
+    0%,
+    30%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    3% {
+        transform: rotate(2deg);
+    }
+
+    7% {
+        transform: rotate(9deg);
+    }
+
+    11% {
+        transform: rotate(-5deg);
+    }
+
+    13% {
+        transform: rotate(2deg);
+    }
+
+    16% {
+        transform: rotate(9deg);
+    }
+
+    20% {
+        transform: rotate(-5deg);
+    }
+
+    24% {
+        transform: rotate(1deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-intro .hero-greeting-hand {
+        animation: none;
     }
 }

@@ -2,11 +2,16 @@ import csiFlowCharts from "../../assets/images/gallery-images/career-images/csi/
 import csiMeetings3 from "../../assets/images/gallery-images/career-images/csi/meetings3.png";
 import csiMeetings1 from "../../assets/images/gallery-images/career-images/csi/meetings1.png";
 import csiMeetings2 from "../../assets/images/gallery-images/career-images/csi/meetings2.png";
+import csiLogoLarge from "../../assets/images/large-images/career/csi_logo.jpg";
+import dpaLogoLarge from "../../assets/images/large-images/career/dpa_logo.jpg";
+import melkRadarLogoLarge from "../../assets/images/large-images/career/melkradar_logo.jpg";
+import settleitGptLogoLarge from "../../assets/images/large-images/career/settleitgpt_logo.jpg";
 
 export const aboutCareerData = {
     "cs-internship": {
         id: "cs-internship",
         title: "CS Internship",
+        lightboxImage: csiLogoLarge,
         summary:
             "Contributed to CS Internship by mentoring web interns, improving program processes, and building internal tools that supported operations at scale.",
         tech: [
@@ -114,6 +119,7 @@ Being able to make the program more organized, scalable, automated, and truly mo
     melkradar: {
         id: "melkradar",
         title: "MelkRadar",
+        lightboxImage: melkRadarLogoLarge,
         summary: "Placeholder",
         tech: ["Placeholder"],
         featuresTitle: "Focus Areas",
@@ -133,6 +139,7 @@ Being able to make the program more organized, scalable, automated, and truly mo
     "dadeh-pardazi-azmoudeh-karan": {
         id: "dadeh-pardazi-azmoudeh-karan",
         title: "Dadeh Pardazi Azmoudeh Karan",
+        lightboxImage: dpaLogoLarge,
         summary: "Placeholder",
         tech: ["Placeholder"],
         featuresTitle: "Focus Areas",
@@ -152,6 +159,7 @@ Being able to make the program more organized, scalable, automated, and truly mo
     settleitgpt: {
         id: "settleitgpt",
         title: "SettleitGPT",
+        lightboxImage: settleitGptLogoLarge,
         summary: "Placeholder",
         tech: ["Placeholder"],
         featuresTitle: "Focus Areas",

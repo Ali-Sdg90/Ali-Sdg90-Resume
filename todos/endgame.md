@@ -17,3 +17,5 @@
 - use the link of the portfolio in the resume.pdf file and my social medias
 
 - pad your back, ali you created something really cool and useful for your future. proud of you me in past and future :D
+
+- maybe add a lower resolution shelf image for initial load?

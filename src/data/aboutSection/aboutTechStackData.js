@@ -1,7 +1,31 @@
+import antDesignLogoLarge from "../../assets/images/large-images/tech-stack/ant-design_logo.jpg";
+import axiosLogoLarge from "../../assets/images/large-images/tech-stack/axios_logo.jpg";
+import azureLogoLarge from "../../assets/images/large-images/tech-stack/azure_logo.jpg";
+import chartJsLogoLarge from "../../assets/images/large-images/tech-stack/chart.js_logo.jpg";
+import eslintLogoLarge from "../../assets/images/large-images/tech-stack/eslint_logo.jpg";
+import expoLogoLarge from "../../assets/images/large-images/tech-stack/expo_logo.jpg";
+import firebaseLogoLarge from "../../assets/images/large-images/tech-stack/firebase_logo.jpg";
+import gitLogoLarge from "../../assets/images/large-images/tech-stack/git_logo.jpg";
+import githubActionsLogoLarge from "../../assets/images/large-images/tech-stack/github-actions_logo.jpg";
+import javascriptLogoLarge from "../../assets/images/large-images/tech-stack/javascript_logo.jpg";
+import nodejsLogoLarge from "../../assets/images/large-images/tech-stack/nodejs_logo.jpg";
+import ollamaLogoLarge from "../../assets/images/large-images/tech-stack/ollama_logo.jpg";
+import prettierLogoLarge from "../../assets/images/large-images/tech-stack/prettier_logo.jpg";
+import reactLogoLarge from "../../assets/images/large-images/tech-stack/react_logo.jpg";
+import reactNativeLogoLarge from "../../assets/images/large-images/tech-stack/react-native_logo.jpg";
+import restApiLogoLarge from "../../assets/images/large-images/tech-stack/rest-api_logo.jpg";
+import routerLogoLarge from "../../assets/images/large-images/tech-stack/router_logo.jpg";
+import scssLogoLarge from "../../assets/images/large-images/tech-stack/scss_logo.jpg";
+import semanticReleaseLogoLarge from "../../assets/images/large-images/tech-stack/semantic-release_logo.jpg";
+import swaggerLogoLarge from "../../assets/images/large-images/tech-stack/swagger_logo.jpg";
+import tanStackQueryLogoLarge from "../../assets/images/large-images/tech-stack/tanstack-query_logo.jpg";
+import viteLogoLarge from "../../assets/images/large-images/tech-stack/vite_logo.jpg";
+
 export const aboutTechStackData = {
     react: {
         id: "react",
         title: "React",
+        lightboxImage: reactLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -21,6 +45,7 @@ export const aboutTechStackData = {
     javascript: {
         id: "javascript",
         title: "JavaScript",
+        lightboxImage: javascriptLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -40,6 +65,7 @@ export const aboutTechStackData = {
     scss: {
         id: "scss",
         title: "SCSS",
+        lightboxImage: scssLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -59,6 +85,7 @@ export const aboutTechStackData = {
     antDesign: {
         id: "antDesign",
         title: "Ant Design",
+        lightboxImage: antDesignLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -78,6 +105,7 @@ export const aboutTechStackData = {
     tanStackQuery: {
         id: "tanStackQuery",
         title: "TanStack Query",
+        lightboxImage: tanStackQueryLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -97,6 +125,7 @@ export const aboutTechStackData = {
     restApis: {
         id: "restApis",
         title: "REST APIs",
+        lightboxImage: restApiLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -116,6 +145,7 @@ export const aboutTechStackData = {
     semanticRelease: {
         id: "semanticRelease",
         title: "Semantic Release",
+        lightboxImage: semanticReleaseLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -135,6 +165,7 @@ export const aboutTechStackData = {
     prettier: {
         id: "prettier",
         title: "Prettier",
+        lightboxImage: prettierLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -154,6 +185,7 @@ export const aboutTechStackData = {
     eslint: {
         id: "eslint",
         title: "ESLint",
+        lightboxImage: eslintLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -173,6 +205,7 @@ export const aboutTechStackData = {
     vite: {
         id: "vite",
         title: "Vite",
+        lightboxImage: viteLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -192,6 +225,7 @@ export const aboutTechStackData = {
     expo: {
         id: "expo",
         title: "Expo",
+        lightboxImage: expoLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -211,6 +245,7 @@ export const aboutTechStackData = {
     reactNative: {
         id: "reactNative",
         title: "React Native",
+        lightboxImage: reactNativeLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -230,6 +265,7 @@ export const aboutTechStackData = {
     nodejs: {
         id: "nodejs",
         title: "Node.js",
+        lightboxImage: nodejsLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -249,6 +285,7 @@ export const aboutTechStackData = {
     githubActions: {
         id: "githubActions",
         title: "GitHub Actions",
+        lightboxImage: githubActionsLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -268,6 +305,7 @@ export const aboutTechStackData = {
     gitGithub: {
         id: "gitGithub",
         title: "Git/GitHub",
+        lightboxImage: gitLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -287,6 +325,7 @@ export const aboutTechStackData = {
     firebase: {
         id: "firebase",
         title: "Firebase",
+        lightboxImage: firebaseLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -306,6 +345,7 @@ export const aboutTechStackData = {
     chartjs: {
         id: "chartjs",
         title: "Chart.js",
+        lightboxImage: chartJsLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -344,6 +384,7 @@ export const aboutTechStackData = {
     ollama: {
         id: "ollama",
         title: "Ollama",
+        lightboxImage: ollamaLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -363,6 +404,7 @@ export const aboutTechStackData = {
     azureDevops: {
         id: "azureDevops",
         title: "Azure DevOps",
+        lightboxImage: azureLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -382,6 +424,7 @@ export const aboutTechStackData = {
     reactRouter: {
         id: "reactRouter",
         title: "React Router",
+        lightboxImage: routerLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -401,6 +444,7 @@ export const aboutTechStackData = {
     axios: {
         id: "axios",
         title: "Axios",
+        lightboxImage: axiosLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -420,6 +464,7 @@ export const aboutTechStackData = {
     swagger: {
         id: "swagger",
         title: "Swagger",
+        lightboxImage: swaggerLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],

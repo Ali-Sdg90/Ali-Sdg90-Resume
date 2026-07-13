@@ -52,7 +52,7 @@
     animation: about-panel-lightbox-image-enter 360ms $ease-out both;
 }
 
-.about-panel-lightbox-image {
+.about-panel-lightbox-image:not(.about-panel-lightbox-image-fallback) {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -65,6 +65,78 @@
         0 18px 42px rgba(0, 0, 0, 0.5),
         0 0 22px rgba(22, 136, 255, 0.14);
     object-fit: contain;
+    opacity: 0;
+    transform: scale(0.985);
+    transition:
+        opacity 420ms $ease-out,
+        transform 520ms $ease-out;
+}
+
+.about-panel-lightbox-frame.is-image-loaded {
+    .about-panel-lightbox-image {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.about-panel-lightbox-loader {
+    position: absolute;
+    inset: 7px;
+    z-index: 1;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: 14px;
+    overflow: hidden;
+    border: 8px solid rgba(0, 6, 16, 0.96);
+    border-radius: 16px;
+    color: rgba(218, 239, 255, 0.78);
+    background:
+        radial-gradient(circle, rgba(22, 136, 255, 0.2), transparent 52%),
+        rgba(0, 6, 16, 0.96);
+}
+
+.about-panel-lightbox-loader::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        110deg,
+        transparent 30%,
+        rgba(117, 202, 255, 0.1) 48%,
+        transparent 66%
+    );
+    transform: translateX(-100%);
+    animation: about-panel-lightbox-loader-shimmer 1.6s ease-in-out infinite;
+}
+
+.about-panel-lightbox-loader-ring {
+    width: 42px;
+    aspect-ratio: 1;
+    border: 3px solid rgba(117, 202, 255, 0.2);
+    border-top-color: rgba(117, 202, 255, 0.95);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 8px rgba(22, 136, 255, 0.55));
+    animation: about-panel-lightbox-loader-spin 800ms linear infinite;
+}
+
+.about-panel-lightbox-loader-text {
+    font-size: 12px;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@keyframes about-panel-lightbox-loader-spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes about-panel-lightbox-loader-shimmer {
+    to {
+        transform: translateX(100%);
+    }
 }
 
 .about-panel-lightbox-image-fallback {

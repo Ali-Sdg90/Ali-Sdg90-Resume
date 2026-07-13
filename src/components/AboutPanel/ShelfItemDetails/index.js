@@ -12,10 +12,11 @@ const sectionSubtitles = {
     "career-journey": "Career detail placeholder",
 };
 
-const getGenericImage = (item, section) => {
+const getGenericImage = (item, section, lightboxSrc) => {
     if (item.image) {
         return {
             src: item.image,
+            lightboxSrc,
             alt: `${item.title} logo`,
             width: 512,
             height: 512,
@@ -45,6 +46,7 @@ export const getShelfItemDetailModule = ({ item, section }) => {
                 : "Project details coming soon",
             image: {
                 src: projectDetail?.image ?? item.image ?? placeholderImage,
+                lightboxSrc: projectDetail?.lightboxImage,
                 alt: `${projectDetail?.title ?? item.title} project preview`,
                 width: 1280,
                 height: 720,
@@ -63,7 +65,7 @@ export const getShelfItemDetailModule = ({ item, section }) => {
         return {
             title: careerDetail?.title ?? item.title,
             subtitle: item.meta,
-            image: getGenericImage(item, section),
+            image: getGenericImage(item, section, careerDetail?.lightboxImage),
             tags: [],
             detail: careerDetail,
             detailVariant: "compact",
@@ -91,7 +93,7 @@ export const getShelfItemDetailModule = ({ item, section }) => {
         return {
             title: techDetail?.title ?? item.title,
             subtitle: "",
-            image: getGenericImage(item, section),
+            image: getGenericImage(item, section, techDetail?.lightboxImage),
             tags: [],
             detail: techDetail,
             detailVariant: "compact",
