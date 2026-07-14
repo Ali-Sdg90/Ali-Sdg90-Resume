@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.13.0...v1.14.0) (2026-07-14)
+
+
+### Features
+
+* add PortfolioReveal component and integrate peel.js for interactive reveal effect, finally HMPWM have a opening path!!! ([33930a3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/33930a31ea1bedf886d96e61a02440fae0a0ef3a))
+
 # [1.13.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.12.0...v1.13.0) (2026-07-14)
 
 
