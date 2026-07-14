@@ -1,0 +1,220 @@
+@use "../../base/variables" as *;
+
+.page-peel-shell {
+    position: fixed;
+    z-index: 0;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    // overflow: hidden;
+    background: #000;
+}
+
+.page-peel-underlay {
+    position: absolute;
+    inset: 0;
+    padding: clamp(2rem, 7vw, 6rem);
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 2rem;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    background: #000;
+
+    h1 {
+        font-size: clamp(2rem, 6vw, 5.5rem);
+        line-height: 1.02;
+        letter-spacing: -0.045em;
+    }
+
+    &__return {
+        padding: 0.7rem 1rem;
+        color: rgba(255, 255, 255, 0.72);
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: 999px;
+        background: transparent;
+        cursor: pointer;
+        transition:
+            color $motion-fast ease,
+            border-color $motion-fast ease,
+            background-color $motion-fast ease;
+
+        &:hover {
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.55);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        &:focus-visible {
+            outline: 2px solid #fff;
+            outline-offset: 4px;
+        }
+    }
+}
+
+.page-peel {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 1;
+
+    &:not(.peel-ready) {
+        .peel-back,
+        .peel-bottom {
+            visibility: hidden;
+        }
+    }
+
+    .peel-layer {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .peel-top-shadow,
+    .peel-back-shadow,
+    .peel-back-reflection,
+    .peel-bottom-shadow {
+        pointer-events: none;
+    }
+
+    .peel-top {
+        overflow: hidden;
+        color: $color-text;
+        background: $color-background;
+        pointer-events: auto;
+        user-select: auto;
+    }
+
+    .peel-back,
+    .peel-bottom {
+        pointer-events: none;
+    }
+
+    .peel-back {
+        background: linear-gradient(
+            135deg,
+            #17212b 0%,
+            #0d141d 56%,
+            #06090d 100%
+        );
+    }
+
+    .peel-bottom {
+        background: #000;
+    }
+}
+
+.page-peel-content {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    pointer-events: auto;
+}
+
+.page-peel-trigger {
+    position: absolute;
+    z-index: 20;
+    right: -5px;
+    bottom: -5px;
+    width: clamp(4.5rem, 7vw, 5.5rem);
+    height: clamp(4.5rem, 7vw, 5.5rem);
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    touch-action: manipulation;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0.7rem;
+        bottom: 0.7rem;
+        width: 0.45rem;
+        height: 0.45rem;
+        border-right: 1px solid rgba(255, 255, 255, 0.46);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.46);
+        opacity: 0.72;
+    }
+
+    &__hint {
+        position: absolute;
+        right: 2.6rem;
+        bottom: 2.55rem;
+        width: max-content;
+        max-width: min(15rem, calc(100vw - 5rem));
+        padding: 0.55rem 0.75rem;
+        color: rgba(247, 251, 255, 0.9);
+        font-size: 0.78rem;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: $radius-sm;
+        background: rgba(7, 12, 18, 0.84);
+        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(0.4rem, 0.4rem);
+        transition:
+            opacity $motion-medium $ease-out,
+            transform $motion-medium $ease-out;
+    }
+
+    &:hover &__hint,
+    &:focus-visible &__hint,
+    &.is-onboarding &__hint {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    &:focus-visible {
+        outline: 2px solid $color-accent;
+        outline-offset: -0.65rem;
+    }
+}
+
+.page-peel-shell.is-open {
+    .peel-bottom {
+        pointer-events: auto;
+    }
+
+    .page-peel {
+        pointer-events: none;
+    }
+
+    .page-peel-trigger {
+        display: none;
+    }
+}
+
+@media (hover: none) {
+    .page-peel-trigger__hint {
+        display: none;
+    }
+
+    .page-peel-trigger.is-onboarding .page-peel-trigger__hint {
+        display: block;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-peel-trigger__hint {
+        transition-duration: 1ms;
+    }
+
+    .page-peel-shell.is-open .page-peel {
+        visibility: hidden;
+    }
+}

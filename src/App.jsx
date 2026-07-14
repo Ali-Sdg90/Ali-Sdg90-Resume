@@ -4,6 +4,7 @@ import AboutPanel from "./components/AboutPanel/AboutPanel";
 import Intro from "./components/Intro/Intro";
 import DynamicBackground from "./components/layout/DynamicBackground";
 import MobileWipNotice from "./components/layout/MobileWipNotice";
+import PortfolioReveal from "./components/PortfolioReveal/PortfolioReveal";
 import Shelf from "./components/Shelf/Shelf";
 import TemporaryConstructionNotice from "./components/TemporaryConstructionNotice/TemporaryConstructionNotice";
 import { shelfSections } from "./data/portfolio/shelfSections";
@@ -54,7 +55,7 @@ const App = () => {
     };
 
     return (
-        <>
+        <PortfolioReveal>
             <TemporaryConstructionNotice />
 
             {/* TEMPORARY: Remove this wrapper class with the mobile WIP gate. */}
@@ -85,7 +86,7 @@ const App = () => {
 
             {/* TEMPORARY: Mobile/tablet placeholder until responsive work begins. */}
             <MobileWipNotice />
-        </>
+        </PortfolioReveal>
     );
 };
 
