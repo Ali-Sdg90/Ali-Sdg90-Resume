@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.12.0...v1.13.0) (2026-07-14)
+
+
+### Features
+
+* add temporary construction notice component and styles, for test add live link to my socials ([6abab95](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/6abab95040f67d18a0941bf0b028e7f9d44774bb))
+
 # [1.12.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.11.8...v1.12.0) (2026-07-13)
 
 
