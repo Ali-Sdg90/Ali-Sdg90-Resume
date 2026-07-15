@@ -2,6 +2,21 @@ import csiLogoLarge from "../../assets/images/large-images/career/csi_logo.jpg";
 import dpaLogoLarge from "../../assets/images/large-images/career/dpa_logo.jpg";
 import melkRadarLogoLarge from "../../assets/images/large-images/career/melkradar_logo.jpg";
 import settleitGptLogoLarge from "../../assets/images/large-images/career/settleitgpt_logo.jpg";
+import csiClubBot1 from "../../assets/images/gallery-images/large-images/csi/club-bot1.png";
+import csiClubBot2 from "../../assets/images/gallery-images/large-images/csi/club-bot2.png";
+import csiContribution from "../../assets/images/gallery-images/large-images/csi/conterbution.png";
+import csiFlowCharts from "../../assets/images/gallery-images/large-images/csi/flow-charts.png";
+import csiQueueBot1 from "../../assets/images/gallery-images/large-images/csi/queue-bot1.png";
+import csiQueuePage from "../../assets/images/gallery-images/large-images/csi/queue-page.png";
+import dpaPage1 from "../../assets/images/gallery-images/large-images/dpa/page1.png";
+import dpaPage2 from "../../assets/images/gallery-images/large-images/dpa/page2.png";
+import dpaPage3 from "../../assets/images/gallery-images/large-images/dpa/page3.png";
+import settleitGptImage1 from "../../assets/images/gallery-images/large-images/gpt/img1.jpg";
+import settleitGptImage2 from "../../assets/images/gallery-images/large-images/gpt/img2.jpg";
+import settleitGptImage3 from "../../assets/images/gallery-images/large-images/gpt/img3.png";
+import melkRadarCharts from "../../assets/images/gallery-images/large-images/mlk/charts.png";
+import melkRadarDesign from "../../assets/images/gallery-images/large-images/mlk/desing.png";
+import melkRadarMapbox from "../../assets/images/gallery-images/large-images/mlk/mapbox.png";
 
 export const aboutCareerData = {
     "cs-internship": {
@@ -27,8 +42,15 @@ export const aboutCareerData = {
             "Designed and improved internal systems, workflows, roles, and operating processes",
             "Built 5 internal automation tools for queue management, club feedback, scheduling, and admin operations",
         ],
-        galleryColumns: 0,
-        galleryImages: [],
+        galleryColumns: 3,
+        galleryImages: [
+            csiClubBot2,
+            csiContribution,
+            csiFlowCharts,
+            csiQueueBot1,
+            csiClubBot1,
+            csiQueuePage,
+        ],
         storyTitle: "Story",
         storyEN: `I started my path in CS as an intern. I completed the web track, and around the middle of my study period, I got the opportunity to also take part in the program as someone who could contribute to its management and improvement.
 
@@ -134,8 +156,8 @@ Being able to make the program more organized, scalable, automated, and truly mo
             "Onboarded 4 front-end engineers, improved the onboarding process, and mentored new teammates.",
             "Worked closely with design, product, backend, and front-end teams.",
         ],
-        galleryColumns: 0,
-        galleryImages: [],
+        galleryColumns: 3,
+        galleryImages: [melkRadarMapbox, melkRadarCharts, melkRadarDesign],
         storyTitle: "Story",
         storyEN: `I joined MelkRadar as an intern. My internship ended earlier than planned, and after that, I continued as a full-time team member at the company.
 
@@ -206,6 +228,8 @@ This experience was heavy, valuable, and sweet for me. It became the real beginn
             "Turned Figma designs into a production-ready React application.",
             "Improved and refactored the codebase as the project evolved.",
         ],
+        galleryColumns: 3,
+        galleryImages: [dpaPage1, dpaPage2, dpaPage3],
         storyTitle: "Story",
         storyEN: `I joined Dadeh Pardazi Azmoudeh Karan after passing the company’s entry assessments. There, we worked as a two-person development team; I was responsible for building and developing the entire front end from scratch, while my teammate built and expanded the back end.
 
@@ -266,6 +290,12 @@ However, there was not a broad team-based experience in this project. I received
             "Implemented AI-generated voice responses for selected characters.",
             "Worked across both the React Native app and Firebase backend.",
             "Helped prepare and publish the app on the Apple App Store.",
+        ],
+        galleryColumns: 3,
+        galleryImages: [
+            settleitGptImage1,
+            settleitGptImage2,
+            settleitGptImage3,
         ],
         storyTitle: "Story",
         storyEN: `I worked on this project with one of my friends. He had already built the initial version as an MVP, and after that, we worked together to finalize and complete the product.
