@@ -1,7 +1,3 @@
-import csiFlowCharts from "../../assets/images/gallery-images/career-images/csi/flow-charts.png";
-import csiMeetings3 from "../../assets/images/gallery-images/career-images/csi/meetings3.png";
-import csiMeetings1 from "../../assets/images/gallery-images/career-images/csi/meetings1.png";
-import csiMeetings2 from "../../assets/images/gallery-images/career-images/csi/meetings2.png";
 import csiLogoLarge from "../../assets/images/large-images/career/csi_logo.jpg";
 import dpaLogoLarge from "../../assets/images/large-images/career/dpa_logo.jpg";
 import melkRadarLogoLarge from "../../assets/images/large-images/career/melkradar_logo.jpg";
@@ -23,7 +19,6 @@ export const aboutCareerData = {
             "Telegram Bots",
             "Azure Boards",
         ],
-
         featuresTitle: "Focus Areas",
         features: [
             "Mentored 30+ web development interns through technical coaching and progress reviews",
@@ -32,15 +27,8 @@ export const aboutCareerData = {
             "Designed and improved internal systems, workflows, roles, and operating processes",
             "Built 5 internal automation tools for queue management, club feedback, scheduling, and admin operations",
         ],
-
-        galleryColumns: 2,
-        galleryImages: [
-            csiMeetings1,
-            csiMeetings2,
-            csiMeetings3,
-            csiFlowCharts,
-        ],
-
+        galleryColumns: 0,
+        galleryImages: [],
         storyTitle: "Story",
         storyEN: `I started my path in CS as an intern. I completed the web track, and around the middle of my study period, I got the opportunity to also take part in the program as someone who could contribute to its management and improvement.
 
@@ -120,20 +108,78 @@ Being able to make the program more organized, scalable, automated, and truly mo
         id: "melkradar",
         title: "MelkRadar",
         lightboxImage: melkRadarLogoLarge,
-        summary: "Placeholder",
-        tech: ["Placeholder"],
+        summary:
+            "Front-End Technical Lead across the MelkRadar ecosystem, contributing to 6 internal products, building core front-end structures and reusable components, reviewing production code, mentoring new team members, and working closely with design, product, backend, and front-end teams.",
+        tech: [
+            "React",
+            "JavaScript",
+            "SCSS",
+            "Ant Design",
+            "Chart.js",
+            "Mapbox GL JS",
+            "Git/GitHub",
+            "Code Review",
+            "UI Architecture",
+            "Technical Mentorship",
+            "Product Collaboration",
+            "Frontend Leadership",
+        ],
         featuresTitle: "Focus Areas",
-        features: ["Placeholder"],
+        features: [
+            "Worked across 6 MelkRadar products, including the main platform, extension, KhodroRadar, and external projects.",
+            "Helped shape core structures, reusable components, and design system foundations with high-quality front-end output.",
+            "Served as one of the main front-end code reviewers for 1.5 years, supporting clean and maintainable code.",
+            "Delivered 50+ production-ready Chart.js visualizations under tight deadlines.",
+            "Integrated Mapbox GL JS and onboarded the front-end team on using it effectively.",
+            "Onboarded 4 front-end engineers, improved the onboarding process, and mentored new teammates.",
+            "Worked closely with design, product, backend, and front-end teams.",
+        ],
+        galleryColumns: 0,
         galleryImages: [],
         storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: `I joined MelkRadar as an intern. My internship ended earlier than planned, and after that, I continued as a full-time team member at the company.
+
+During my time there, I was involved in different parts of the MelkRadar ecosystem, from the main MelkRadar website and MelkRadar extension to the start and development of the company’s new project, KhodroRadar, TonReach, and two other external projects the company had taken on.
+
+I always tried to deliver my work with the highest quality possible. I was genuinely satisfied with the quality and care behind my work, and I could see that the team was satisfied with the quality of what I delivered.
+
+After a while, I became one of the reviewers on the front-end team. This meant that I was both writing code myself and reviewing and merging code from other team members.
+
+During this time, I onboarded several new people into the team, and I recorded different onboarding videos to improve the onboarding process.
+
+At MelkRadar, I was deeply involved in different parts of the work. Frequent meetings with the design team, product design, backend developers, guiding front-end teammates, consulting on task distribution, and many other responsibilities had all become part of my work.
+
+After a certain point, I reduced my role in the company and continued working with the team mostly as a reviewer and merger of front-end code.
+
+This experience was heavy, valuable, and sweet for me. It became the real beginning of teamwork in my career. I have a deep sense of satisfaction from being in that professional and complex environment, and I was able to build many of my personal and professional foundations there.`,
+
+        storyFA: `من به عنوان نیروی کارآموز وارد ملک‌رادار شدم. دوره کارآموزیم زودتر از زمانی که قرار بود تموم شد و بعد از اون به عنوان نیروی استخدامی شرکت ادامه دادم.
+
+در طول حضورم، در بخش‌های مختلفی از اکوسیستم ملک‌رادار نقش داشتم؛ از سایت اصلی ملک‌رادار و اکستنشن ملک‌رادار گرفته تا شروع و ساخت پروژه جدید شرکت، خودرو رادار، تون‌ریچ و دو پروژه خارجی دیگری که شرکت گرفته بود.
+
+همیشه سعی می‌کردم کارهایی که انجام می‌دم رو با بهترین کیفیت ممکن تحویل بدم و واقعاً هم خودم از کیفیت و ظرافت کارهام راضی بودم و می‌دیدم تیم هم از کیفیت کارم رضایت داره.
+
+بعد از مدتی تبدیل به یکی از ریویوئرهای تیم فرانت شدم؛ یعنی هم خودم کد می‌زدم، هم کدهای بقیه اعضای تیم رو ریویو و مرج می‌کردم.
+
+در این مدت چند نفر جدید رو به تیم آنبورد کردم و برای بهتر شدن روند آنبوردینگ، ویدئوهای مختلفی ضبط کردم.
+
+در ملک‌رادار خیلی درگیر بخش‌های مختلف کار بودم. جلسه‌های متعدد با تیم دیزاین، طراحی محصول، بچه‌های بک‌اند، راهنمایی بچه‌های فرانت، مشاوره برای تقسیم تسک‌ها و مسائل مختلف دیگه، همگی بخشی از کارهایم شده بودند.
+
+بعد از یه مقطع، نقشم رو در شرکت کم‌تر کردم و بیشتر به عنوان ریویوئر و مرج‌کننده کدهای فرانت با تیم همکاری داشتم.
+
+این تجربه برای من سنگین، ارزشمند و شیرین بود؛ تجربه‌ای که شروع جدی کار تیمی رو برای من ساخت. از بودن در اون محیط حرفه‌ای و پیچیده رضایت عمیقی دارم و خیلی از پایه‌های شخصیتی و حرفه‌ایم رو تونستم اونجا برای خودم بسازم.`,
         hasRelatedLinks: true,
         relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
+            {
+                label: "Company",
+                text: "MelkRadar Official Website",
+                url: "https://melkradar.com/p/search",
+            },
+            {
+                label: "Chart.js Work",
+                text: "Chart.js templates from my chart-building work at MelkRadar.",
+                url: "https://github.com/Ali-Sdg90/Learning-Chart.js-",
+            },
         ],
     },
     "dadeh-pardazi-azmoudeh-karan": {
