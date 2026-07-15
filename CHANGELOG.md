@@ -1,3 +1,10 @@
+## [1.14.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.14.2...v1.14.3) (2026-07-15)
+
+
+### Bug Fixes
+
+* add career card images ([d5f875c](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d5f875ce81a410021608955cab4eb38bb5b886ee))
+
 ## [1.14.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.14.1...v1.14.2) (2026-07-15)
 
 
