@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.14.0...v1.14.1) (2026-07-15)
+
+
+### Bug Fixes
+
+* remove csi images for privacy reasons and add mlk career data ([433f638](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/433f6389c80d899a88bd50736214c3bc418fd949))
+
 # [1.14.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.13.0...v1.14.0) (2026-07-14)
 
 
