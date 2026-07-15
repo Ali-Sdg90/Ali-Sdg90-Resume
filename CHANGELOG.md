@@ -1,3 +1,10 @@
+## [1.14.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.14.1...v1.14.2) (2026-07-15)
+
+
+### Bug Fixes
+
+* add dpa and settleGPT data, fix internal tool wrong number in shelf, before adding "safe" images for career cards ([9266a33](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/9266a3368ffa1dafa85d2274bd9eeff7fc80a1da))
+
 ## [1.14.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.14.0...v1.14.1) (2026-07-15)
 
 
