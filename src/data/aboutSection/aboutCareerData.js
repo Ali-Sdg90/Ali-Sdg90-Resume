@@ -186,40 +186,126 @@ This experience was heavy, valuable, and sweet for me. It became the real beginn
         id: "dadeh-pardazi-azmoudeh-karan",
         title: "Dadeh Pardazi Azmoudeh Karan",
         lightboxImage: dpaLogoLarge,
-        summary: "Placeholder",
-        tech: ["Placeholder"],
-        featuresTitle: "Focus Areas",
-        features: ["Placeholder"],
-        galleryImages: [],
-        storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
+        summary:
+            "Built the front end of a large administrative platform from scratch, translating Figma designs into a production-ready React application with Ant Design and 60+ API integrations.",
+        tech: [
+            "React",
+            "JavaScript",
+            "Ant Design",
+            "REST APIs",
+            "Swagger",
+            "Figma",
+            "Large-scale Front-End",
+            "Component Architecture",
         ],
+        featuresTitle: "Focus Areas",
+        features: [
+            "Built the entire front end of the platform from scratch.",
+            "Integrated 60+ REST APIs using Swagger.",
+            "Created reusable components and a maintainable project structure.",
+            "Turned Figma designs into a production-ready React application.",
+            "Improved and refactored the codebase as the project evolved.",
+        ],
+        storyTitle: "Story",
+        storyEN: `I joined Dadeh Pardazi Azmoudeh Karan after passing the company’s entry assessments. There, we worked as a two-person development team; I was responsible for building and developing the entire front end from scratch, while my teammate built and expanded the back end.
+
+This was the first project where I was fully responsible for the front end from beginning to end. Throughout the project, I learned a lot about proper project structure, designing core components, and the foundations needed for a project to grow in a healthy and maintainable way.
+
+The project was relatively large and connected to an extensive database containing restaurant information, restaurant members, resumes submitted to each restaurant, and various other types of data that were displayed across the website in different ways.
+
+The project was built around Ant Design, so I needed to become comfortable with it before starting development. Learning and working with it was a challenging but enjoyable experience, and the final result was a high-quality product that I am very proud of.
+
+The project required integration with more than 60 APIs. I used Swagger to test those APIs and then implemented them throughout the application.
+
+Building the project took around seven months. After that, the website was ready for its marketing activities and the next stages of the product, and my work on the project came to an end.
+
+This experience was very valuable to me because building and managing the front end of a large project from start to finish was entirely my responsibility. Along the way, I often had to learn new things in the moment so I could keep the project moving forward.
+
+However, there was not a broad team-based experience in this project. I received tasks, completed and delivered them, and marked them as Done. Unlike my experience at MelkRadar, I did not directly work with a complete team that included testing, design, and other departments. This sometimes made the working experience more difficult, but overall, it was an interesting and highly educational experience.`,
+
+        storyFA: `با پشت سر گذاشتن آزمون‌های ورودی وارد شرکت داده‌پردازی آزموده‌کاران شدم. آنجا در یک تیم دو نفره مسئول ساخت سایت بودیم؛ من باید کل فرانت‌اند را از پایه می‌ساختم و توسعه می‌دادم و همکارم هم بک‌اند را از ابتدا پیاده‌سازی و گسترش می‌داد.
+
+این اولین پروژه‌ای بود که از ابتدا تا انتها مسئولیت کامل فرانت‌اند آن بر عهده خودم بود. در طول پروژه چیزهای زیادی درباره ساختار درست پروژه، طراحی کامپوننت‌های اصلی و مواردی که برای رشد سالم و قابل‌مدیریت پروژه لازم بود، یاد گرفتم.
+
+پروژه نسبتاً بزرگ بود و به یک پایگاه داده گسترده متصل می‌شد که اطلاعات رستوران‌ها، اعضای هر رستوران، رزومه‌های ارسال‌شده برای آن‌ها و اطلاعات مختلف دیگری را به شکل‌های گوناگون در سایت نمایش می‌داد.
+
+پروژه بر پایه Ant Design بود و لازم بود قبل از شروع کار به آن مسلط شوم. فرایند یادگیری و کار با آن برایم چالشی شیرین و جالب بود و در نهایت هم خروجی باکیفیت و خوبی حاصل شد که بهش خیلی افتخار می‌کنم.
+
+این پروژه بیش از ۶۰ API برای اتصال داشت و من با استفاده از Swagger آن‌ها را تست می‌کردم و در پروژه پیاده‌سازی می‌کردم.
+
+ساخت پروژه حدود هفت ماه طول کشید و بعد از آن، سایت آماده شد تا فعالیت‌های بازاریابی و مراحل بعدی آن شروع شود و کار من روی پروژه به پایان رسید.
+
+این تجربه برای من خیلی ارزشمند بود؛ چون ساخت و مدیریت فرانت‌اند یک پروژه بزرگ از ابتدا تا انتها کاملاً بر عهده خودم بود و در طول مسیر لازم بود چیزهای زیادی را همان لحظه یاد بگیرم تا بتوانم پروژه را جلو ببرم.
+
+البته تجربه تیمی گسترده‌ای در این پروژه وجود نداشت. من تسک‌ها را دریافت می‌کردم، انجام می‌دادم، تحویل می‌دادم و آن‌ها را Done می‌کردم. برخلاف تجربه‌ام در ملک‌رادار، ارتباط مستقیمی با یک تیم کامل شامل تست، طراحی و بخش‌های دیگر نداشتم و همین موضوع گاهی تجربه کاری را برایم سخت‌تر می‌کرد؛ ولی در مجموع، تجربه آموزنده و جالبی بود.`,
+        hasRelatedLinks: false,
+        relatedLinks: [],
     },
     settleitgpt: {
         id: "settleitgpt",
         title: "SettleitGPT",
         lightboxImage: settleitGptLogoLarge,
-        summary: "Placeholder",
-        tech: ["Placeholder"],
+        summary:
+            "Co-developed and launched an AI-powered iOS application with React Native and Expo, taking the product from an early MVP to a complete App Store release.",
+        tech: [
+            "React Native",
+            "Expo",
+            "JavaScript",
+            "iOS Development",
+            "Firebase",
+            "REST APIs",
+            "AI Integration",
+            "Prompt Engineering",
+            "Voice Generation",
+            "Native Device APIs",
+        ],
         featuresTitle: "Focus Areas",
-        features: ["Placeholder"],
-        galleryImages: [],
+        features: [
+            "Built AI-powered character personas for judging user discussions.",
+            "Integrated native iOS features including the microphone, camera, and photo library.",
+            "Implemented AI-generated voice responses for selected characters.",
+            "Worked across both the React Native app and Firebase backend.",
+            "Helped prepare and publish the app on the Apple App Store.",
+        ],
         storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: `I worked on this project with one of my friends. He had already built the initial version as an MVP, and after that, we worked together to finalize and complete the product.
+
+The app was designed to run on Apple devices, so I needed to learn the SDKs and iOS development workflow before I could properly contribute. I installed the iOS simulator and developed the application on macOS. The app was built with Expo and React Native.
+
+The project had a very creative concept. Two people would present their arguments and points of view, then choose a famous character to act as the judge. That selected character was defined through a custom prompt and passed to the AI, which then decided who had won the argument.
+
+The app could even generate the voice of the selected character, meaning users could receive the final judgment in a generated version of that character’s voice and tone.
+
+During the project, I also learned how to work with native iOS capabilities such as the microphone, photo library, and camera, and how to implement them inside the application.
+
+The app used Firebase for its back end, and changes to each feature usually required updates on both sides of the project. Both my friend and I worked across the front end and back end, and in the end, we were able to complete the app, pass the App Store review process, and publish it on the Apple App Store.
+
+To support the launch, I also published an introduction and promotional post for the app, which received strong reach and engagement.
+
+This experience took me far outside my comfort zone, but at the same time, it was a very rewarding, exciting, and enjoyable experience.`,
+
+        storyFA: `این پروژه را همراه با یکی از دوستانم پیش بردم. او نسخه اولیه پروژه را در حد MVP ساخته بود و بعد از آن، با همکاری هم فرایند نهایی‌سازی و تکمیل پروژه را انجام دادیم.
+
+اپ قرار بود روی گوشی‌های اپل اجرا شود، بنابراین لازم بود SDKها و روش توسعه برای iOS را یاد بگیرم تا بتوانم روی پروژه کار کنم. شبیه‌ساز iOS را نصب کردم و توسعه اپ را روی سیستم macOS انجام دادم. اپ با Expo و بر پایه React Native ساخته شده بود.
+
+پروژه ایده خیلی خلاقانه‌ای داشت. دو نفر منطق و دیدگاه خودشان را مطرح می‌کردند و بعد یکی از شخصیت‌های معروف را به‌عنوان داور انتخاب می‌کردند. شخصیت انتخاب‌شده از طریق پرامپتی که برایش تعریف شده بود به هوش مصنوعی داده می‌شد و در نهایت اعلام می‌کرد کدام طرف برنده بحث است.
+
+اپ حتی می‌توانست صدای آن شخصیت را هم تولید کند؛ یعنی نتیجه بحث را با لحن و صدای تولیدشده همان شخصیت دریافت می‌کردی.
+
+در طول پروژه یاد گرفتم از قابلیت‌های داخلی iOS مثل میکروفون، گالری و دوربین هم استفاده کنم و آن‌ها را داخل اپ پیاده‌سازی کنم.
+
+اپ برای بک‌اند از Firebase استفاده می‌کرد و تغییرات هر بخش معمولاً نیازمند به‌روزرسانی در هر دو سمت پروژه بود. در این پروژه هم من و هم دوستم روی فرانت‌اند و بک‌اند کار می‌کردیم و در نهایت توانستیم اپ را کامل کنیم، تأیید اپ استور را بگیریم و آن را در Apple App Store منتشر کنیم.
+
+برای معرفی و انتشار اپ، یک پست تبلیغاتی و معرفی هم منتشر کردم که بازدید و تعامل خیلی خوبی گرفت.
+
+این تجربه خیلی خارج از محدوده امنم بود، اما در عین حال تجربه‌ای بسیار شیرین، جذاب و لذت‌بخش بود.`,
         hasRelatedLinks: true,
         relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
+            {
+                label: "Launch Post",
+                text: "SettleitGPT Introduction on LinkedIn",
+                url: "https://www.linkedin.com/posts/ali-sdg90_settleitgpt-share-7374421474943700993-_H3R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiHtIwB6ffMAWL0iNc5fSdSRqvEYI6Q2IA",
+            },
         ],
     },
 };

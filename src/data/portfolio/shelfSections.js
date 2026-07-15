@@ -188,7 +188,7 @@ export const shelfSections = [
             },
             {
                 id: "internalTools",
-                title: "9",
+                title: "5",
                 meta: "Internal tools shipped",
                 icon: FaToolbox,
             },
