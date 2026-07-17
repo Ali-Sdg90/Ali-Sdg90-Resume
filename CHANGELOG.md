@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.14.4...v1.15.0) (2026-07-17)
+
+
+### Features
+
+* add 'How It Was Built' section template structure ([8bbe4ae](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/8bbe4ae17a1169a4d1b45a42c61f07e7c4799ae0))
+
 ## [1.14.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.14.3...v1.14.4) (2026-07-17)
 
 
