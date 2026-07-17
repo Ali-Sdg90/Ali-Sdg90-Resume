@@ -120,22 +120,29 @@ const DetailGallery = ({ columns = 3, images = [], title }) => {
                 className="featured-project-gallery"
                 style={{ "--gallery-columns": galleryColumns }}
             >
-                {images.map((imageSrc, imageIndex) => (
-                    <LightboxImage
-                        image={{
-                            src: imageSrc,
-                            alt: `${title} gallery ${imageIndex + 1}`,
-                        }}
-                        key={imageSrc}
-                        buttonClassName="featured-project-gallery-button"
-                        fallbackClassName="featured-project-gallery-image featured-project-gallery-image-fallback"
-                        imageClassName="featured-project-gallery-image"
-                        imageProps={{
-                            loading: "lazy",
-                            decoding: "async",
-                        }}
-                    />
-                ))}
+                {images.map((image, imageIndex) => {
+                    const galleryImage =
+                        typeof image === "string" ? { src: image } : image;
+
+                    return (
+                        <LightboxImage
+                            image={{
+                                ...galleryImage,
+                                alt:
+                                    galleryImage.alt ??
+                                    `${title} gallery ${imageIndex + 1}`,
+                            }}
+                            key={galleryImage.src}
+                            buttonClassName="featured-project-gallery-button"
+                            fallbackClassName="featured-project-gallery-image featured-project-gallery-image-fallback"
+                            imageClassName="featured-project-gallery-image"
+                            imageProps={{
+                                loading: "lazy",
+                                decoding: "async",
+                            }}
+                        />
+                    );
+                })}
             </div>
         </section>
     );

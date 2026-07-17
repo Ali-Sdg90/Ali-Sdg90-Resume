@@ -2,21 +2,81 @@ import csiLogoLarge from "../../assets/images/large-images/career/csi_logo.jpg";
 import dpaLogoLarge from "../../assets/images/large-images/career/dpa_logo.jpg";
 import melkRadarLogoLarge from "../../assets/images/large-images/career/melkradar_logo.jpg";
 import settleitGptLogoLarge from "../../assets/images/large-images/career/settleitgpt_logo.jpg";
-import csiClubBot1 from "../../assets/images/gallery-images/large-images/csi/club-bot1.png";
-import csiClubBot2 from "../../assets/images/gallery-images/large-images/csi/club-bot2.png";
-import csiContribution from "../../assets/images/gallery-images/large-images/csi/conterbution.png";
-import csiFlowCharts from "../../assets/images/gallery-images/large-images/csi/flow-charts.png";
-import csiQueueBot1 from "../../assets/images/gallery-images/large-images/csi/queue-bot1.png";
-import csiQueuePage from "../../assets/images/gallery-images/large-images/csi/queue-page.png";
-import dpaPage1 from "../../assets/images/gallery-images/large-images/dpa/page1.png";
-import dpaPage2 from "../../assets/images/gallery-images/large-images/dpa/page2.png";
-import dpaPage3 from "../../assets/images/gallery-images/large-images/dpa/page3.png";
-import settleitGptImage1 from "../../assets/images/gallery-images/large-images/gpt/img1.jpg";
-import settleitGptImage2 from "../../assets/images/gallery-images/large-images/gpt/img2.jpg";
-import settleitGptImage3 from "../../assets/images/gallery-images/large-images/gpt/img3.png";
-import melkRadarCharts from "../../assets/images/gallery-images/large-images/mlk/charts.png";
-import melkRadarDesign from "../../assets/images/gallery-images/large-images/mlk/desing.png";
-import melkRadarMapbox from "../../assets/images/gallery-images/large-images/mlk/mapbox.png";
+import csiClubBot1Large from "../../assets/images/gallery-images/large-images/csi/club-bot1.png";
+import csiClubBot2Large from "../../assets/images/gallery-images/large-images/csi/club-bot2.png";
+import csiContributionLarge from "../../assets/images/gallery-images/large-images/csi/conterbution.png";
+import csiFlowChartsLarge from "../../assets/images/gallery-images/large-images/csi/flow-charts.png";
+import csiQueueBot1Large from "../../assets/images/gallery-images/large-images/csi/queue-bot1.png";
+import csiQueuePageLarge from "../../assets/images/gallery-images/large-images/csi/queue-page.png";
+import dpaPage1Large from "../../assets/images/gallery-images/large-images/dpa/page1.png";
+import dpaPage2Large from "../../assets/images/gallery-images/large-images/dpa/page2.png";
+import dpaPage3Large from "../../assets/images/gallery-images/large-images/dpa/page3.png";
+import settleitGptImage1Large from "../../assets/images/gallery-images/large-images/gpt/img1.jpg";
+import settleitGptImage2Large from "../../assets/images/gallery-images/large-images/gpt/img2.jpg";
+import settleitGptImage3Large from "../../assets/images/gallery-images/large-images/gpt/img3.png";
+import settleitGptImage4Large from "../../assets/images/gallery-images/large-images/gpt/img4.png";
+import melkRadarChartsLarge from "../../assets/images/gallery-images/large-images/mlk/charts.png";
+import melkRadarDesignLarge from "../../assets/images/gallery-images/large-images/mlk/desing.png";
+import melkRadarMapboxLarge from "../../assets/images/gallery-images/large-images/mlk/mapbox.png";
+import csiClubBot1Small from "../../assets/images/gallery-images/small-images/csi/club-bot1.jpg";
+import csiClubBot2Small from "../../assets/images/gallery-images/small-images/csi/club-bot2.jpg";
+import csiContributionSmall from "../../assets/images/gallery-images/small-images/csi/conterbution.jpg";
+import csiFlowChartsSmall from "../../assets/images/gallery-images/small-images/csi/flow-charts.jpg";
+import csiQueueBot1Small from "../../assets/images/gallery-images/small-images/csi/queue-bot1.jpg";
+import csiQueuePageSmall from "../../assets/images/gallery-images/small-images/csi/queue-page.jpg";
+import dpaPage1Small from "../../assets/images/gallery-images/small-images/dpa/page1.jpg";
+import dpaPage2Small from "../../assets/images/gallery-images/small-images/dpa/page2.jpg";
+import dpaPage3Small from "../../assets/images/gallery-images/small-images/dpa/page3.jpg";
+import settleitGptImage1Small from "../../assets/images/gallery-images/small-images/gpt/img1.jpg";
+import settleitGptImage2Small from "../../assets/images/gallery-images/small-images/gpt/img2.jpg";
+import settleitGptImage3Small from "../../assets/images/gallery-images/small-images/gpt/img3.jpg";
+import settleitGptImage4Small from "../../assets/images/gallery-images/small-images/gpt/img4.jpg";
+import melkRadarChartsSmall from "../../assets/images/gallery-images/small-images/mlk/charts.jpg";
+import melkRadarDesignSmall from "../../assets/images/gallery-images/small-images/mlk/desing.jpg";
+import melkRadarMapboxSmall from "../../assets/images/gallery-images/small-images/mlk/mapbox.jpg";
+
+const galleryImage = (src, lightboxSrc) => ({ src, lightboxSrc });
+
+const csiClubBot1 = galleryImage(csiClubBot1Small, csiClubBot1Large);
+const csiClubBot2 = galleryImage(csiClubBot2Small, csiClubBot2Large);
+const csiContribution = galleryImage(
+    csiContributionSmall,
+    csiContributionLarge,
+);
+const csiFlowCharts = galleryImage(csiFlowChartsSmall, csiFlowChartsLarge);
+const csiQueueBot1 = galleryImage(csiQueueBot1Small, csiQueueBot1Large);
+const csiQueuePage = galleryImage(csiQueuePageSmall, csiQueuePageLarge);
+const dpaPage1 = galleryImage(dpaPage1Small, dpaPage1Large);
+const dpaPage2 = galleryImage(dpaPage2Small, dpaPage2Large);
+const dpaPage3 = galleryImage(dpaPage3Small, dpaPage3Large);
+const settleitGptImage1 = galleryImage(
+    settleitGptImage1Small,
+    settleitGptImage1Large,
+);
+const settleitGptImage2 = galleryImage(
+    settleitGptImage2Small,
+    settleitGptImage2Large,
+);
+const settleitGptImage3 = galleryImage(
+    settleitGptImage3Small,
+    settleitGptImage3Large,
+);
+const settleitGptImage4 = galleryImage(
+    settleitGptImage4Small,
+    settleitGptImage4Large,
+);
+const melkRadarCharts = galleryImage(
+    melkRadarChartsSmall,
+    melkRadarChartsLarge,
+);
+const melkRadarDesign = galleryImage(
+    melkRadarDesignSmall,
+    melkRadarDesignLarge,
+);
+const melkRadarMapbox = galleryImage(
+    melkRadarMapboxSmall,
+    melkRadarMapboxLarge,
+);
 
 export const aboutCareerData = {
     "cs-internship": {
@@ -295,6 +355,7 @@ However, there was not a broad team-based experience in this project. I received
         galleryImages: [
             settleitGptImage1,
             settleitGptImage2,
+            settleitGptImage4,
             settleitGptImage3,
         ],
         storyTitle: "Story",
