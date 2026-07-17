@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.15.2...v1.16.0) (2026-07-17)
+
+
+### Features
+
+* implement the new h.m.p.w.c. , finalize history images, huge commit. gn... ([987e907](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/987e9073dc448f426371fba9c32c76698400ba2c))
+
 ## [1.15.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.15.1...v1.15.2) (2026-07-17)
 
 
