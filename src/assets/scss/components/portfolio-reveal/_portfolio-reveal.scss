@@ -11,50 +11,6 @@
     background: #000;
 }
 
-.page-peel-underlay {
-    position: absolute;
-    inset: 0;
-    padding: clamp(2rem, 7vw, 6rem);
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    gap: 2rem;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-    background: #000;
-
-    h1 {
-        font-size: clamp(2rem, 6vw, 5.5rem);
-        line-height: 1.02;
-        letter-spacing: -0.045em;
-    }
-
-    &__return {
-        padding: 0.7rem 1rem;
-        color: rgba(255, 255, 255, 0.72);
-        border: 1px solid rgba(255, 255, 255, 0.28);
-        border-radius: 999px;
-        background: transparent;
-        cursor: pointer;
-        transition:
-            color $motion-fast ease,
-            border-color $motion-fast ease,
-            background-color $motion-fast ease;
-
-        &:hover {
-            color: #fff;
-            border-color: rgba(255, 255, 255, 0.55);
-            background: rgba(255, 255, 255, 0.06);
-        }
-
-        &:focus-visible {
-            outline: 2px solid #fff;
-            outline-offset: 4px;
-        }
-    }
-}
-
 .page-peel {
     position: absolute;
     z-index: 1;

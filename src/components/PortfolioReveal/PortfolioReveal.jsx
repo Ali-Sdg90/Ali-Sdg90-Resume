@@ -2,6 +2,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Peel, PeelCorners } from "peel.js";
 import "peel.js/style";
 
+import HowItWasBuilt from "../HowItWasBuilt";
+
 const DEFAULT_FOLD = 28;
 const HOVER_FOLD = 72;
 const HOVER_DURATION_MS = 340;
@@ -20,6 +22,7 @@ const PortfolioReveal = ({ children }) => {
     const peelRef = useRef(null);
     const returnButtonRef = useRef(null);
     const triggerRef = useRef(null);
+    const buildStoryRef = useRef(null);
     const animationFrameRef = useRef(null);
     const foldAnimationFrameRef = useRef(null);
     const onboardingDelayRef = useRef(null);
@@ -32,6 +35,7 @@ const PortfolioReveal = ({ children }) => {
     const pathStartFoldRef = useRef(DEFAULT_FOLD);
     const pathModeRef = useRef("open");
     const [isOpen, setIsOpen] = useState(false);
+    const [isReturning, setIsReturning] = useState(false);
     const [isOnboarding, setIsOnboarding] = useState(false);
 
     const animateFoldTo = useCallback((targetDistance) => {
@@ -160,6 +164,8 @@ const PortfolioReveal = ({ children }) => {
 
     const openPage = useCallback(() => {
         if (isOpenRef.current || isAnimatingRef.current) return;
+        setIsReturning(false);
+        buildStoryRef.current?.scrollTo({ top: 0 });
         triggerRef.current.hidden = true;
         pathModeRef.current = "open";
         pathStartFoldRef.current = foldRef.current;
@@ -170,6 +176,7 @@ const PortfolioReveal = ({ children }) => {
     const closePage = useCallback(() => {
         if (!isOpenRef.current || isAnimatingRef.current) return;
 
+        setIsReturning(true);
         cancelAnimationFrame(foldAnimationFrameRef.current);
 
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -179,6 +186,8 @@ const PortfolioReveal = ({ children }) => {
             pathModeRef.current = "open";
             configurePeel(0);
             setIsOpen(false);
+            setIsReturning(false);
+            buildStoryRef.current?.scrollTo({ top: 0 });
             triggerRef.current.hidden = false;
             requestAnimationFrame(() => triggerRef.current?.focus());
             return;
@@ -208,6 +217,8 @@ const PortfolioReveal = ({ children }) => {
             pathModeRef.current = "open";
             configurePeel(0);
             setIsOpen(false);
+            setIsReturning(false);
+            buildStoryRef.current?.scrollTo({ top: 0 });
             triggerRef.current.hidden = false;
             requestAnimationFrame(() => triggerRef.current?.focus());
         };
@@ -289,20 +300,12 @@ const PortfolioReveal = ({ children }) => {
                     aria-hidden={!isOpen}
                     inert={isOpen ? undefined : true}
                 >
-                    <section
-                        className="page-peel-underlay"
-                        aria-labelledby="build-title"
-                    >
-                        <h1 id="build-title">How My Portfolio Was Built</h1>
-                        <button
-                            className="page-peel-underlay__return"
-                            type="button"
-                            ref={returnButtonRef}
-                            onClick={closePage}
-                        >
-                            Return to portfolio
-                        </button>
-                    </section>
+                    <HowItWasBuilt
+                        ref={buildStoryRef}
+                        isActive={isOpen && !isReturning}
+                        returnButtonRef={returnButtonRef}
+                        onReturn={closePage}
+                    />
                 </div>
                 <div className="peel-back" aria-hidden="true" />
                 <div
