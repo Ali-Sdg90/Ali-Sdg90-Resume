@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import ImageLightbox from "./ImageLightbox";
 
@@ -19,16 +19,46 @@ const LightboxImage = ({
 }) => {
     const [isLightboxOpen, setIsLightboxOpen] = useState(false);
     const [imageError, setImageError] = useState(null);
+    const [measuredImageSize, setMeasuredImageSize] = useState(null);
+    const buttonRef = useRef(null);
     const hasImageError = imageError?.src === image.src;
     const fallbackText = getFallbackText(image);
+    const hasExplicitSize = image.width && image.height;
+    const hasMeasuredSize = measuredImageSize?.src === image.src;
+    const lightboxImage =
+        hasExplicitSize || !hasMeasuredSize
+            ? image
+            : {
+                  ...image,
+                  width: measuredImageSize.width,
+                  height: measuredImageSize.height,
+              };
+
+    const openLightbox = () => {
+        if (!hasExplicitSize) {
+            const thumbnail = buttonRef.current?.querySelector("img");
+            const { naturalWidth, naturalHeight } = thumbnail ?? {};
+
+            if (naturalWidth && naturalHeight) {
+                setMeasuredImageSize({
+                    src: image.src,
+                    width: naturalWidth,
+                    height: naturalHeight,
+                });
+            }
+        }
+
+        setIsLightboxOpen(true);
+    };
 
     return (
         <>
             <button
                 className={buttonClassName}
                 type="button"
+                ref={buttonRef}
                 aria-label={`Preview ${image.alt}`}
-                onClick={() => setIsLightboxOpen(true)}
+                onClick={openLightbox}
             >
                 {children ?? (
                     <>
@@ -49,6 +79,20 @@ const LightboxImage = ({
                                 src={image.src}
                                 alt={image.alt}
                                 {...imageProps}
+                                onLoad={(event) => {
+                                    imageProps?.onLoad?.(event);
+
+                                    const { naturalWidth, naturalHeight } =
+                                        event.currentTarget;
+
+                                    if (naturalWidth && naturalHeight) {
+                                        setMeasuredImageSize({
+                                            src: image.src,
+                                            width: naturalWidth,
+                                            height: naturalHeight,
+                                        });
+                                    }
+                                }}
                                 onError={(event) => {
                                     imageProps?.onError?.(event);
                                     setImageError({ src: image.src });
@@ -61,7 +105,7 @@ const LightboxImage = ({
 
             {isLightboxOpen && (
                 <ImageLightbox
-                    image={image}
+                    image={lightboxImage}
                     onClose={() => setIsLightboxOpen(false)}
                 />
             )}
