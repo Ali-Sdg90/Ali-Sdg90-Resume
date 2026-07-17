@@ -1,3 +1,10 @@
+## [1.15.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.15.1...v1.15.2) (2026-07-17)
+
+
+### Bug Fixes
+
+* add h.m.p.w.m. small and large images, i think i need to change the structure of the page... ([31e918c](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/31e918c1ed6baaf94f183b6ed4fbfa9af0fe5741))
+
 ## [1.15.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.15.0...v1.15.1) (2026-07-17)
 
 
