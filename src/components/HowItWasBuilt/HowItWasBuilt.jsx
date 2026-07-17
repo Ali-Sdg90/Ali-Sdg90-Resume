@@ -1,10 +1,11 @@
 import { forwardRef, useState } from "react";
-import { motion, useReducedMotion } from "framer-motion";
-import { FaArrowLeftLong } from "react-icons/fa6";
+import { useReducedMotion } from "framer-motion";
 
 import howItWasBuiltData from "../../data/howItWasBuilt/howItWasBuiltData";
-import BuildProgress from "./BuildProgress";
-import ShowcaseRow from "./ShowcaseRow";
+import BuildGallery from "./BuildGallery";
+import StoryClosing from "./StoryClosing";
+import StoryHeader from "./StoryHeader";
+import StoryHero from "./StoryHero";
 
 const HowItWasBuilt = forwardRef(function HowItWasBuilt(
     { isActive, onReturn, returnButtonRef },
@@ -12,6 +13,7 @@ const HowItWasBuilt = forwardRef(function HowItWasBuilt(
 ) {
     const prefersReducedMotion = useReducedMotion();
     const [activeLanguage, setActiveLanguage] = useState("en");
+    const [selectedIndex, setSelectedIndex] = useState(0);
     const { page, chapters } = howItWasBuiltData;
 
     return (
@@ -22,76 +24,32 @@ const HowItWasBuilt = forwardRef(function HowItWasBuilt(
         >
             <div className="build-story__ambient" aria-hidden="true" />
 
-            <header className="build-story__nav">
-                <button
-                    className="build-story__return"
-                    type="button"
-                    ref={returnButtonRef}
-                    onClick={onReturn}
-                >
-                    <FaArrowLeftLong aria-hidden="true" />
-                    <span>{page.portfolioLabel}</span>
-                </button>
-                <div className="build-story__language-control">
-                    <span>Image info</span>
-                    <div
-                        className="build-story__language-toggle"
-                        aria-label="Change image information language"
-                        role="group"
-                    >
-                        {[
-                            ["en", "EN"],
-                            ["fa", "FA"],
-                        ].map(([language, label]) => (
-                            <button
-                                className={
-                                    activeLanguage === language
-                                        ? "is-active"
-                                        : ""
-                                }
-                                type="button"
-                                aria-pressed={activeLanguage === language}
-                                key={language}
-                                onClick={() => setActiveLanguage(language)}
-                            >
-                                {label}
-                            </button>
-                        ))}
-                    </div>
-                </div>
-            </header>
-
-            <BuildProgress
-                scrollContainerRef={scrollContainerRef}
-                total={chapters.length}
+            <StoryHeader
+                activeLanguage={activeLanguage}
+                onLanguageChange={setActiveLanguage}
+                onReturn={onReturn}
+                portfolioLabel={page.portfolioLabel}
+                returnButtonRef={returnButtonRef}
             />
 
-            <motion.div
-                className="build-story__hero"
-                initial={prefersReducedMotion ? false : { opacity: 0, y: 28 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            >
-                <h1 id="build-title">{page.title}</h1>
-                <p className="build-story__subtitle">{page.subtitle}</p>
-            </motion.div>
+            <StoryHero
+                prefersReducedMotion={prefersReducedMotion}
+                subtitle={page.subtitle}
+                title={page.title}
+            />
 
-            <div className="build-story__chapters">
-                {chapters.map((chapter, index) => (
-                    <ShowcaseRow
-                        chapter={chapter}
-                        activeLanguage={activeLanguage}
-                        index={index}
-                        key={chapter.id}
-                    />
-                ))}
-            </div>
+            <BuildGallery
+                key={
+                    isActive ? "build-gallery-active" : "build-gallery-inactive"
+                }
+                activeLanguage={activeLanguage}
+                chapters={chapters}
+                isActive={isActive}
+                selectedIndex={selectedIndex}
+                onSelect={setSelectedIndex}
+            />
 
-            <footer className="build-story__footer">
-                <button type="button" onClick={onReturn}>
-                    {page.returnLabel} <FaArrowLeftLong aria-hidden="true" />
-                </button>
-            </footer>
+            <StoryClosing prefersReducedMotion={prefersReducedMotion} />
         </section>
     );
 });

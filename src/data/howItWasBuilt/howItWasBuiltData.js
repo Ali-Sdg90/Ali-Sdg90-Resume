@@ -34,8 +34,10 @@ import historyImage18Large from "../../assets/images/history-class/large-images/
 import historyImage18Small from "../../assets/images/history-class/small-images/img18.jpg";
 import historyImage19Large from "../../assets/images/history-class/large-images/img19.png";
 import historyImage19Small from "../../assets/images/history-class/small-images/img19.jpg";
-import historyImage20Large from "../../assets/images/history-class/large-images/img20.png";
-import historyImage20Small from "../../assets/images/history-class/small-images/img20.jpg";
+import historyImage201Large from "../../assets/images/history-class/large-images/img20.1.png";
+import historyImage201Small from "../../assets/images/history-class/small-images/img20.1.jpg";
+import historyImage202Large from "../../assets/images/history-class/large-images/img20.2.png";
+import historyImage202Small from "../../assets/images/history-class/small-images/img20.2.jpg";
 import historyImage21Large from "../../assets/images/history-class/large-images/img21.png";
 import historyImage21Small from "../../assets/images/history-class/small-images/img21.jpg";
 import historyImage22Large from "../../assets/images/history-class/large-images/img22.png";
@@ -47,7 +49,7 @@ import historyImage24Small from "../../assets/images/history-class/small-images/
 
 export const howItWasBuiltData = {
     page: {
-        title: "How my portfolio was built",
+        title: "How My Portfolio Was Built",
         subtitle:
             "Enjoy the journey of creating this portfolio, from the first sketches to the final polishes.",
         portfolioLabel: "Portfolio",
@@ -433,7 +435,7 @@ export const howItWasBuiltData = {
             accent: "#ffd166",
         },
         {
-            id: "history-20",
+            id: "history-201",
             translations: {
                 en: {
                     title: "Placeholder",
@@ -447,11 +449,32 @@ export const howItWasBuiltData = {
                 },
             },
             image: {
-                src: historyImage20Small,
-                lightboxSrc: historyImage20Large,
+                src: historyImage201Small,
+                lightboxSrc: historyImage201Large,
                 alt: "Portfolio history image 20",
             },
             accent: "#ae96ff",
+        },
+        {
+            id: "history-202",
+            translations: {
+                en: {
+                    title: "Placeholder",
+                    description:
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                },
+                fa: {
+                    title: "متن جایگزین",
+                    description:
+                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                },
+            },
+            image: {
+                src: historyImage202Small,
+                lightboxSrc: historyImage202Large,
+                alt: "Portfolio history image 20",
+            },
+            accent: "#56e0d2",
         },
         {
             id: "history-21",
