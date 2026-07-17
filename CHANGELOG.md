@@ -1,3 +1,10 @@
+## [1.14.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.14.3...v1.14.4) (2026-07-17)
+
+
+### Bug Fixes
+
+* add small images and method for use them for career gallery, update and improve repo license ([ff948c3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/ff948c3bcf24fa763f650e9c21389e6d457c6cc1))
+
 ## [1.14.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.14.2...v1.14.3) (2026-07-15)
 
 
