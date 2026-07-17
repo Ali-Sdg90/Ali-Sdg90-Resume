@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.15.0...v1.15.1) (2026-07-17)
+
+
+### Bug Fixes
+
+* enhance LightboxImage component with size measurement and improved lightbox opening logic ([da71e07](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/da71e071383a053692e5afe83cf17abef4661c84))
+
 # [1.15.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.14.4...v1.15.0) (2026-07-17)
 
 
