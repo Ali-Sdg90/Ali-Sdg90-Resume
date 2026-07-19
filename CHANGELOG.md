@@ -1,3 +1,10 @@
+## [1.16.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.3...v1.16.4) (2026-07-19)
+
+
+### Bug Fixes
+
+* finalize style of history gallery and add first draft of img1 story ([6cb8708](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/6cb8708adee897d2c94ad89a0dd4800123714c68))
+
 ## [1.16.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.2...v1.16.3) (2026-07-19)
 
 
