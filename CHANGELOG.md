@@ -1,3 +1,10 @@
+## [1.16.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.4...v1.16.5) (2026-07-19)
+
+
+### Bug Fixes
+
+* write the first 10 gallery description ([d7016fd](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d7016fdcaedb2afb3d1ea4e601f67baf26e98193))
+
 ## [1.16.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.3...v1.16.4) (2026-07-19)
 
 
