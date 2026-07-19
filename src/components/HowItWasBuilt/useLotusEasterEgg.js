@@ -14,8 +14,13 @@ const useLotusEasterEgg = (prefersReducedMotion) => {
     const handleClick = () => {
         if (!prefersReducedMotion) {
             animation.start({
-                scale: [1, 1.025, 0.995, 1],
-                transition: { duration: 0.5, ease: APPLE_EASE },
+                scale: [1, 1.018, 1],
+                y: [0, -2, 0],
+                transition: {
+                    duration: 0.72,
+                    times: [0, 0.36, 1],
+                    ease: APPLE_EASE,
+                },
             });
         }
 
