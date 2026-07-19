@@ -49,7 +49,12 @@ const HowItWasBuilt = forwardRef(function HowItWasBuilt(
                 onSelect={setSelectedIndex}
             />
 
-            <StoryClosing prefersReducedMotion={prefersReducedMotion} />
+            <StoryClosing
+                key={
+                    isActive ? "story-closing-active" : "story-closing-inactive"
+                }
+                prefersReducedMotion={prefersReducedMotion}
+            />
         </section>
     );
 });

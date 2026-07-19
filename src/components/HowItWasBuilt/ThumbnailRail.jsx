@@ -10,7 +10,6 @@ const ThumbnailRail = ({ chapters, onSelect, selectedIndex }) => {
         handlePointerDown,
         handlePointerMove,
         handlePointerEnd,
-        handleWheel,
         stopMomentum,
     } = useThumbnailMomentum();
 
@@ -40,7 +39,6 @@ const ThumbnailRail = ({ chapters, onSelect, selectedIndex }) => {
             onPointerMove={handlePointerMove}
             onPointerUp={handlePointerEnd}
             onPointerCancel={handlePointerEnd}
-            onWheel={handleWheel}
         >
             {chapters.map((chapter, index) => (
                 <button

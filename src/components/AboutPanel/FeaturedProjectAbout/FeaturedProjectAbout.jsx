@@ -162,6 +162,7 @@ const ProjectStory = ({
         collapsed: 0,
         expanded: 0,
     });
+    const [shouldAnimateHeight, setShouldAnimateHeight] = useState(false);
     const storyContentRef = useRef(null);
     const storyId = useId();
     const isFarsi = activeLanguage === "FA" && storyFA;
@@ -228,7 +229,7 @@ const ProjectStory = ({
                         : storyHeights.collapsed,
                 }}
                 transition={{
-                    duration: isExpanded ? 1.5 : 1,
+                    duration: shouldAnimateHeight ? (isExpanded ? 1.5 : 1) : 0,
                     ease: [0.22, 1, 0.36, 1],
                 }}
                 onAnimationComplete={() => {
@@ -263,6 +264,7 @@ const ProjectStory = ({
                 aria-expanded={isExpanded}
                 aria-controls={storyId}
                 onClick={() => {
+                    setShouldAnimateHeight(true);
                     if (!isExpanded) setIsStoryClamped(false);
                     setIsExpanded((current) => !current);
                 }}

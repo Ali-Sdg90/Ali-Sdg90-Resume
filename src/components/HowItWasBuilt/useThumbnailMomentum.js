@@ -108,17 +108,6 @@ const useThumbnailMomentum = () => {
         [startMomentum],
     );
 
-    const handleWheel = useCallback((event) => {
-        const rail = railRef.current;
-        if (!rail || Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return;
-
-        const maxScrollLeft = rail.scrollWidth - rail.clientWidth;
-        if (maxScrollLeft <= 0) return;
-
-        event.preventDefault();
-        rail.scrollLeft += event.deltaY;
-    }, []);
-
     useEffect(() => stopMomentum, [stopMomentum]);
 
     return {
@@ -127,7 +116,6 @@ const useThumbnailMomentum = () => {
         handlePointerDown,
         handlePointerMove,
         handlePointerEnd,
-        handleWheel,
         stopMomentum,
     };
 };

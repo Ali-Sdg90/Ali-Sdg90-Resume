@@ -4,7 +4,7 @@ import { useAnimation } from "framer-motion";
 import { APPLE_EASE } from "./motionConfig";
 
 const CLICK_WINDOW_MS = 1000;
-const REQUIRED_CLICKS = 5;
+const REQUIRED_CLICKS = 6;
 const EASTER_EGG_URL = "https://also-ali-sdg90.github.io/ICARUS/";
 
 const useLotusEasterEgg = (prefersReducedMotion) => {
