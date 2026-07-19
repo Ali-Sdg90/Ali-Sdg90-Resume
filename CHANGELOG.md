@@ -1,3 +1,10 @@
+## [1.16.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.2...v1.16.3) (2026-07-19)
+
+
+### Bug Fixes
+
+* fix un-wanted scrolling behavior for rail in gallery in h.m.p.w.c, fix un-wanted intro animation for story section in about cards ([0c42b22](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/0c42b22aae538146b7cc27b52094cb7dbdd3d4bd))
+
 ## [1.16.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.1...v1.16.2) (2026-07-19)
 
 
