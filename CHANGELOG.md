@@ -1,3 +1,10 @@
+## [1.16.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.1...v1.16.2) (2026-07-19)
+
+
+### Bug Fixes
+
+* improve style and animation of lotus, before adding smart scroll behavior in h.m.p.w.c. page ([313fbfe](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/313fbfe082fa197eaa0b1e2b0cf2850fb65fd1b8))
+
 ## [1.16.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.0...v1.16.1) (2026-07-19)
 
 
