@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.0...v1.16.1) (2026-07-19)
+
+
+### Bug Fixes
+
+* add new design of h.m.p.w.c. image to page, before changing style of lotus easter egg ([e1f97b7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/e1f97b79b6e8092c9285faf4e8de9aab1f49b752))
+
 # [1.16.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.15.2...v1.16.0) (2026-07-17)
 
 
