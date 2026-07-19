@@ -46,6 +46,8 @@ import historyImage23Large from "../../assets/images/history-class/large-images/
 import historyImage23Small from "../../assets/images/history-class/small-images/img23.jpg";
 import historyImage24Large from "../../assets/images/history-class/large-images/img24.png";
 import historyImage24Small from "../../assets/images/history-class/small-images/img24.jpg";
+import historyImage25Large from "../../assets/images/history-class/large-images/img25.png";
+import historyImage25Small from "../../assets/images/history-class/small-images/img25.jpg";
 
 export const howItWasBuiltData = {
     page: {
@@ -559,6 +561,27 @@ export const howItWasBuiltData = {
                 alt: "Portfolio history image 24",
             },
             accent: "#48d7c7",
+        },
+        {
+            id: "history-25",
+            translations: {
+                en: {
+                    title: "Placeholder",
+                    description:
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                },
+                fa: {
+                    title: "متن جایگزین",
+                    description:
+                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                },
+            },
+            image: {
+                src: historyImage25Small,
+                lightboxSrc: historyImage25Large,
+                alt: "Portfolio history image 25",
+            },
+            accent: "#ff9d66",
         },
     ],
 };
