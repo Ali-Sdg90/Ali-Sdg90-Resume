@@ -62,37 +62,40 @@ const BuildGallery = ({
                 viewport={{ once: true, amount: 0.16 }}
                 transition={{ duration: 1.15, ease: APPLE_EASE }}
             >
-                <GalleryMedia
-                    chapter={chapter}
-                    isFirst={isFirst}
-                    isLast={isLast}
-                    onNext={selectNext}
-                    onPrevious={selectPrevious}
-                    prefersReducedMotion={prefersReducedMotion}
-                />
+                <div className="build-gallery__media-column">
+                    <GalleryMedia
+                        chapter={chapter}
+                        isFirst={isFirst}
+                        isLast={isLast}
+                        onNext={selectNext}
+                        onPrevious={selectPrevious}
+                        prefersReducedMotion={prefersReducedMotion}
+                    />
+                    <motion.div
+                        initial={
+                            prefersReducedMotion ? false : { opacity: 0, y: 18 }
+                        }
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.4 }}
+                        transition={{
+                            duration: 0.7,
+                            delay: 0.15,
+                            ease: APPLE_EASE,
+                        }}
+                    >
+                        <ThumbnailRail
+                            chapters={chapters}
+                            selectedIndex={selectedIndex}
+                            onSelect={onSelect}
+                        />
+                    </motion.div>
+                </div>
                 <GalleryInformation
                     activeLanguage={activeLanguage}
                     chapter={chapter}
                     prefersReducedMotion={prefersReducedMotion}
                     selectedIndex={selectedIndex}
                     total={chapters.length}
-                />
-            </motion.div>
-
-            <motion.div
-                initial={prefersReducedMotion ? false : { opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{
-                    duration: 0.7,
-                    delay: 0.15,
-                    ease: APPLE_EASE,
-                }}
-            >
-                <ThumbnailRail
-                    chapters={chapters}
-                    selectedIndex={selectedIndex}
-                    onSelect={onSelect}
                 />
             </motion.div>
         </section>

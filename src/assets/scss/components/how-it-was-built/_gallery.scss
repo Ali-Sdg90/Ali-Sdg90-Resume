@@ -2,7 +2,7 @@
 
 .build-gallery {
     --gallery-accent: #8facff;
-    width: min(100% - 6rem, 88rem);
+    width: min(100% - 6rem, 110rem);
     margin: 0 auto;
     min-height: 100vh;
     min-height: 100dvh;
@@ -26,8 +26,9 @@
 
     &__media {
         position: relative;
+        width: 100%;
+        height: clamp(22rem, 42vw, 38rem);
         min-width: 0;
-        min-height: clamp(22rem, 42vw, 37rem);
         overflow: hidden;
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: clamp(0.85rem, 1.8vw, 1.4rem);
@@ -43,15 +44,20 @@
     &__image-button {
         width: 100%;
         height: 100%;
-        display: grid;
-        place-items: center;
+        padding: clamp(0.4rem, 0.7vw, 0.7rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: transparent;
         cursor: pointer;
 
         img {
-            width: 100%;
-            height: 100%;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
             object-fit: contain;
+            object-position: center center;
             user-select: none;
             transition: opacity $motion-medium ease;
         }
@@ -107,7 +113,7 @@
 
     &__information {
         min-width: 0;
-        padding: clamp(2rem, 3.5vw, 4rem) clamp(1rem, 2vw, 2rem);
+        padding: clamp(0.7rem, 1vw, 1.2rem) clamp(1rem, 2vw, 2rem) 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -123,9 +129,9 @@
 
         h2 {
             margin: 1.5rem 0 1.25rem;
-            font-size: clamp(2rem, 3.5vw, 3.8rem);
+            font-size: clamp(1.65rem, 2.5vw, 2.8rem);
             font-weight: 620;
-            line-height: 1.04;
+            line-height: 1.12;
             letter-spacing: -0.045em;
             text-wrap: balance;
         }
@@ -162,13 +168,20 @@
 
     &__description {
         color: #98a2b4;
-        font-size: clamp(1rem, 1.25vw, 1.14rem);
-        line-height: 1.8;
+        font-size: clamp(0.9rem, 1vw, 1rem);
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+        white-space: pre-line;
+    }
+
+    &__media-column {
+        min-width: 0;
     }
 
     &__thumbnail-rail {
         --thumbnail-gap: clamp(0.4rem, 0.8vw, 0.7rem);
-        margin-top: 1rem;
+        width: min(100%, 60rem);
+        margin: 1rem auto 0;
         padding: 0.35rem;
         display: grid;
         grid-auto-flow: column;

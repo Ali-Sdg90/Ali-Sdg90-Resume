@@ -62,14 +62,28 @@ export const howItWasBuiltData = {
             id: "history-01",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Initial Project Idea",
+                    description: `I always wanted to have a personal portfolio. A place where I could show the things I’ve built in one place, but not just as a simple normal page. I wanted the portfolio to fully feel like Ali. Something that made it clear from the start that it was built with my own creativity and personality.
+
+Something like a hub. A connection point for my projects, my resume, my social media links, and the things related to me.
+
+When my schedule got a bit lighter and I felt mentally ready to start it, the idea of building a bookshelf came to my mind. A place where each book would represent one of my projects. A simple and cozy bookshelf.
+
+I even thought it might be fun to have Ali on the side, waving in stop motion, following the mouse with his eyes, or having a few small and fun easter eggs on the page.
+
+I drew the first version of the idea very simply in Paint, and this became the first initial design of the project.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "ایده اولیه پروژه",
+                    description: `من همیشه دوست داشتم یه پورتفولیوی شخصی داشته باشم؛ جایی که بتونم ساخته‌هام رو یک‌جا به نمایش بذارم، ولی فقط یه صفحه‌ی ساده و معمولی نباشه. می‌خواستم پورتفولیو کاملا به مدل علی باشه. چیزی که از همون اول معلوم باشه با خلاقیت و شخصیت خودم ساخته شده.
+
+یه چیزی شبیه یه هاب؛ یه نقطه‌ی اتصال برای پروژه‌هام، رزومه‌م، لینک‌های سوشال مدیاهام و چیزهایی که به من مربوط می‌شن.
+
+وقتی سرم خلوت‌تر شده بود و از نظر روحی هم آمادگی شروعش رو داشتم، ایده‌ی ساختن یه کتابخونه به ذهنم رسید؛ جایی که هر کتاب، نماینده‌ی یکی از پروژه‌هام باشه. یه کتابخونه ساده و cozy.
+
+حتی فکر کردم شاید جالب باشه اون کنار، خود علی به‌صورت استاپ‌موشن دست تکون بده، با چشم‌هاش موس رو دنبال کنه، یا یه سری ایستر اگ کوچیک و باحال توی صفحه داشته باشه.
+
+اولین نسخه‌ی ایده رو خیلی ساده توی Paint کشیدم و این شد اولین دیزاین اولیه پروژه.`,
                 },
             },
             image: {

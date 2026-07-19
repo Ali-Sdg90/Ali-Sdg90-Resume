@@ -10,7 +10,7 @@
         }
 
         &__media {
-            min-height: clamp(21rem, 45vw, 30rem);
+            height: clamp(21rem, 45vw, 30rem);
         }
     }
 }
@@ -61,7 +61,7 @@
         }
 
         &__media {
-            min-height: min(66vw, 29rem);
+            height: min(66vw, 29rem);
         }
 
         &__information {
