@@ -24,6 +24,8 @@ import historyImage12Large from "../../assets/images/history-class/large-images/
 import historyImage12Small from "../../assets/images/history-class/small-images/img12.jpg";
 import historyImage13Large from "../../assets/images/history-class/large-images/img13.png";
 import historyImage13Small from "../../assets/images/history-class/small-images/img13.jpg";
+import historyImage14Large from "../../assets/images/history-class/large-images/img14.png";
+import historyImage14Small from "../../assets/images/history-class/small-images/img14.jpg";
 import historyImage15Large from "../../assets/images/history-class/large-images/img15.png";
 import historyImage15Small from "../../assets/images/history-class/small-images/img15.jpg";
 import historyImage16Large from "../../assets/images/history-class/large-images/img16.png";
@@ -34,10 +36,8 @@ import historyImage18Large from "../../assets/images/history-class/large-images/
 import historyImage18Small from "../../assets/images/history-class/small-images/img18.jpg";
 import historyImage19Large from "../../assets/images/history-class/large-images/img19.png";
 import historyImage19Small from "../../assets/images/history-class/small-images/img19.jpg";
-import historyImage201Large from "../../assets/images/history-class/large-images/img20.1.png";
-import historyImage201Small from "../../assets/images/history-class/small-images/img20.1.jpg";
-import historyImage202Large from "../../assets/images/history-class/large-images/img20.2.png";
-import historyImage202Small from "../../assets/images/history-class/small-images/img20.2.jpg";
+import historyImage20Large from "../../assets/images/history-class/large-images/img20.png";
+import historyImage20Small from "../../assets/images/history-class/small-images/img20.jpg";
 import historyImage21Large from "../../assets/images/history-class/large-images/img21.png";
 import historyImage21Small from "../../assets/images/history-class/small-images/img21.jpg";
 import historyImage22Large from "../../assets/images/history-class/large-images/img22.png";
@@ -102,7 +102,7 @@ I drew the first version of the idea very simply in Paint, and this became the f
 
 In the end, we got to this image. It felt really special, creative, and exciting to me.
 
-A three-dimensional shelf with a nice perspective in the middle of the page, simple text and contact information on the right, and me in stop motion on the left.
+A three-dimensional shelf with a nice perspective in the middle of the page, simple text and contact information on the left, and me in stop motion on the right.
 
 It had a small cyberpunk neon-light feeling. Not too loud, not too invisible.
 
@@ -116,7 +116,7 @@ So now that I had the design and the vision, I could start the project.`,
 
 در نهایت به این عکس رسیدیم. چیزی بود که به نظرم خیلی خاص و خلاقانه و جذاب بود.
 
-شلف سه‌بعدی با پرسپکتیو خوشگل وسط صفحه، نوشته معمولی و اطلاعات تماس سمت راست و خودم به‌صورت استاپ‌موشن سمت چپ.
+شلف سه‌بعدی با پرسپکتیو خوشگل وسط صفحه، نوشته معمولی و اطلاعات تماس سمت چپ و خودم به‌صورت استاپ‌موشن سمت راست.
 
 یه حالت سایبرپانکی نئون‌لایتی ریز داشت. نه خیلی تو چشم، نه خیلی نامرئی.
 
@@ -198,7 +198,7 @@ Now it was time to arrange them.`,
             id: "history-05",
             translations: {
                 en: {
-                    title: "The First Fight With Perspective",
+                    title: "The Fight With Perspective",
                     description: `Placing the cards according to the perspective of the shelf image was a really complicated process...
 
 It was all about playing with the perspective origin, the perspective value, and the X, Y, and Z rotation angles of the cards...
@@ -212,7 +212,7 @@ At this stage, I only used the Things I’ve Built row as my working reference a
 So later, I could go back and find the correct values for each shelf.`,
                 },
                 fa: {
-                    title: "اولین نبرد با پرسپکتیو",
+                    title: "نبرد با پرسپکتیو",
                     description: `قرار دادن کارت‌ها طبق پرسپکتیو عکس شلف، پروسه خیلی پیچیده‌ای بود...
 
 همش بازی با اوریجین پرسپکتیو، مقدار پرسپکتیو، زاویه‌های X و Y و Z چرخش کارت‌ها...
@@ -237,7 +237,7 @@ So later, I could go back and find the correct values for each shelf.`,
             id: "history-06",
             translations: {
                 en: {
-                    title: "Taming the Angles and Motion",
+                    title: "Victory Over Perspective",
                     description: `With a lot of precision, I managed to get the card angles right!
 
 I kept telling myself that if I could not get the angles right, it would be the first thing people would notice unconsciously at first glance, and it could make all the work I had done, and all the work ahead of me, feel worthless. If it looked off, the user would feel that something here is wrong. It does not feel natural.
@@ -249,7 +249,7 @@ Then I added the infinite card behavior, the acceleration and natural dragging b
 The movement speed of the cards and the amount of friction when they were thrown felt natural and fun to me.`,
                 },
                 fa: {
-                    title: "رام کردن زاویه‌ها و حرکت",
+                    title: "پیروزی بر پرسپکتیو",
                     description: `با ظرافت خیلی زیاد تونستم زاویه‌ی کارت‌ها رو درست دربیارم!
 
 با خودم می‌گفتم اگه نتونم زاویه‌ها رو درست دربیارم، اولین چیزی هست که به‌صورت ناخودآگاه توی دید اول به چشم میاد و می‌تونه کل زحمات الان و آینده‌م رو بی‌ارزش کنه. اگه مشکل‌دار باشه، کاربر می‌گه اینجا یه چیزی اشتباهه. طبیعی نیست.
@@ -365,14 +365,28 @@ Oh, and yeah, I also filled the left side of the page.`,
             id: "history-10",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Changing Direction",
+                    description: `For testing, I took a photo of myself with the outfit and lighting angle I had in the design, and placed it inside the project.
+
+It was really disappointing for me to see that having my own photo on the page did not work well.
+
+The specific lighting angle, the super high quality, and the natural feeling of the photo all needed to be perfect. If even a small part was off, it would not look natural, and it would subconsciously push away the comfort of looking at the page. I realized I was in a challenge where, if I continued this path with this design, the chance of the project failing would become really high.
+
+There was another problem too. Having my photo there grabbed too much attention. The shelf was supposed to be the center of attention on the page. Having two parts of the project constantly fighting for attention is not really good for the user experience.
+
+So this was a failed but cool test, and saw that I needed to change the design of the project.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "تغییر مسیر",
+                    description: `برای تست، یه عکس از خودم با لباس و زاویه‌ی نوری‌ای که تو دیزاین داشتم گرفتم و تو پروژه گذاشتم.
+
+برام خیلی ناراحت‌کننده بود که دیدم بودن عکس خودم تو صفحه خوب جواب نمی‌ده.
+
+زاویه‌ی نوری خاص عکس، کیفیت فوق‌بالا و طبیعی بودن عکس باید همشون پرفکت باشن. اگه یکم مشکل‌دار باشه، طبیعی به چشم نمیاد و ناخودآگاه راحت بودن با دیدن صفحه رو پس می‌زنه. دیدم تو چالشی افتادم که اگه بخوام این مسیر رو با این دیزاین ادامه بدم، احتمال شکست پروژه خیلی بالا می‌ره.
+
+بعد یه مشکل دیگه هم بود. بودن عکس من خیلی توجه جلب می‌کرد. قرار بود شلف مرکز توجه صفحه باشه. دوتیکه‌ی پروژه که مدام بخوان توجه رو جلب کنن، خیلی برای تجربه‌ی کاربری خوب نیست.
+
+پس این یه تست ناموفق و باحال بود و دیدم نیاز بود تو دیزاین پروژه دست ببرم.`,
                 },
             },
             image: {
@@ -386,14 +400,20 @@ Oh, and yeah, I also filled the left side of the page.`,
             id: "history-11",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "The Second Design",
+                    description: `Instead of the stop-motion Ali on the right side of the page, I added an About Me section with my photo at the top, where the user could scroll and read the full text.
+
+To me, it felt like a clean and simple idea that did not grab too much attention and allowed the shelf to shine on the page. It was not so simple that it felt out of place either. In my eyes, it sat well on the page.
+
+I created the new design image with ChatGPT and started building it.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "دیزاین دوم پروژه",
+                    description: `به جای علی استاپ‌موشنی سمت راست صفحه، یه سکشن About Me قرار دادم که بالاش عکسم باشه و توش کاربر بتونه اسکرول کنه و کل متن رو بخونه.
+
+به چشمم ایده‌ی تمیز و ساده‌ای میومد که خیلی هم جلب توجه نمی‌کرد و اجازه می‌داد شلف بتونه تو صفحه بدرخشه. اون‌قدر هم ساده نبود که جاش تو صفحه نباشه. به دیدم خوب تو صفحه نشسته بود.
+
+عکس جدید دیزاین رو با چت‌جی‌پی‌تی ساختم و شروع به ساختنش کردم.`,
                 },
             },
             image: {
@@ -407,14 +427,24 @@ Oh, and yeah, I also filled the left side of the page.`,
             id: "history-12",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Strange New Section",
+                    description: `I built the new section. I named it About Section.
+
+The fact that the text inside it was tilted looked a bit strange to me. It felt strange because this section was meant for reading, and this perspective felt a little tiring and uncomfortable for the eyes.
+
+I gave myself some time to spend more time with it, maybe I was just being sensitive about it in the moment.
+
+I improved the Career cards based on the design. They were no longer just an image with text under it. They became closer to the new design, better, more professional, and prettier.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "سکشن جدید عجیب",
+                    description: `سکشن جدید رو ساختم. اسمش رو About Section گذاشتم.
+
+یکم اینکه متن توش کج بود، به چشمم عجیب میومد. این عجیبی به خاطر این بود که این سکشن برای خوندن بود و این پرسپکتیو یکم خسته‌کننده و اذیت‌کننده برای چشم بود.
+
+یکم به خودم وقت دادم بیشتر باهاش وقت بگذرونم، شاید فقط تو لحظه نسبت بهش حساس بودم.
+
+کارت‌های Career رو طبق دیزاین بهتر کردم. دیگه فقط یه عکس و متن زیرش نبود. شبیه دیزاین جدید، بهتر و حرفه‌ای‌تر و خوشگل‌تر شد.`,
                 },
             },
             image: {
@@ -428,14 +458,28 @@ Oh, and yeah, I also filled the left side of the page.`,
             id: "history-13",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Choosing the Best Path",
+                    description: `I thought a lot about how to show the user more details about the shelf cards.
+
+One of the early ideas of the project, which felt really cool and scary to me, was that when the user clicked on a shelf card, a modal would open with an animation and show the card information inside it. The modal could be resized on the page, so the user could move modals around or have multiple ones open at the same time with different sizes.
+
+It was a very big idea. I thought maybe it would become way bigger than my portfolio, or make interacting with the page too complicated.
+
+Then a simpler idea came to my mind. I could use this new About Me section, and when the user clicked on a card, it would show that card’s information inside this section. When no card was selected, it would show About Me.
+
+It felt like a creative and good idea to me. With ChatGPT, I made the rough design and layout of the parts inside it, and I had a good plan to continue.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "انتخاب بهترین راه",
+                    description: `سر اینکه چطور توضیحات بیشتر کارت‌های شلف‌ها رو به کاربر نشون بدم، خیلی فکر کردم.
+
+یکی از ایده‌های اولیه پروژه که به نظرم خیلی باحال و ترسناک میومد این بود که وقتی روی کارت‌های شلف کلیک می‌شه، یه مودال با انیمیشن باز بشه و توش اطلاعات کارت نشون داده بشه. این مودال تو صفحه قابلیت تغییر اندازه داشته باشه، جوری که کاربر بتونه مودال‌ها رو تو صفحه تکون بده یا چند تا در لحظه باز داشته باشه، با سایزهای مختلف.
+
+ایده خیلی بزرگی بود. فکر کردم شاید خیلی فراتر از پورتفولیوم می‌شه یا زیادی کار با صفحه رو پیچیده می‌کنه.
+
+بعد یه ایده ساده‌تر به ذهنم رسید. می‌تونم از این سکشن About Me جدید استفاده کنم و وقتی کاربر روی کارتی کلیک کرد، اون اطلاعات کارت رو تو این سکشن نشون بده. وقتی هم کارتی سلکت نشده، About Me رو نشون بده.
+
+به نظرم ایده خلاقانه و خوبی میومد. با چت‌جی‌پی‌تی دیزاین تقریبی و قرارگیری قسمت‌های داخلش رو ساختم و پلن خوبی برای ادامه دادن داشتم.`,
                 },
             },
             image: {
@@ -446,17 +490,58 @@ Oh, and yeah, I also filled the left side of the page.`,
             accent: "#48d7c7",
         },
         {
+            id: "history-14",
+            translations: {
+                en: {
+                    title: "Implementing the Dynamic Modal",
+                    description: `I implemented the dynamic model of the About Section.
+
+It looked pretty and cool to me. The only thing was that the content inside it felt a little too small and tiny.
+
+I wanted each card to also have a description and story section, where I could write its story in Persian, and the user could easily change the card language and read the text in Ali-style Persian. So I added a language switch to the top of the card.
+
+I also made the whole section straight and removed the tilted perspective from it.`,
+                },
+                fa: {
+                    title: "پیاده‌سازی مدال داینامیک",
+                    description: `مدل داینامیک About Section رو پیاده‌سازی کردم.
+
+به چشمم خوشگل و باحال میومد. فقط محتواهای داخلش یه کم زیادی کوچیک و ریز به چشمم میومد.
+
+دوست داشتم برای هر کارت هم یه سکشن توضیح و داستان داشته باشم که بتونم توش به فارسی داستانش رو بنویسم و کاربر بتونه راحت زبون کارت رو عوض کنه و متن رو به مدل علی‌ای فارسی بخونه. پس به بالای کارت، سوییچ تغییر زبان هم اضافه کردم.
+
+کلا سکشن هم صاف گذاشتم و اون حالت پرسپکتیو کج رو ازش گرفتم.`,
+                },
+            },
+            image: {
+                src: historyImage14Small,
+                lightboxSrc: historyImage14Large,
+                alt: "Portfolio history image 14",
+            },
+            accent: "#ff9d66",
+        },
+        {
             id: "history-15",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "The Accordion Modal Begins",
+                    description: `I finally wrote the About Me text. I really tried to make it feel exactly, exactly like myself, but it was a little longer than I wanted. For now, I kept it like this so I could come back to it later.
+
+I finalized the width of the About Me section and started adding the expanded state for the About Section.
+
+The first implementation did not have a very pretty icon, but it was still a starting point.
+
+Then I thought I could use different widths for About Me and About Card, so when switching between these two modes, there would be a width difference between them. It is a simple effect, but it looks nice to the eye.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "شروع مودال آکاردئونی",
+                    description: `متن About Me رو بالاخره نوشتم. خیلی سعی کردم متن دقیقا خود خود خودم باشه، ولی یکم طولانی‌تر از چیزی بود که دوست داشتم. فعلا همین رو نگه داشتم تا بعدا دوباره بهش سر بزنم.
+
+عرض سکشن About Me رو نهایی کردم و شروع کردم به اضافه کردن حالت expanded سکشن About Section.
+
+پیاده‌سازی اولیه خیلی آیکون خوشگلی نداشت، ولی باز شروع اولیه بود.
+
+به ذهنم رسید می‌تونم عرض مختلف برای About Me و About Card بذارم که وقتی بین این دو مود سوییچ می‌شه، تفاوت عرضی بین دو مود باشه. افکت ساده‌ایه، ولی به چشم خوشگل میاد.`,
                 },
             },
             image: {
@@ -464,7 +549,7 @@ Oh, and yeah, I also filled the left side of the page.`,
                 lightboxSrc: historyImage15Large,
                 alt: "Portfolio history image 15",
             },
-            accent: "#ff9d66",
+            accent: "#f47caa",
         },
         {
             id: "history-16",
@@ -485,7 +570,7 @@ Oh, and yeah, I also filled the left side of the page.`,
                 lightboxSrc: historyImage16Large,
                 alt: "Portfolio history image 16",
             },
-            accent: "#f47caa",
+            accent: "#63c5ff",
         },
         {
             id: "history-17",
@@ -506,7 +591,7 @@ Oh, and yeah, I also filled the left side of the page.`,
                 lightboxSrc: historyImage17Large,
                 alt: "Portfolio history image 17",
             },
-            accent: "#63c5ff",
+            accent: "#8fdb78",
         },
         {
             id: "history-18",
@@ -527,7 +612,7 @@ Oh, and yeah, I also filled the left side of the page.`,
                 lightboxSrc: historyImage18Large,
                 alt: "Portfolio history image 18",
             },
-            accent: "#8fdb78",
+            accent: "#ffd166",
         },
         {
             id: "history-19",
@@ -548,31 +633,10 @@ Oh, and yeah, I also filled the left side of the page.`,
                 lightboxSrc: historyImage19Large,
                 alt: "Portfolio history image 19",
             },
-            accent: "#ffd166",
-        },
-        {
-            id: "history-201",
-            translations: {
-                en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                },
-                fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
-                },
-            },
-            image: {
-                src: historyImage201Small,
-                lightboxSrc: historyImage201Large,
-                alt: "Portfolio history image 20",
-            },
             accent: "#ae96ff",
         },
         {
-            id: "history-202",
+            id: "history-20",
             translations: {
                 en: {
                     title: "Placeholder",
@@ -586,8 +650,8 @@ Oh, and yeah, I also filled the left side of the page.`,
                 },
             },
             image: {
-                src: historyImage202Small,
-                lightboxSrc: historyImage202Large,
+                src: historyImage20Small,
+                lightboxSrc: historyImage20Large,
                 alt: "Portfolio history image 20",
             },
             accent: "#56e0d2",
