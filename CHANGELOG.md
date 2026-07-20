@@ -1,3 +1,10 @@
+## [1.16.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.5...v1.16.6) (2026-07-20)
+
+
+### Bug Fixes
+
+* add 6 more history card text, now we are at 16th card, rename and re-order history images ([37ab220](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/37ab220cf709e50a810466ab5d76772ca3c12df8))
+
 ## [1.16.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.4...v1.16.5) (2026-07-19)
 
 
