@@ -48,6 +48,8 @@ import historyImage24Large from "../../assets/images/history-class/large-images/
 import historyImage24Small from "../../assets/images/history-class/small-images/img24.jpg";
 import historyImage25Large from "../../assets/images/history-class/large-images/img25.png";
 import historyImage25Small from "../../assets/images/history-class/small-images/img25.jpg";
+import historyImage26Large from "../../assets/images/history-class/large-images/img26.png";
+import historyImage26Small from "../../assets/images/history-class/small-images/img26.jpg";
 
 export const howItWasBuiltData = {
     page: {
@@ -655,14 +657,27 @@ I had never used Codex like this before, and I was really amazed by its power an
             id: "history-19",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "The Project's Gem",
+                    description: `One of the features that came to my mind in the middle of the work, and felt really important and cool to me, was this history of how I built my project.
+
+It felt like a memory note from the project for myself, while others could join my mental journey, see how it grew, what problems I ran into, and how I solved them.
+
+To me, for a software engineer, nothing is more important than learning how to see and solve a problem. In a way, I wanted to gift this path to the viewer of my project. A funny little gift too. Two months of Ali’s work in a few images :)
+
+I wanted it to be a separate page inside my project, so I thought a lot about where to place the button for opening it. I did not want it to get lost on the page or grab too much attention.
+Every part of the page had its own reason to be there, and I could not just place a random button somewhere. In the end, I came up with two ideas for placing it, which we will see in the next two slides.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "ایده‌ی گلِ پروژه",
+                    description: `یکی از فیچرهایی که وسط کار به ذهنم رسید و به نظرم خیلی مهم و باحال بود، همین تاریخچه‌ی اینکه چطور پروژه‌م رو ساختم بود.
+
+بودنش شبیه یه یادداشت خاطره از پروژه‌م برای خودم بود و بقیه می‌تونستن همراه من سفر ذهنی کنن که چجوری پروژه رو ساختم، رشدش چطور بود، به چه مشکلاتی خوردم و چطور حلشون کردم.
+
+به نظرم برای یه مهندس نرم‌افزار، هیچ‌چیز مهم‌تر از یادگیری نحوه‌ی دیدن مسئله و مدل حل مسئله نیست. یه جورایی با این کار می‌خواستم این مسیر رو به بیننده‌ی پروژه‌م هدیه بدم. هدیه‌ی فانی هم به نظرم میاد. دو ماه زحمت علی تو چند تا دونه عکس :)
+
+می‌خواستم یه صفحه‌ی جداگانه تو پروژه‌م باشه. سر اینکه دکمه‌ی باز شدنش رو کجا تو صفحه بذارم، خیلی فکر کردم.
+نمی‌خواستم این دکمه تو صفحه گم باشه یا خیلی توجه جلب کنه.
+تمامی قسمت‌ها دلیل حضور خودشون رو داشتن و نمی‌تونستم همین‌جوری یه دکمه وسطشون قرار بدم. در نهایت به دو ایده برای قرار دادن دکمه رسیدم که تو دو اسلاید بعد می‌بینیم.`,
                 },
             },
             image: {
@@ -676,14 +691,26 @@ I had never used Codex like this before, and I was really amazed by its power an
             id: "history-20",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "It Didn’t Land Well",
+                    description: `The first idea was to put an item on top of the shelf, like in the image. Something like a book lying on the shelf, with “How My Portfolio Was Built” written on it. When clicked, it would open the page that is open right now.
+
+It was a pretty and creative idea. I implemented it for testing, but in practice it did not work very well.
+
+One of the beautiful things about the page was that the shelf was simple and easy to understand at first glance. The eye wants to first see the main lines of the image, find the patterns, and quickly understand what it is looking at. Having an object somewhere the eye does not expect it reduced the joy of seeing a clean, smooth, perspective-based design.
+
+I did not want my design to become more crowded or lose the beauty of the perspective I had built for the shelf.
+So I gave up on this idea.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "نتونست خوب بشینه",
+                    description: `ایده‌ی اول این بود که یه آیتم بالای شلف مثل عکس بذارم. شبیه یه کتاب که بالای شلف افتاده. روش نوشته باشه How My Portfolio Was Built و وقتی روش کلیک بشه، این صفحه‌ای که الان باز هست باز بشه.
+
+ایده‌ی خوشگل و خلاقانه‌ای بود. این رو برای تست پیاده‌سازی کردم، ولی تو عمل خیلی خوب نشد.
+
+یکی از زیبایی‌های صفحه، ساده و قابل‌فهم بودن شلف در نگاه اول بود. چشم دوست داره اول خطوط کلی تصویر رو ببینه و با پیدا کردن الگوها سریع متوجه بشه با چه چیزی روبه‌روئه. حضور یه جسم در جایی که چشم انتظارش رو نداره، از لذت دیدن یه دیزاین تمیز، صاف و پرسپکتیومحور کم می‌کرد.
+
+دوست نداشتم دیزاینم شلوغ‌تر بشه یا از زیبایی پرسپکتیوی که برای شلف ساخته بودم کم بشه.
+پس بی‌خیال این ایده شدم.`,
                 },
             },
             image: {
@@ -691,20 +718,38 @@ I had never used Codex like this before, and I was really amazed by its power an
                 lightboxSrc: historyImage20Large,
                 alt: "Portfolio history image 20",
             },
-            accent: "#56e0d2",
+            accent: "#ae96ff",
         },
         {
             id: "history-21",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Page Turned",
+                    description: `I felt really bad. I did not know where I could place the main button for seeing the history of my project. I also really did not want to give up on the project history page.
+
+I was busy with other parts of the project when the idea of turning a page suddenly came to my mind.
+
+It felt like a clean and good idea to me. It sat independently in the corner of the page, was not inside an unrelated section, was small but not lost, creative and fun, and it was something I had built something similar to before.
+
+I found the library I needed and implemented it.
+
+The problems, speed, animation behavior, and details had some annoying little challenges, but the final result became really lovely to me.
+
+I was really happy that the confusion I had from the start of the project about placing this feature was finally solved :)`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "ورق برگشت",
+                    description: `خیلی حس بدی داشتم. ایده‌ی اصلی قرار دادن دکمه‌ی دیدن تاریخچه‌ی پروژه‌م رو نمی‌دونستم کجا می‌تونم بذارم. دلم هم اصلا نمی‌اومد بی‌خیال صفحه‌ی تاریخچه‌ی پروژه‌م بشم.
+
+درگیر کارهای دیگه بودم، یهو ایده‌ی برگردوندن ورق به ذهنم رسید.
+
+به نظرم ایده‌ی تمیز و خوبی بود. گوشه‌ی صفحه به‌صورت مستقل بود و تو سکشن بی‌ربط نبود، کوچیک بود ولی تو صفحه گم نبود، خلاقانه و باحال بود و چیزی بود که قبلا یه چیزی شبیهش رو ساخته بودم.
+
+لایبرری مورد نیازش رو پیدا کردم و پیاده‌سازیش کردم.
+
+مشکلات و سرعت و مدل انیمیشن و ایناش یکم دنگ و فنگ داشت، ولی خروجی خیلی دوست‌داشتنی برام شده بود.
+
+خیلی خوشحال بودم که گنگی‌ای که از اول پروژه برای قرار دادن این فیچر داشتم، بالاخره حل شده بود :)`,
                 },
             },
             image: {
@@ -718,14 +763,24 @@ I had never used Codex like this before, and I was really amazed by its power an
             id: "history-22",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Story for Every Card",
+                    description: `I finalized the About Cards template for all sections, both in structure and style.
+
+I added a Story section to the cards. I was going to write the story of each card, the experience, and the things related to it in my own voice. This made it feel like it was really Ali’s work, not just a dry and cold resume with project or card information.
+
+Now, the only thing left was the very hard and time-consuming work of novel-writing for every card.
+
+You might not believe it, but filling a single card took an unbelievable amount of time. As I’m writing this, it is 2 AM, and I have spent today, yesterday, and the day before finalizing the text and small details of this gallery. There are still a few more slides left D:`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "داستان برای هر کارت",
+                    description: `تمپلیت قسمت About Cards رو برای همه‌ی سکشن‌ها از نظر ساختار و استایل نهایی کردم.
+
+به کارت‌ها قسمت Story اضافه کردم. توش قرار شد به زبون خودم داستان هر کارت، تجربه و چیزهای مربوط بهش رو بنویسم. اینجوری حس می‌کردم این واقعا کار علی هست، نه فقط یه رزومه‌ی خشک و سرد با اطلاعات پروژه یا کارت.
+
+حالا فقط کار خیلی سخت و زمان‌بر رمان‌نویسی برای هر کارت مونده بود.
+
+شاید باورت نشه، ولی به شکل غیرقابل‌باوری پر کردن یه کارت ازم زمان برد. الان که دارم این رو می‌نویسم ساعت ۲ صبحه و امروز، دیروز و روز قبلش رو برای نهایی‌سازی متن و ریزکاری‌های این گالری وقت گذاشتم. هنوز هم چند تا اسلاید دیگه مونده :D`,
                 },
             },
             image: {
@@ -733,7 +788,7 @@ I had never used Codex like this before, and I was really amazed by its power an
                 lightboxSrc: historyImage22Large,
                 alt: "Portfolio history image 22",
             },
-            accent: "#78a9ff",
+            accent: "#56e0d2",
         },
         {
             id: "history-23",
@@ -754,7 +809,7 @@ I had never used Codex like this before, and I was really amazed by its power an
                 lightboxSrc: historyImage23Large,
                 alt: "Portfolio history image 23",
             },
-            accent: "#b78cff",
+            accent: "#78a9ff",
         },
         {
             id: "history-24",
@@ -775,7 +830,7 @@ I had never used Codex like this before, and I was really amazed by its power an
                 lightboxSrc: historyImage24Large,
                 alt: "Portfolio history image 24",
             },
-            accent: "#48d7c7",
+            accent: "#b78cff",
         },
         {
             id: "history-25",
@@ -795,6 +850,27 @@ I had never used Codex like this before, and I was really amazed by its power an
                 src: historyImage25Small,
                 lightboxSrc: historyImage25Large,
                 alt: "Portfolio history image 25",
+            },
+            accent: "#48d7c7",
+        },
+        {
+            id: "history-26",
+            translations: {
+                en: {
+                    title: "Placeholder",
+                    description:
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                },
+                fa: {
+                    title: "متن جایگزین",
+                    description:
+                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                },
+            },
+            image: {
+                src: historyImage26Small,
+                lightboxSrc: historyImage26Large,
+                alt: "Portfolio history image 26",
             },
             accent: "#ff9d66",
         },

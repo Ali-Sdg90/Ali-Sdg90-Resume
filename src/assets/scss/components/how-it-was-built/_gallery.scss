@@ -178,11 +178,39 @@
     }
 
     &__description {
+        // border: 1px solid red;
         color: #98a2b4;
         font-size: clamp(0.9rem, 1vw, 1rem);
         line-height: 1.7;
         overflow-wrap: anywhere;
         white-space: pre-line;
+
+        // TODO: Restore the fixed height and scrollbar when description
+        // scrolling is revisited.
+        // max-height: 33rem;
+        // padding-inline-end: 0.65rem;
+        // overflow-x: hidden;
+        // overflow-y: auto;
+        // overscroll-behavior: contain;
+        // scrollbar-color: rgba(143, 172, 255, 0.48) transparent;
+        // scrollbar-width: thin;
+        //
+        // &::-webkit-scrollbar {
+        //     width: 5px;
+        // }
+        //
+        // &::-webkit-scrollbar-track {
+        //     background: transparent;
+        // }
+        //
+        // &::-webkit-scrollbar-thumb {
+        //     border-radius: 999px;
+        //     background: rgba(143, 172, 255, 0.42);
+        // }
+        //
+        // &::-webkit-scrollbar-thumb:hover {
+        //     background: rgba(143, 172, 255, 0.68);
+        // }
     }
 
     &__media-column {
