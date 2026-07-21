@@ -1,3 +1,10 @@
+## [1.16.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.7...v1.16.8) (2026-07-21)
+
+
+### Bug Fixes
+
+* write 3 more gallery story, add new image in middle of the gallery, gn ali :] ([a8b1d7e](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/a8b1d7ed2ba7f481497108232628426e46372d57))
+
 ## [1.16.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.6...v1.16.7) (2026-07-21)
 
 
