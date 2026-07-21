@@ -91,7 +91,10 @@
     }
 
     .build-gallery__thumbnail,
-    .build-gallery__image-button img {
+    .build-gallery__image-button img,
+    .build-story__language-toggle,
+    .build-story__language-toggle button,
+    .build-story__language-thumb {
         transition: none;
     }
 }

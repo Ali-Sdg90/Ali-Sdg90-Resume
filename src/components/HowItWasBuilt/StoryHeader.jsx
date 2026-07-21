@@ -24,12 +24,18 @@ const StoryHeader = ({
         </button>
 
         <div className="build-story__language-control">
-            <span>Image info</span>
+            <span>Gallery Language</span>
             <div
-                className="build-story__language-toggle"
+                className={`build-story__language-toggle${
+                    activeLanguage === "fa" ? " is-fa-active" : ""
+                }`}
                 aria-label="Change image information language"
                 role="group"
             >
+                <span
+                    className="build-story__language-thumb"
+                    aria-hidden="true"
+                />
                 {LANGUAGES.map(([language, label]) => (
                     <button
                         className={

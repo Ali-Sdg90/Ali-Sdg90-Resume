@@ -37,6 +37,7 @@ const PortfolioReveal = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isReturning, setIsReturning] = useState(false);
     const [isOnboarding, setIsOnboarding] = useState(false);
+    const [hasOpenedBuildStory, setHasOpenedBuildStory] = useState(false);
 
     const animateFoldTo = useCallback((targetDistance) => {
         const peel = peelRef.current;
@@ -164,6 +165,7 @@ const PortfolioReveal = ({ children }) => {
 
     const openPage = useCallback(() => {
         if (isOpenRef.current || isAnimatingRef.current) return;
+        setHasOpenedBuildStory(true);
         setIsReturning(false);
         buildStoryRef.current?.scrollTo({ top: 0 });
         triggerRef.current.hidden = true;
@@ -300,12 +302,14 @@ const PortfolioReveal = ({ children }) => {
                     aria-hidden={!isOpen}
                     inert={isOpen ? undefined : true}
                 >
-                    <HowItWasBuilt
-                        ref={buildStoryRef}
-                        isActive={isOpen && !isReturning}
-                        returnButtonRef={returnButtonRef}
-                        onReturn={closePage}
-                    />
+                    {hasOpenedBuildStory && (
+                        <HowItWasBuilt
+                            ref={buildStoryRef}
+                            isActive={isOpen && !isReturning}
+                            returnButtonRef={returnButtonRef}
+                            onReturn={closePage}
+                        />
+                    )}
                 </div>
                 <div className="peel-back" aria-hidden="true" />
                 <div
