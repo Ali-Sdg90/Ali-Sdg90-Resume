@@ -459,13 +459,13 @@ I improved the Career cards based on the design. They were no longer just an ima
             translations: {
                 en: {
                     title: "Choosing the Best Path",
-                    description: `I thought a lot about how to show the user more details about the shelf cards.
+                    description: `I thought a lot about how to show users more details about the shelf cards.
 
-One of the early ideas of the project, which felt really cool and scary to me, was that when the user clicked on a shelf card, a modal would open with an animation and show the card information inside it. The modal could be resized on the page, so the user could move modals around or have multiple ones open at the same time with different sizes.
+One of the early ideas, which felt really cool and scary to me, was opening an animated modal when the user clicked on a shelf card. It would show the card information inside, be resizable, and let users move multiple modals around the page with different sizes.
 
 It was a very big idea. I thought maybe it would become way bigger than my portfolio, or make interacting with the page too complicated.
 
-Then a simpler idea came to my mind. I could use this new About Me section, and when the user clicked on a card, it would show that card’s information inside this section. When no card was selected, it would show About Me.
+Then a simpler idea came to my mind. I could use this new About Me section, and when the user clicked on a card, it would show that card’s information there. When no card was selected, it would show About Me.
 
 It felt like a creative and good idea to me. With ChatGPT, I made the rough design and layout of the parts inside it, and I had a good plan to continue.`,
                 },
@@ -555,14 +555,31 @@ Then I thought I could use different widths for About Me and About Card, so when
             id: "history-16",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Building the Bigger Modal Model",
+                    description: `I finalized the design of the expanded state.
+
+I gave the section a small blur, and in my eyes it became really pretty.
+
+(Later, I will make the section font bigger in the expanded state.)
+
+I also made the open-section button look softer, but it is still a bit thicker than the final version in this screenshot.
+
+The section still does not have a scrollbar. The text also has a little too much space from the right side of the section.
+
+In the next step, I cleaned up the section.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "ساخت مدل مدال بزرگ‌تر",
+                    description: `دیزاین حالت expanded رو نهایی کردم.
+به سکشن یه blur ریز دادم و به دیدم خیلی خوشگل شد.
+
+(بعدا فونت سکشن رو تو حالت expanded بزرگ‌تر خواهم کرد.)
+
+ظاهر دکمه‌ی باز کردن سکشن رو هم نرم‌تر کردم، ولی هنوز یکم چاق‌تر از خروجی نهایی هست تو این عکس.
+
+هنوز سکشن اسکرول‌بار نداره. یکم هم فاصله‌ی متن تا سمت راست سکشن زیاده.
+
+تو مرحله‌ی بعد، تر و تمیزکاری سکشن رو انجام دادم.`,
                 },
             },
             image: {
@@ -576,14 +593,24 @@ Then I thought I could use different widths for About Me and About Card, so when
             id: "history-17",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Always Privacy First",
+                    description: `I gave the About Section a custom scrollbar. I manually adjusted its size, animation, delay, and movement speed until it felt natural, soft, and lovely to me.
+
+Here, I learned an important lesson. At first, I wanted to use photos from communities, meetings, and groups I had been part of in the card galleries, like governance meetings, general meetings, sprints, workshops, and so on. I had edited them heavily so no private information or people’s names would be visible, but it still did not feel right to put people’s faces on my site. Even with names and information removed, they might still not be okay with their photos being in my portfolio.
+
+I removed the photos that showed another person or their non-public information, and only used images of my work.
+
+Writing the stories and adding gallery images gave my project a lot of soul and personality. Like a person’s character, it is built with memories and the things they have experienced. Now my project was starting to gain memories and personality.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "Always Privacy First",
+                    description: `به About Section اسکرول‌بار کاستوم دادم. برای اندازه، انیمیشن، دیلی و سرعت حرکتش، دستی مقادیر رو بالا و پایین کردم و در نهایت به چشمم طبیعی و نرم و دوست‌داشتنی میومد.
+
+اینجا یه درس مهم یاد گرفتم. اول می‌خواستم تو گالری کارت‌ها عکس کامیونیتی، جلسات و گروه‌هایی که بودم رو بذارم. مثلا اسکرین‌شات جلسات گاورننس، عمومی، اسپرینت، کارگاه و غیره. عکس‌ها رو هم حسابی ادیت کرده بودم که هیچ اطلاعات خصوصی یا اسم افراد توش معلوم نباشه، ولی باز خیلی اوکی نبود بخوام عکس صورت افراد رو تو سایتم بذارم. حتی اگه اسم و تمامی اطلاعاتشون حذف شده باشه، باز شاید اون افراد راضی نباشن عکسشون تو پورتفولیوم باشه.
+
+عکس‌هایی که توش شخصی دیگه اطلاعات غیر پابلیکش معلوم بود رو حذف کردم و فقط از عکس‌های کار‌هام استفاده کردم.
+
+نوشتن داستان و اضافه کردن عکس گالری، خیلی به پروژه‌م روح و شخصیت داد. مثل شخصیت یه آدم، ساخته می‌شه با خاطرات و چیزایی که تجربه کرده. الان پروژه‌م خاطرات و شخصیت داشت به دست میاورد.`,
                 },
             },
             image: {
@@ -597,14 +624,24 @@ Then I thought I could use different widths for About Me and About Card, so when
             id: "history-18",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "The Power of Codex",
+                    description: `All the images I had up to this point were small 300 by 300 thumbnails. I wanted the image to be shown to the user inside a lightbox when they clicked on it. But the quality and size of all the images were small, so I needed both a small and a large version for all the shelf and project images.
+I only had the small versions of the images. I had also not saved the Photoshop files I used to finalize the shelf images while creating them.
+So I asked Codex for help. I told it to go into this folder, take the small images, and without changing anything inside the images, create sharper and higher-quality 600 by 600 versions, then put them in this folder.
+
+In almost 15 minutes, it created 28 images with the quality and exact result I wanted. Now, when the project shows an image, it always shows the low-size version, unless the user clicks on it and the image needs to be shown in the lightbox with better quality.
+
+I had never used Codex like this before, and I was really amazed by its power and quality :)`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "قدرت Codex",
+                    description: `تمام عکس‌هایی که تا اینجا داشتم، برای حالت thumbnail کوچیک و ۳۰۰ در ۳۰۰ بود. می‌خواستم وقتی کاربر روی هر عکس کلیک می‌کنه، تو یه lightbox عکس به کاربر نشون داده بشه. ولی الان کیفیت و سایز همه‌ی عکس‌ها کوچیک بود، پس نیاز بود از تمامی عکس‌های شلف و پروژه، ورژن عکس کوچیک و بزرگ داشته باشم.
+من فقط ورژن کوچیک عکس‌ها رو داشتم. فایل فتوشاپی هم که باهاشون عکس‌های شلف رو نهایی کرده بودم، موقع ساختنشون سیو نکرده بودم.
+پس از Codex کمک گرفتم. بهش گفتم برو تو این پوشه، عکس‌های کوچیک رو بدون تغییر هیچ چیز تو خود عکس، با سایز ۶۰۰ در ۶۰۰، با کیفیت بهتر و شارپ‌تر بساز و تو این پوشه بذار.
+
+تو تقریبا ۱۵ دقیقه، ۲۸ تا عکس رو با کیفیت و دقیقا همونی که می‌خواستم ساخت. حالا پروژه موقع نشون دادن عکس، همیشه نسخه‌ی کم‌حجم رو نشون می‌ده، مگر روی عکس کلیک بشه و عکس بخواد تو lightbox با کیفیت بهتر نشون داده بشه.
+
+تا حالا از Codex اینجوری استفاده نکرده بودم و خیلی از قدرت و کیفیتش کف کردم :)`,
                 },
             },
             image: {
