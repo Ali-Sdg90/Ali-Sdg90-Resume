@@ -1,3 +1,10 @@
+## [1.16.10](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.9...v1.16.10) (2026-07-23)
+
+
+### Bug Fixes
+
+* finalize the h.m.p.w.c. page!!!, later need to work on adding scrollbar and mobile view ([3d98c3a](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/3d98c3a214196d0f70ea7878390ec7411e70d3c3))
+
 ## [1.16.9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.8...v1.16.9) (2026-07-23)
 
 
