@@ -431,7 +431,7 @@ I created the new design image with ChatGPT and started building it.`,
             id: "history-12",
             translations: {
                 en: {
-                    title: "Strange New Section",
+                    title: "A Strange Tilted Section",
                     description: `I built the new section. I named it About Section.
 
 The fact that the text inside it was tilted looked a bit strange to me. It felt strange because this section was meant for reading, and this perspective felt a little tiring and uncomfortable for the eyes.
@@ -441,7 +441,7 @@ I gave myself some time to spend more time with it, maybe I was just being sensi
 I improved the Career cards based on the design. They were no longer just an image with text under it. They became closer to the new design, better, more professional, and prettier.`,
                 },
                 fa: {
-                    title: "سکشن جدید عجیب",
+                    title: "سکشن عجیب کج",
                     description: `سکشن جدید رو ساختم. اسمش رو About Section گذاشتم.
 
 یکم اینکه متن توش کج بود، به چشمم عجیب میومد. این عجیبی به خاطر این بود که این سکشن برای خوندن بود و این پرسپکتیو یکم خسته‌کننده و اذیت‌کننده برای چشم بود.
@@ -597,7 +597,7 @@ In the next step, I cleaned up the section.`,
             id: "history-17",
             translations: {
                 en: {
-                    title: "My Conscience Is at Ease",
+                    title: "Privacy First",
                     description: `I gave the About Section a custom scrollbar. I manually adjusted its size, animation, delay, and movement speed until it felt natural, soft, and lovely to me.
 
 Here, I learned an important lesson. At first, I wanted to use photos from communities, meetings, and groups I had been part of in the card galleries, like governance meetings, general meetings, sprints, workshops, and so on. I had edited them heavily so no private information or people’s names would be visible, but it still did not feel right to put people’s faces on my site. Even with names and information removed, they might still not be okay with their photos being in my portfolio.
@@ -607,7 +607,7 @@ I removed the photos that showed another person or their non-public information,
 Writing the stories and adding gallery images gave my project a lot of soul and personality. Like a person’s character, it is built with memories and the things they have experienced. Now my project was starting to gain memories and personality.`,
                 },
                 fa: {
-                    title: "وجدانم باید راحت باشه",
+                    title: "Privacy First",
                     description: `به About Section اسکرول‌بار کاستوم دادم. برای اندازه، انیمیشن، دیلی و سرعت حرکتش، دستی مقادیر رو بالا و پایین کردم و در نهایت به چشمم طبیعی و نرم و دوست‌داشتنی میومد.
 
 اینجا یه درس مهم یاد گرفتم. اول می‌خواستم تو گالری کارت‌ها عکس کامیونیتی، جلسات و گروه‌هایی که بودم رو بذارم. مثلا اسکرین‌شات جلسات گاورننس، عمومی، اسپرینت، کارگاه و غیره. عکس‌ها رو هم حسابی ادیت کرده بودم که هیچ اطلاعات خصوصی یا اسم افراد توش معلوم نباشه، ولی باز خیلی اوکی نبود بخوام عکس صورت افراد رو تو سایتم بذارم. حتی اگه اسم و تمامی اطلاعاتشون حذف شده باشه، باز شاید اون افراد راضی نباشن عکسشون تو پورتفولیوم باشه.
@@ -628,7 +628,7 @@ Writing the stories and adding gallery images gave my project a lot of soul and 
             id: "history-18",
             translations: {
                 en: {
-                    title: "Thanks to AI Overloards",
+                    title: "Thanks to AI Overlords",
                     description: `All the images I had up to this point were small 300 by 300 thumbnails. I wanted the image to be shown to the user inside a lightbox when they clicked on it. But the quality and size of all the images were small, so I needed both a small and a large version for all the shelf and project images.
 I only had the small versions of the images. I had also not saved the Photoshop files I used to finalize the shelf images while creating them.
 So I asked Codex for help. I told it to go into this folder, take the small images, and without changing anything inside the images, create sharper and higher-quality 600 by 600 versions, then put them in this folder.
@@ -638,7 +638,7 @@ In almost 15 minutes, it created 28 images with the quality and exact result I w
 I had never used Codex like this before, and I was really amazed by its power and quality :)`,
                 },
                 fa: {
-                    title: "تشکر از AI Overloards",
+                    title: "تشکر از AI Overlords",
                     description: `تمام عکس‌هایی که تا اینجا داشتم، برای حالت thumbnail کوچیک و ۳۰۰ در ۳۰۰ بود. می‌خواستم وقتی کاربر روی هر عکس کلیک می‌کنه، تو یه lightbox عکس به کاربر نشون داده بشه. ولی الان کیفیت و سایز همه‌ی عکس‌ها کوچیک بود، پس نیاز بود از تمامی عکس‌های شلف و پروژه، ورژن عکس کوچیک و بزرگ داشته باشم.
 من فقط ورژن کوچیک عکس‌ها رو داشتم. فایل فتوشاپی هم که باهاشون عکس‌های شلف رو نهایی کرده بودم، موقع ساختنشون سیو نکرده بودم.
 پس از Codex کمک گرفتم. بهش گفتم برو تو این پوشه، عکس‌های کوچیک رو بدون تغییر هیچ چیز تو خود عکس، با سایز ۶۰۰ در ۶۰۰، با کیفیت بهتر و شارپ‌تر بساز و تو این پوشه بذار.
@@ -659,7 +659,7 @@ I had never used Codex like this before, and I was really amazed by its power an
             id: "history-19",
             translations: {
                 en: {
-                    title: "The Project's Gem",
+                    title: "Project Gem",
                     description: `One of the features that came to my mind in the middle of the work, and felt really important and cool to me, was this history of how I built my project.
 
 It felt like a memory note from the project for myself, while others could join my mental journey, see how it grew, what problems I ran into, and how I solved them.
@@ -670,7 +670,7 @@ I wanted it to be a separate page inside my project, so I thought a lot about wh
 Every part of the page had its own reason to be there, and I could not just place a random button somewhere. In the end, I came up with two ideas for placing it, which we will see in the next two slides.`,
                 },
                 fa: {
-                    title: "گل پروژه",
+                    title: "گوهر پروژه",
                     description: `یکی از فیچرهایی که وسط کار به ذهنم رسید و به نظرم خیلی مهم و باحال بود، همین تاریخچه‌ی اینکه چطور پروژه‌م رو ساختم بود.
 
 بودنش شبیه یه یادداشت خاطره از پروژه‌م برای خودم بود و بقیه می‌تونستن همراه من سفر ذهنی کنن که چجوری پروژه رو ساختم، رشدش چطور بود، به چه مشکلاتی خوردم و چطور حلشون کردم.
@@ -827,7 +827,7 @@ This feature might still get lost in the user’s view, but I did not want to ma
             id: "history-24",
             translations: {
                 en: {
-                    title: "Too Tall",
+                    title: "Being tall is not always good",
                     description: `For the design of the portfolio history page, my first idea was a ladder-like layout. A very long page where images and text sit next to each other, and the user can scroll through it.
 
 After building the first template, I realized it did not have a good user experience. With this design, I would not really stop at each image to carefully look at the text and the image. I just wanted to keep scrolling until I reached the bottom of the page.
@@ -837,7 +837,7 @@ I wanted this page to be the beautiful gem of my project, and I really did not w
 So the design had to change.`,
                 },
                 fa: {
-                    title: "زیادی قدش بلنده",
+                    title: "مشکلات قد بلند",
                     description: `برای طراحی صفحه‌ی تاریخچه‌ی پورتفولیو، ایده‌ی اولیه‌م حالت نردبونی بود. یه صفحه‌ی خیلی دراز که عکس و نوشته کنار هم هستن و کاربر می‌تونه اسکرول کنه.
 
 بعد از ساخت تمپلیت اولیه‌ش، دیدم تجربه‌ی کاربری خوبی نداره. با این دیزاین من واقعا سر هر عکس ایست نمی‌کردم تا با دقت متن و عکس رو ببینم و بخونم، فقط می‌خواستم اسکرول کنم تا پایین صفحه برم.
@@ -893,7 +893,7 @@ It felt like a good idea to me, so I went for implementing it.`,
                     description: `The new design was implemented too.
 I also added some small and pretty intro animations to it. Similar to Apple’s website, I tried to create a nice feeling of entering the page.
 
-There might also be an easter egg on the page that needs to be clicked 10 times before it runs :)
+There might also be an easter egg on the page that needs to be clicked 6 times before it runs :)
 
 I added the footer, copyright notice, and the project’s custom license to the project too.
 
@@ -904,7 +904,7 @@ Everything felt pretty okay. The only things left were filling the card informat
                     description: `پیاده‌سازی دیزاین جدید هم انجام شد.
 انیمیشن‌های intro ریز و خوشگلی هم بهش دادم. شبیه سایت Apple سعی کردم حس ورود به صفحه رو بسازم.
 
-تو صفحه هم شاید یه ایستر اگ گذاشته باشم که لازم باشه ۱۰ بار روش کلیک بشه تا اجرا بشه :)
+تو صفحه هم شاید یه ایستر اگ گذاشته باشم که لازم باشه ۶ بار روش کلیک بشه تا اجرا بشه :)
 
 فوتر، حق کپی‌رایت و لایسنس کاستوم پروژه رو هم به پروژه اضافه کردم.
 

@@ -12,7 +12,7 @@ const HowItWasBuilt = forwardRef(function HowItWasBuilt(
     scrollContainerRef,
 ) {
     const prefersReducedMotion = useReducedMotion();
-    const [activeLanguage, setActiveLanguage] = useState("en");
+    const [activeLanguage, setActiveLanguage] = useState("fa");
     const [selectedIndex, setSelectedIndex] = useState(0);
     const { page, chapters } = howItWasBuiltData;
 
