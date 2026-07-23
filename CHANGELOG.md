@@ -1,3 +1,10 @@
+## [1.16.9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.8...v1.16.9) (2026-07-23)
+
+
+### Bug Fixes
+
+* finish the story for images in gallery, improve titles for slides and make them more fun, start deep reviewing the section ([f19c3a3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/f19c3a30ae7b88c02d55ac425b3fb6c1546d020c))
+
 ## [1.16.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.7...v1.16.8) (2026-07-21)
 
 
