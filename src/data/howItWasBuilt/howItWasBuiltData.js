@@ -51,6 +51,8 @@ import historyImage25Small from "../../assets/images/history-class/small-images/
 import historyImage26Large from "../../assets/images/history-class/large-images/img26.png";
 import historyImage26Small from "../../assets/images/history-class/small-images/img26.jpg";
 
+// import placeholderImageSmall from "../../assets/images/global/placeholder.jpg";
+
 export const howItWasBuiltData = {
     page: {
         title: "How My Portfolio Was Built",
@@ -64,7 +66,7 @@ export const howItWasBuiltData = {
             id: "history-01",
             translations: {
                 en: {
-                    title: "Shaping the First Vision",
+                    title: "First Vision",
                     description: `I always wanted to have a personal portfolio. A place where I could show the things I’ve built in one place, but not just as a simple normal page. I wanted the portfolio to fully feel like Ali. Something that made it clear from the start that it was built with my own creativity and personality.
 
 Something like a hub. A connection point for my projects, my resume, my social media links, and the things related to me.
@@ -76,7 +78,7 @@ I even thought it might be fun to have Ali on the side, waving in stop motion, f
 I drew the first version of the idea very simply in Paint, and this became the first initial design of the project.`,
                 },
                 fa: {
-                    title: "رسیدن به ویژن اولیه",
+                    title: "ویژن اولیه",
                     description: `من همیشه دوست داشتم یه پورتفولیوی شخصی داشته باشم؛ جایی که بتونم ساخته‌هام رو یک‌جا به نمایش بذارم، ولی فقط یه صفحه‌ی ساده و معمولی نباشه. می‌خواستم پورتفولیو کاملا به مدل علی باشه. چیزی که از همون اول معلوم باشه با خلاقیت و شخصیت خودم ساخته شده.
 
 یه چیزی شبیه یه هاب؛ یه نقطه‌ی اتصال برای پروژه‌هام، رزومه‌م، لینک‌های سوشال مدیاهام و چیزهایی که به من مربوط می‌شن.
@@ -99,7 +101,7 @@ I drew the first version of the idea very simply in Paint, and this became the f
             id: "history-02",
             translations: {
                 en: {
-                    title: "Shaping the First Design",
+                    title: "First Design",
                     description: `I told ChatGPT about my idea, the vision I had for it, and how I wanted it to be built. I also gave it my resume, and we talked about the design of my portfolio together.
 
 In the end, we got to this image. It felt really special, creative, and exciting to me.
@@ -113,7 +115,7 @@ The design was something I was excited to build myself. I also had some experien
 So now that I had the design and the vision, I could start the project.`,
                 },
                 fa: {
-                    title: "رسیدن به دیزاین اولیه",
+                    title: "دیزاین اولیه",
                     description: `ایده‌م رو به چت‌جی‌پی‌تی گفتم، ویژنی که براش داشتم و می‌خواستم اونجوری ساخته بشه. همراه ایده‌م، رزومه‌م رو هم بهش دادم و با هم راجب دیزاین پورتفولیوم گپ زدیم.
 
 در نهایت به این عکس رسیدیم. چیزی بود که به نظرم خیلی خاص و خلاقانه و جذاب بود.
@@ -200,7 +202,7 @@ Now it was time to arrange them.`,
             id: "history-05",
             translations: {
                 en: {
-                    title: "The Fight With Perspective",
+                    title: "Playing with Perspective",
                     description: `Placing the cards according to the perspective of the shelf image was a really complicated process...
 
 It was all about playing with the perspective origin, the perspective value, and the X, Y, and Z rotation angles of the cards...
@@ -214,7 +216,7 @@ At this stage, I only used the Things I’ve Built row as my working reference a
 So later, I could go back and find the correct values for each shelf.`,
                 },
                 fa: {
-                    title: "نبرد با پرسپکتیو",
+                    title: "بازی با پرسپکتیو",
                     description: `قرار دادن کارت‌ها طبق پرسپکتیو عکس شلف، پروسه خیلی پیچیده‌ای بود...
 
 همش بازی با اوریجین پرسپکتیو، مقدار پرسپکتیو، زاویه‌های X و Y و Z چرخش کارت‌ها...
@@ -239,7 +241,7 @@ So later, I could go back and find the correct values for each shelf.`,
             id: "history-06",
             translations: {
                 en: {
-                    title: "Victory Over Perspective",
+                    title: "It Moves!",
                     description: `With a lot of precision, I managed to get the card angles right!
 
 I kept telling myself that if I could not get the angles right, it would be the first thing people would notice unconsciously at first glance, and it could make all the work I had done, and all the work ahead of me, feel worthless. If it looked off, the user would feel that something here is wrong. It does not feel natural.
@@ -251,7 +253,7 @@ Then I added the infinite card behavior, the acceleration and natural dragging b
 The movement speed of the cards and the amount of friction when they were thrown felt natural and fun to me.`,
                 },
                 fa: {
-                    title: "پیروزی بر پرسپکتیو",
+                    title: "تکون میخوره!",
                     description: `با ظرافت خیلی زیاد تونستم زاویه‌ی کارت‌ها رو درست دربیارم!
 
 با خودم می‌گفتم اگه نتونم زاویه‌ها رو درست دربیارم، اولین چیزی هست که به‌صورت ناخودآگاه توی دید اول به چشم میاد و می‌تونه کل زحمات الان و آینده‌م رو بی‌ارزش کنه. اگه مشکل‌دار باشه، کاربر می‌گه اینجا یه چیزی اشتباهه. طبیعی نیست.
@@ -274,7 +276,7 @@ The movement speed of the cards and the amount of friction when they were thrown
             id: "history-07",
             translations: {
                 en: {
-                    title: "Shaping the Shelf's DNA",
+                    title: "Injecting DNA into the Shelf",
                     description: `I also made the card width separate data for each row. Now the length, width, angle, perspective, speed, behavior, and data of each row were unique to that row, and were passed into the template file to be built.
 
 I finalized the short descriptions of my projects, added square placeholders for the images, and improved the style and spacing of the cards.
@@ -282,7 +284,7 @@ I finalized the short descriptions of my projects, added square placeholders for
 For the first time, I could really see how beautiful it was going to become!`,
                 },
                 fa: {
-                    title: "شکل دادن DNA شلف",
+                    title: "تزریق DNA شلف",
                     description: `عرض کارت‌ها هم دیتای جدا برای هر ردیف کردم. الان طول، عرض، زاویه، پرسپکتیو، سرعت، رفتار و دیتای هر ردیف، مختص به خودش بود و برای ساخته شدن، به فایل تمپلیت داده می‌شد.
 
 دیسکریپشن کوتاه پروژه‌هام رو نهایی کردم، برای عکس‌ها مربع پلیس‌هولدر گذاشتم و استایل و فاصله‌گذاری کارت‌ها رو بهتر کردم.
@@ -301,7 +303,7 @@ For the first time, I could really see how beautiful it was going to become!`,
             id: "history-08",
             translations: {
                 en: {
-                    title: "Shaping the Project's Soul",
+                    title: "My Baby is Alive!",
                     description: `I added the images for the Tech Stack and Career sections.
 
 All of the images needed a quick visit to Photoshop so their size would be exactly 300 by 300, and so the logos would not stick too close to the border. I wanted them to have a little bit of space and sit nicely inside the cards. (This gets much better later.)
@@ -313,7 +315,7 @@ Now my project was not just a single blue color anymore. It felt like it had gai
 And I do not know why this screenshot is so much brighter than the others... but it turned out cool :)`,
                 },
                 fa: {
-                    title: "شکل دادن روح پروژه",
+                    title: "بچم زندست!",
                     description: `عکس‌های قسمت Tech Stack و Career رو گذاشتم.
 
 عکس‌ها همشون نیاز بود یه بار سر به فتوشاپ بزنن که اندازه‌شون حتما ۳۰۰ در ۳۰۰ بشه و تا جای ممکن لوگو خیلی به بوردر نچسبه و یکم فاصله داشته باشه که خوشگل تو کارت بشینه. (بعدا این خیلی بهترتر می‌شه)
@@ -367,7 +369,7 @@ Oh, and yeah, I also filled the left side of the page.`,
             id: "history-10",
             translations: {
                 en: {
-                    title: "Changing Direction",
+                    title: "Two Different Worlds",
                     description: `For testing, I took a photo of myself with the outfit and lighting angle I had in the design, and placed it inside the project.
 
 It was really disappointing for me to see that having my own photo on the page did not work well.
@@ -379,7 +381,7 @@ There was another problem too. Having my photo there grabbed too much attention.
 So this was a failed but cool test, and saw that I needed to change the design of the project.`,
                 },
                 fa: {
-                    title: "تغییر مسیر",
+                    title: "دو دنیای متفاوت",
                     description: `برای تست، یه عکس از خودم با لباس و زاویه‌ی نوری‌ای که تو دیزاین داشتم گرفتم و تو پروژه گذاشتم.
 
 برام خیلی ناراحت‌کننده بود که دیدم بودن عکس خودم تو صفحه خوب جواب نمی‌ده.
@@ -495,7 +497,7 @@ It felt like a creative and good idea to me. With ChatGPT, I made the rough desi
             id: "history-14",
             translations: {
                 en: {
-                    title: "Implementing the Dynamic Modal",
+                    title: "Dynamic Model",
                     description: `I implemented the dynamic model of the About Section.
 
 It looked pretty and cool to me. The only thing was that the content inside it felt a little too small and tiny.
@@ -505,7 +507,7 @@ I wanted each card to also have a description and story section, where I could w
 I also made the whole section straight and removed the tilted perspective from it.`,
                 },
                 fa: {
-                    title: "پیاده‌سازی مدال داینامیک",
+                    title: "مدال‌ داینامیک",
                     description: `مدل داینامیک About Section رو پیاده‌سازی کردم.
 
 به چشمم خوشگل و باحال میومد. فقط محتواهای داخلش یه کم زیادی کوچیک و ریز به چشمم میومد.
@@ -526,7 +528,7 @@ I also made the whole section straight and removed the tilted perspective from i
             id: "history-15",
             translations: {
                 en: {
-                    title: "The Accordion Modal Begins",
+                    title: "Myself in a Modal",
                     description: `I finally wrote the About Me text. I really tried to make it feel exactly, exactly like myself, but it was a little longer than I wanted. For now, I kept it like this so I could come back to it later.
 
 I finalized the width of the About Me section and started adding the expanded state for the About Section.
@@ -536,7 +538,7 @@ The first implementation did not have a very pretty icon, but it was still a sta
 Then I thought I could use different widths for About Me and About Card, so when switching between these two modes, there would be a width difference between them. It is a simple effect, but it looks nice to the eye.`,
                 },
                 fa: {
-                    title: "شروع مودال آکاردئونی",
+                    title: "خودم تو مودال",
                     description: `متن About Me رو بالاخره نوشتم. خیلی سعی کردم متن دقیقا خود خود خودم باشه، ولی یکم طولانی‌تر از چیزی بود که دوست داشتم. فعلا همین رو نگه داشتم تا بعدا دوباره بهش سر بزنم.
 
 عرض سکشن About Me رو نهایی کردم و شروع کردم به اضافه کردن حالت expanded سکشن About Section.
@@ -557,7 +559,7 @@ Then I thought I could use different widths for About Me and About Card, so when
             id: "history-16",
             translations: {
                 en: {
-                    title: "Building the Bigger Modal Model",
+                    title: "Elastic Modal",
                     description: `I finalized the design of the expanded state.
 
 I gave the section a small blur, and in my eyes it became really pretty.
@@ -571,7 +573,7 @@ The section still does not have a scrollbar. The text also has a little too much
 In the next step, I cleaned up the section.`,
                 },
                 fa: {
-                    title: "ساخت مدل مدال بزرگ‌تر",
+                    title: "مودال الاستیک",
                     description: `دیزاین حالت expanded رو نهایی کردم.
 به سکشن یه blur ریز دادم و به دیدم خیلی خوشگل شد.
 
@@ -595,7 +597,7 @@ In the next step, I cleaned up the section.`,
             id: "history-17",
             translations: {
                 en: {
-                    title: "Always Privacy First",
+                    title: "My Conscience Is at Ease",
                     description: `I gave the About Section a custom scrollbar. I manually adjusted its size, animation, delay, and movement speed until it felt natural, soft, and lovely to me.
 
 Here, I learned an important lesson. At first, I wanted to use photos from communities, meetings, and groups I had been part of in the card galleries, like governance meetings, general meetings, sprints, workshops, and so on. I had edited them heavily so no private information or people’s names would be visible, but it still did not feel right to put people’s faces on my site. Even with names and information removed, they might still not be okay with their photos being in my portfolio.
@@ -605,7 +607,7 @@ I removed the photos that showed another person or their non-public information,
 Writing the stories and adding gallery images gave my project a lot of soul and personality. Like a person’s character, it is built with memories and the things they have experienced. Now my project was starting to gain memories and personality.`,
                 },
                 fa: {
-                    title: "Always Privacy First",
+                    title: "وجدانم باید راحت باشه",
                     description: `به About Section اسکرول‌بار کاستوم دادم. برای اندازه، انیمیشن، دیلی و سرعت حرکتش، دستی مقادیر رو بالا و پایین کردم و در نهایت به چشمم طبیعی و نرم و دوست‌داشتنی میومد.
 
 اینجا یه درس مهم یاد گرفتم. اول می‌خواستم تو گالری کارت‌ها عکس کامیونیتی، جلسات و گروه‌هایی که بودم رو بذارم. مثلا اسکرین‌شات جلسات گاورننس، عمومی، اسپرینت، کارگاه و غیره. عکس‌ها رو هم حسابی ادیت کرده بودم که هیچ اطلاعات خصوصی یا اسم افراد توش معلوم نباشه، ولی باز خیلی اوکی نبود بخوام عکس صورت افراد رو تو سایتم بذارم. حتی اگه اسم و تمامی اطلاعاتشون حذف شده باشه، باز شاید اون افراد راضی نباشن عکسشون تو پورتفولیوم باشه.
@@ -626,7 +628,7 @@ Writing the stories and adding gallery images gave my project a lot of soul and 
             id: "history-18",
             translations: {
                 en: {
-                    title: "The Power of Codex",
+                    title: "Thanks to AI Overloards",
                     description: `All the images I had up to this point were small 300 by 300 thumbnails. I wanted the image to be shown to the user inside a lightbox when they clicked on it. But the quality and size of all the images were small, so I needed both a small and a large version for all the shelf and project images.
 I only had the small versions of the images. I had also not saved the Photoshop files I used to finalize the shelf images while creating them.
 So I asked Codex for help. I told it to go into this folder, take the small images, and without changing anything inside the images, create sharper and higher-quality 600 by 600 versions, then put them in this folder.
@@ -636,7 +638,7 @@ In almost 15 minutes, it created 28 images with the quality and exact result I w
 I had never used Codex like this before, and I was really amazed by its power and quality :)`,
                 },
                 fa: {
-                    title: "قدرت Codex",
+                    title: "تشکر از AI Overloards",
                     description: `تمام عکس‌هایی که تا اینجا داشتم، برای حالت thumbnail کوچیک و ۳۰۰ در ۳۰۰ بود. می‌خواستم وقتی کاربر روی هر عکس کلیک می‌کنه، تو یه lightbox عکس به کاربر نشون داده بشه. ولی الان کیفیت و سایز همه‌ی عکس‌ها کوچیک بود، پس نیاز بود از تمامی عکس‌های شلف و پروژه، ورژن عکس کوچیک و بزرگ داشته باشم.
 من فقط ورژن کوچیک عکس‌ها رو داشتم. فایل فتوشاپی هم که باهاشون عکس‌های شلف رو نهایی کرده بودم، موقع ساختنشون سیو نکرده بودم.
 پس از Codex کمک گرفتم. بهش گفتم برو تو این پوشه، عکس‌های کوچیک رو بدون تغییر هیچ چیز تو خود عکس، با سایز ۶۰۰ در ۶۰۰، با کیفیت بهتر و شارپ‌تر بساز و تو این پوشه بذار.
@@ -668,7 +670,7 @@ I wanted it to be a separate page inside my project, so I thought a lot about wh
 Every part of the page had its own reason to be there, and I could not just place a random button somewhere. In the end, I came up with two ideas for placing it, which we will see in the next two slides.`,
                 },
                 fa: {
-                    title: "ایده‌ی گلِ پروژه",
+                    title: "گل پروژه",
                     description: `یکی از فیچرهایی که وسط کار به ذهنم رسید و به نظرم خیلی مهم و باحال بود، همین تاریخچه‌ی اینکه چطور پروژه‌م رو ساختم بود.
 
 بودنش شبیه یه یادداشت خاطره از پروژه‌م برای خودم بود و بقیه می‌تونستن همراه من سفر ذهنی کنن که چجوری پروژه رو ساختم، رشدش چطور بود، به چه مشکلاتی خوردم و چطور حلشون کردم.
@@ -691,7 +693,7 @@ Every part of the page had its own reason to be there, and I could not just plac
             id: "history-20",
             translations: {
                 en: {
-                    title: "It Didn’t Land Well",
+                    title: "Pretty but Nah...",
                     description: `The first idea was to put an item on top of the shelf, like in the image. Something like a book lying on the shelf, with “How My Portfolio Was Built” written on it. When clicked, it would open the page that is open right now.
 
 It was a pretty and creative idea. I implemented it for testing, but in practice it did not work very well.
@@ -702,7 +704,7 @@ I did not want my design to become more crowded or lose the beauty of the perspe
 So I gave up on this idea.`,
                 },
                 fa: {
-                    title: "نتونست خوب بشینه",
+                    title: "خوشگله ولی نه...",
                     description: `ایده‌ی اول این بود که یه آیتم بالای شلف مثل عکس بذارم. شبیه یه کتاب که بالای شلف افتاده. روش نوشته باشه How My Portfolio Was Built و وقتی روش کلیک بشه، این صفحه‌ای که الان باز هست باز بشه.
 
 ایده‌ی خوشگل و خلاقانه‌ای بود. این رو برای تست پیاده‌سازی کردم، ولی تو عمل خیلی خوب نشد.
@@ -763,7 +765,7 @@ I was really happy that the confusion I had from the start of the project about 
             id: "history-22",
             translations: {
                 en: {
-                    title: "Story for Every Card",
+                    title: "Every Card Story",
                     description: `I finalized the About Cards template for all sections, both in structure and style.
 
 I added a Story section to the cards. I was going to write the story of each card, the experience, and the things related to it in my own voice. This made it feel like it was really Ali’s work, not just a dry and cold resume with project or card information.
@@ -773,7 +775,7 @@ Now, the only thing left was the very hard and time-consuming work of novel-writ
 You might not believe it, but filling a single card took an unbelievable amount of time. As I’m writing this, it is 2 AM, and I have spent today, yesterday, and the day before finalizing the text and small details of this gallery. There are still a few more slides left D:`,
                 },
                 fa: {
-                    title: "داستان برای هر کارت",
+                    title: "داستان هر کارت",
                     description: `تمپلیت قسمت About Cards رو برای همه‌ی سکشن‌ها از نظر ساختار و استایل نهایی کردم.
 
 به کارت‌ها قسمت Story اضافه کردم. توش قرار شد به زبون خودم داستان هر کارت، تجربه و چیزهای مربوط بهش رو بنویسم. اینجوری حس می‌کردم این واقعا کار علی هست، نه فقط یه رزومه‌ی خشک و سرد با اطلاعات پروژه یا کارت.
@@ -794,14 +796,24 @@ You might not believe it, but filling a single card took an unbelievable amount 
             id: "history-23",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Look at Me!!",
+                    description: `At this point, the project had reached a stage where I wanted to use its link on my social media and introduce it to people I knew. So I added a temporary Toast saying that the project was still in progress, and that this link could be used to follow its progress.
+
+Clicking and opening the project history page was not very obvious, so I added an onboarding-like behavior for the feature. Eight seconds after entering the page, the edge of the page would lift a little to quietly grab some attention.
+
+I chose eight seconds because, from my own experience, it took about that long for the eye to see and understand the elements on the page.
+Once the eye understood the page, a small attention grab would happen in the corner so the viewer would not miss this feature.
+This feature might still get lost in the user’s view, but I did not want to make it any louder than this. Someone who cares and wants to explore will notice it. Someone who does not care might be better off not finding it.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "منو ببین!!",
+                    description: `اینجا پروژه به جایی رسیده بود که خواستم از لینکش تو سوشال‌مدیاهام استفاده کنم و به آشناهام معرفیش کنم. برای همین یه Toast موقت به صفحه اضافه کردم که توش می‌گم این پروژه هنوز داره روش کار می‌شه و تموم نشده. می‌تونی با این لینک پیشرفت پروژه‌م رو ببینی.
+
+کلیک و باز کردن صفحه‌ی تاریخچه‌ی پروژه‌م خیلی معلوم نبود، پس یه حالت onboarding برای فیچر گذاشتم که ۸ ثانیه بعد از ورود به صفحه، لبه‌ی ورق یه کم بالا بیاد و کمی جلب توجه کنه.
+۸ ثانیه گذاشتم چون با تجربه‌ی خودم، تقریبا ۸ ثانیه طول می‌کشید تا چشم بتونه المنت‌های صفحه رو ببینه و درک کنه.
+وقتی چشم فهمید صفحه چی هست، اون‌موقع یه جلب توجه ریز گوشه‌ی صفحه انجام می‌شه که یه وقت این فیچر رو بیننده از دست نده.
+
+باز هم ممکنه این فیچر تو دید کاربر گم بشه، ولی نمی‌خواستم بیشتر از این جلب توجهش رو بولدتر کنم. کسی که بخواد و براش مهم باشه، متوجهش می‌شه. کسی که براش مهم نباشه، پیدا نکردن فیچر شاید براش بهتر باشه.`,
                 },
             },
             image: {
@@ -815,14 +827,24 @@ You might not believe it, but filling a single card took an unbelievable amount 
             id: "history-24",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Too Tall",
+                    description: `For the design of the portfolio history page, my first idea was a ladder-like layout. A very long page where images and text sit next to each other, and the user can scroll through it.
+
+After building the first template, I realized it did not have a good user experience. With this design, I would not really stop at each image to carefully look at the text and the image. I just wanted to keep scrolling until I reached the bottom of the page.
+
+I wanted this page to be the beautiful gem of my project, and I really did not want to just leave it like that and call it good enough...
+
+So the design had to change.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "زیادی قدش بلنده",
+                    description: `برای طراحی صفحه‌ی تاریخچه‌ی پورتفولیو، ایده‌ی اولیه‌م حالت نردبونی بود. یه صفحه‌ی خیلی دراز که عکس و نوشته کنار هم هستن و کاربر می‌تونه اسکرول کنه.
+
+بعد از ساخت تمپلیت اولیه‌ش، دیدم تجربه‌ی کاربری خوبی نداره. با این دیزاین من واقعا سر هر عکس ایست نمی‌کردم تا با دقت متن و عکس رو ببینم و بخونم، فقط می‌خواستم اسکرول کنم تا پایین صفحه برم.
+
+من می‌خواستم این صفحه گوهر خوشگل پروژه‌م باشه و دلم نمی‌اومد همین‌جوری ولش کنم و بگم گود اینافه...
+
+پس دیزاین رو لازم بود عوض کنم.`,
                 },
             },
             image: {
@@ -836,14 +858,24 @@ You might not believe it, but filling a single card took an unbelievable amount 
             id: "history-25",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Better Frame",
+                    description: `In the best design tool ever, MS Paint, I sketched the idea of placing the images and text in a gallery-like layout.
+
+I wanted the user to no longer be forced to scroll through a long page, then keep gently moving the scrollbar up and down just to get the image and text exactly in view. If it had stayed like that, the user would probably just give up on reading and seeing the page.
+
+With this model, everything would sit inside one clear box. The user could choose which frame to see, which language to read it in, and how fast they wanted to move through the sections.
+
+It felt like a good idea to me, so I went for implementing it.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "قاب بهتر",
+                    description: `تو بهترین برنامه‌ی دیزاین، MS Paint، ایده‌ی قرارگیری عکس‌ها و متن‌ها به حالت گالری رو کشیدم.
+
+می‌خواستم کاربر دیگه مجبور نباشه وسط یه صفحه‌ی بلند اسکرول کنه، بعد هی اسکرول‌بار رو آروم بالا و پایین ببره تا عکس و متن دقیقا جلوی چشمش قرار بگیرن. اگه اون حالت می‌موند، احتمالا خیلی راحت بی‌خیال خوندن و دیدن صفحه می‌شد.
+
+با این مدل، همه‌چیز داخل یه باکس مشخص قرار می‌گرفت. کاربر می‌تونست خودش انتخاب کنه کدوم فریم رو ببینه، با چه زبانی بخونتش و با چه سرعتی بین بخش‌ها جلو بره.
+
+به نظرم ایده‌ی خوبی بود، پس رفتم برای پیاده‌سازیش.`,
                 },
             },
             image: {
@@ -857,14 +889,26 @@ You might not believe it, but filling a single card took an unbelievable amount 
             id: "history-26",
             translations: {
                 en: {
-                    title: "Placeholder",
-                    description:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Almost Alive",
+                    description: `The new design was implemented too.
+I also added some small and pretty intro animations to it. Similar to Apple’s website, I tried to create a nice feeling of entering the page.
+
+There might also be an easter egg on the page that needs to be clicked 10 times before it runs :)
+
+I added the footer, copyright notice, and the project’s custom license to the project too.
+
+Everything felt pretty okay. The only things left were filling the card information and polishing the small details.`,
                 },
                 fa: {
-                    title: "متن جایگزین",
-                    description:
-                        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.",
+                    title: "تقریباً زنده",
+                    description: `پیاده‌سازی دیزاین جدید هم انجام شد.
+انیمیشن‌های intro ریز و خوشگلی هم بهش دادم. شبیه سایت Apple سعی کردم حس ورود به صفحه رو بسازم.
+
+تو صفحه هم شاید یه ایستر اگ گذاشته باشم که لازم باشه ۱۰ بار روش کلیک بشه تا اجرا بشه :)
+
+فوتر، حق کپی‌رایت و لایسنس کاستوم پروژه رو هم به پروژه اضافه کردم.
+
+به نظر همه‌چیزش اوکی بود. فقط پر کردن اطلاعات کارت‌ها و ریزکاری‌هاش مونده بود.`,
                 },
             },
             image: {
