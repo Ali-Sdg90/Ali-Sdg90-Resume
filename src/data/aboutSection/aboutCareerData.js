@@ -12,7 +12,7 @@ import dpaPage1Large from "../../assets/images/gallery-images/large-images/dpa/p
 import dpaPage2Large from "../../assets/images/gallery-images/large-images/dpa/page2.png";
 import dpaPage3Large from "../../assets/images/gallery-images/large-images/dpa/page3.png";
 import settleitGptImage1Large from "../../assets/images/gallery-images/large-images/gpt/img1.jpg";
-import settleitGptImage2Large from "../../assets/images/gallery-images/large-images/gpt/img2.jpg";
+// import settleitGptImage2Large from "../../assets/images/gallery-images/large-images/gpt/img2.jpg";
 import settleitGptImage3Large from "../../assets/images/gallery-images/large-images/gpt/img3.png";
 import settleitGptImage4Large from "../../assets/images/gallery-images/large-images/gpt/img4.png";
 import melkRadarChartsLarge from "../../assets/images/gallery-images/large-images/mlk/charts.png";
@@ -28,7 +28,7 @@ import dpaPage1Small from "../../assets/images/gallery-images/small-images/dpa/p
 import dpaPage2Small from "../../assets/images/gallery-images/small-images/dpa/page2.jpg";
 import dpaPage3Small from "../../assets/images/gallery-images/small-images/dpa/page3.jpg";
 import settleitGptImage1Small from "../../assets/images/gallery-images/small-images/gpt/img1.jpg";
-import settleitGptImage2Small from "../../assets/images/gallery-images/small-images/gpt/img2.jpg";
+// import settleitGptImage2Small from "../../assets/images/gallery-images/small-images/gpt/img2.jpg";
 import settleitGptImage3Small from "../../assets/images/gallery-images/small-images/gpt/img3.jpg";
 import settleitGptImage4Small from "../../assets/images/gallery-images/small-images/gpt/img4.jpg";
 import melkRadarChartsSmall from "../../assets/images/gallery-images/small-images/mlk/charts.jpg";
@@ -53,10 +53,10 @@ const settleitGptImage1 = galleryImage(
     settleitGptImage1Small,
     settleitGptImage1Large,
 );
-const settleitGptImage2 = galleryImage(
-    settleitGptImage2Small,
-    settleitGptImage2Large,
-);
+// const settleitGptImage2 = galleryImage(
+//     settleitGptImage2Small,
+//     settleitGptImage2Large,
+// );
 const settleitGptImage3 = galleryImage(
     settleitGptImage3Small,
     settleitGptImage3Large,
@@ -354,7 +354,7 @@ However, there was not a broad team-based experience in this project. I received
         galleryColumns: 3,
         galleryImages: [
             settleitGptImage1,
-            settleitGptImage2,
+            // settleitGptImage2,
             settleitGptImage4,
             settleitGptImage3,
         ],
