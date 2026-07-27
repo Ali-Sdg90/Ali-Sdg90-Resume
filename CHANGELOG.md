@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.10...v1.17.0) (2026-07-27)
+
+
+### Features
+
+* add Umami analytics script to index.html ([d824c9e](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d824c9eac87d72c0f7c29d8613f17a3aa80cda8b))
+
 ## [1.16.10](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.9...v1.16.10) (2026-07-23)
 
 
