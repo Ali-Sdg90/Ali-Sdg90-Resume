@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa6";
 
 import LightboxImage from "../../ui/LightboxImage";
+import { trackUmamiEvent } from "../../../utils/analytics";
 
 const sectionIcons = {
     features: FaListCheck,
@@ -21,7 +22,26 @@ const sectionIcons = {
     relatedLinks: FaLink,
 };
 
-const ProjectLinks = ({ links = [] }) => {
+const getLinkType = (label = "") =>
+    label
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "_")
+        .replace(/^_+|_+$/g, "") || "link";
+
+const trackProjectLinkClick = ({ link, placement, project }) => {
+    if (!project) return;
+
+    trackUmamiEvent("project_link_click", {
+        project_id: project.id,
+        project_name: project.title,
+        link_type: getLinkType(link.label),
+        link_name: link.label,
+        placement,
+    });
+};
+
+const ProjectLinks = ({ links = [], project }) => {
     const visibleLinks = links.filter((link) => link.label);
 
     if (!visibleLinks.length) return null;
@@ -55,6 +75,13 @@ const ProjectLinks = ({ links = [] }) => {
                         key={link.label}
                         target="_blank"
                         rel="noreferrer"
+                        onClick={() =>
+                            trackProjectLinkClick({
+                                link,
+                                placement: "primary",
+                                project,
+                            })
+                        }
                     >
                         <Icon aria-hidden="true" />
                         <span>{link.label}</span>
@@ -276,7 +303,7 @@ const ProjectStory = ({
     );
 };
 
-const RelatedLinks = ({ links = [] }) => {
+const RelatedLinks = ({ links = [], project }) => {
     const visibleLinks = links.filter(
         (link) => link.label || link.text || link.url,
     );
@@ -313,6 +340,13 @@ const RelatedLinks = ({ links = [] }) => {
                                     target="_blank"
                                     rel="noreferrer"
                                     title={link.text}
+                                    onClick={() =>
+                                        trackProjectLinkClick({
+                                            link,
+                                            placement: "related",
+                                            project,
+                                        })
+                                    }
                                 >
                                     {content}
                                 </a>
@@ -348,6 +382,8 @@ const FeaturedProjectAbout = ({
     }
 
     const shouldHideSummary = section?.id === "tech-stack";
+    const project =
+        section?.id === "projects" ? { id: item.id, title: item.title } : null;
     const summary =
         section?.id === "achievements" ? item?.meta : detail.summary;
 
@@ -356,7 +392,7 @@ const FeaturedProjectAbout = ({
             {!shouldHideSummary && summary && (
                 <p className="featured-project-summary">{summary}</p>
             )}
-            <ProjectLinks links={detail.links} />
+            <ProjectLinks links={detail.links} project={project} />
             {/* <TechChips tech={detail.tech} /> */}
             <DetailGallery
                 columns={detail.galleryColumns}
@@ -376,7 +412,7 @@ const FeaturedProjectAbout = ({
                 titleFA={detail.storyTitleFA}
             />
             {detail.hasRelatedLinks && (
-                <RelatedLinks links={detail.relatedLinks} />
+                <RelatedLinks links={detail.relatedLinks} project={project} />
             )}
         </div>
     );

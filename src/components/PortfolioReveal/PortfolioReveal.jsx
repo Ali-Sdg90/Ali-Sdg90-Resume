@@ -3,6 +3,7 @@ import { Peel, PeelCorners } from "peel.js";
 import "peel.js/style";
 
 import HowItWasBuilt from "../HowItWasBuilt";
+import { trackUmamiEvent } from "../../utils/analytics";
 
 const DEFAULT_FOLD = 28;
 const HOVER_FOLD = 72;
@@ -165,6 +166,9 @@ const PortfolioReveal = ({ children }) => {
 
     const openPage = useCallback(() => {
         if (isOpenRef.current || isAnimatingRef.current) return;
+        trackUmamiEvent("build_story_open", {
+            entry_point: "page_peel",
+        });
         setHasOpenedBuildStory(true);
         setIsReturning(false);
         buildStoryRef.current?.scrollTo({ top: 0 });

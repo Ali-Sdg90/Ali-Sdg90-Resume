@@ -1,4 +1,5 @@
 import HeroContactInfo from "./HeroContactInfo";
+import { trackUmamiEvent } from "../../utils/analytics";
 
 const RESUME_URL = "/resume/ali-sadeghi-resume-en.pdf";
 
@@ -49,6 +50,12 @@ const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
                         href={RESUME_URL}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() =>
+                            trackUmamiEvent("resume_open", {
+                                file: "ali-sadeghi-resume-en.pdf",
+                                location: "hero",
+                            })
+                        }
                     >
                         View Resume <span aria-hidden="true">-&gt;</span>
                     </a>

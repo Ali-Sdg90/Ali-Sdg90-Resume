@@ -4,7 +4,7 @@ import emojiSignature from "../../assets/images/global/emoji-signature.webp";
 import { REVEAL_TRANSITION } from "./motionConfig";
 import useLotusEasterEgg from "./useLotusEasterEgg";
 
-const StoryClosing = ({ prefersReducedMotion }) => {
+const StoryClosing = ({ completionElementRef, prefersReducedMotion }) => {
     const { animation, handleClick } = useLotusEasterEgg(prefersReducedMotion);
 
     const handleKeyDown = (event) => {
@@ -18,6 +18,7 @@ const StoryClosing = ({ prefersReducedMotion }) => {
         <>
             <motion.div
                 className="build-story__closing"
+                ref={completionElementRef}
                 role="button"
                 tabIndex={0}
                 aria-label="Thank you for visiting. Open a small surprise."

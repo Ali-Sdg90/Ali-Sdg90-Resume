@@ -1,4 +1,4 @@
-import { forwardRef, useState } from "react";
+import { forwardRef, useRef, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 
 import howItWasBuiltData from "../../data/howItWasBuilt/howItWasBuiltData";
@@ -6,6 +6,7 @@ import BuildGallery from "./BuildGallery";
 import StoryClosing from "./StoryClosing";
 import StoryHeader from "./StoryHeader";
 import StoryHero from "./StoryHero";
+import useBuildStoryAnalytics from "../../hooks/useBuildStoryAnalytics";
 
 const HowItWasBuilt = forwardRef(function HowItWasBuilt(
     { isActive, onReturn, returnButtonRef },
@@ -15,6 +16,19 @@ const HowItWasBuilt = forwardRef(function HowItWasBuilt(
     const [activeLanguage, setActiveLanguage] = useState("fa");
     const [selectedIndex, setSelectedIndex] = useState(0);
     const { page, chapters } = howItWasBuiltData;
+    const completionElementRef = useRef(null);
+    const { finishSession } = useBuildStoryAnalytics({
+        chapters,
+        completionElementRef,
+        isActive,
+        scrollContainerRef,
+        selectedIndex,
+    });
+
+    const handleReturn = () => {
+        finishSession("return_to_portfolio");
+        onReturn();
+    };
 
     return (
         <section
@@ -27,7 +41,7 @@ const HowItWasBuilt = forwardRef(function HowItWasBuilt(
             <StoryHeader
                 activeLanguage={activeLanguage}
                 onLanguageChange={setActiveLanguage}
-                onReturn={onReturn}
+                onReturn={handleReturn}
                 portfolioLabel={page.portfolioLabel}
                 returnButtonRef={returnButtonRef}
             />
@@ -50,6 +64,7 @@ const HowItWasBuilt = forwardRef(function HowItWasBuilt(
             />
 
             <StoryClosing
+                completionElementRef={completionElementRef}
                 key={
                     isActive ? "story-closing-active" : "story-closing-inactive"
                 }

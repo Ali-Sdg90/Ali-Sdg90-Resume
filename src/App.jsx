@@ -10,6 +10,7 @@ import TemporaryConstructionNotice from "./components/TemporaryConstructionNotic
 import { shelfSections } from "./data/portfolio/shelfSections";
 import { getShelfItemId } from "./utils/getShelfItemId";
 import { setDocumentTitle } from "./utils/setDocumentTitle";
+import { trackUmamiEvent } from "./utils/analytics";
 
 setDocumentTitle();
 
@@ -32,6 +33,28 @@ const App = () => {
     }, [selectedShelfItem]);
 
     const handleShelfItemSelect = ({ sectionId, itemId }) => {
+        const isClosingSelectedItem =
+            selectedShelfItem?.sectionId === sectionId &&
+            selectedShelfItem?.itemId === itemId;
+
+        if (!isClosingSelectedItem) {
+            const section = shelfSections.find(
+                (sectionItem) => sectionItem.id === sectionId,
+            );
+            const item = section?.items.find(
+                (sectionItem) => getShelfItemId(sectionItem) === itemId,
+            );
+
+            if (section && item) {
+                trackUmamiEvent("shelf_card_open", {
+                    section_id: section.id,
+                    section_name: section.label,
+                    item_id: itemId,
+                    item_name: item.title,
+                });
+            }
+        }
+
         setSelectedShelfItem((currentItem) =>
             currentItem?.sectionId === sectionId &&
             currentItem?.itemId === itemId
