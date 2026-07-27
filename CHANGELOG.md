@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.17.0...v1.18.0) (2026-07-27)
+
+
+### Features
+
+* implement Umami analytics tracking for user interactions and add new analytics hook ([88e7bdd](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/88e7bdd39bbe08d7b98e2536f2b19e0fb0347526))
+
 # [1.17.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.16.10...v1.17.0) (2026-07-27)
 
 
