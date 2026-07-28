@@ -90,39 +90,9 @@ export const shelfSections = [
                 meta: "iOS app with AI personas and voice generation",
             },
             {
-                id: "path-finder",
-                title: "Path Finder",
-                meta: "Customizable animated pathfinding sandbox",
-            },
-            {
-                id: "tic-tac-toe",
-                title: "Tic Tac Toe",
-                meta: "Customizable game with multiple play modes",
-            },
-            {
-                id: "quick-math",
-                title: "Quick Math",
-                meta: "Timed math game with a rotating cube interface",
-            },
-            {
-                id: "gradient-paint",
-                title: "Gradient Paint",
-                meta: "Customizable interactive gradient painting canvas",
-            },
-            {
-                id: "rps-battle-royale",
-                title: "RPS Battle Royale",
-                meta: "Rock-paper-scissors battle royale simulator",
-            },
-            {
-                id: "dice-distribution",
-                title: "Dice Distribution",
-                meta: "Configurable dice probability simulator",
-            },
-            {
-                id: "cs-queue-bot",
-                title: "CS Queue Bot",
-                meta: "Live Telegram bot for queue management",
+                id: "cs-queue-calendar",
+                title: "CS Queue Calendar",
+                meta: "Live calendar for CS Internship session planning",
             },
             {
                 id: "cs-club-bot",
@@ -130,9 +100,39 @@ export const shelfSections = [
                 meta: "Live Telegram bot for AI-assisted workflows",
             },
             {
-                id: "cs-queue-calendar",
-                title: "CS Queue Calendar",
-                meta: "Live calendar for CS Internship session planning",
+                id: "cs-queue-bot",
+                title: "CS Queue Bot",
+                meta: "Live Telegram bot for queue management",
+            },
+            {
+                id: "dice-distribution",
+                title: "Dice Distribution",
+                meta: "Configurable dice probability simulator",
+            },
+            {
+                id: "rps-battle-royale",
+                title: "RPS Battle Royale",
+                meta: "Rock-paper-scissors battle royale simulator",
+            },
+            {
+                id: "gradient-paint",
+                title: "Gradient Paint",
+                meta: "Customizable interactive gradient painting canvas",
+            },
+            {
+                id: "quick-math",
+                title: "Quick Math",
+                meta: "Timed math game with a rotating cube interface",
+            },
+            {
+                id: "tic-tac-toe",
+                title: "Tic Tac Toe",
+                meta: "Customizable game with multiple play modes",
+            },
+            {
+                id: "path-finder",
+                title: "Path Finder",
+                meta: "Customizable animated pathfinding sandbox",
             },
         ],
     },
@@ -310,7 +310,7 @@ export const shelfSections = [
                 title: "MelkRadar",
                 company: "MelkRadar",
                 meta: "Front-End Developer & Reviewer",
-                year: "2023 - 2026",
+                year: "2023 - 2025",
                 image: melkRadarLogo,
             },
             {

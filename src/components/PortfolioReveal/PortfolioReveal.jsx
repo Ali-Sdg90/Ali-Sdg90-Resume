@@ -280,19 +280,41 @@ const PortfolioReveal = ({ children }) => {
     }, [configurePeel, configureReturnPeel]);
 
     useEffect(() => {
-        onboardingDelayRef.current = window.setTimeout(() => {
-            if (hasInteractedRef.current || isOpenRef.current) return;
+        let isDisposed = false;
 
-            setIsOnboarding(true);
-            animateFoldTo(HOVER_FOLD);
+        const scheduleOnboarding = () => {
+            onboardingDelayRef.current = window.setTimeout(() => {
+                if (
+                    isDisposed ||
+                    hasInteractedRef.current ||
+                    isOpenRef.current
+                ) {
+                    return;
+                }
 
-            onboardingEndRef.current = window.setTimeout(() => {
-                setIsOnboarding(false);
-                animateFoldTo(DEFAULT_FOLD);
-            }, ONBOARDING_DURATION_MS);
-        }, ONBOARDING_DELAY_MS);
+                setIsOnboarding(true);
+                animateFoldTo(HOVER_FOLD);
+
+                onboardingEndRef.current = window.setTimeout(() => {
+                    if (
+                        isDisposed ||
+                        hasInteractedRef.current ||
+                        isOpenRef.current
+                    ) {
+                        return;
+                    }
+
+                    setIsOnboarding(false);
+                    animateFoldTo(DEFAULT_FOLD);
+                    scheduleOnboarding();
+                }, ONBOARDING_DURATION_MS);
+            }, ONBOARDING_DELAY_MS);
+        };
+
+        scheduleOnboarding();
 
         return () => {
+            isDisposed = true;
             clearTimeout(onboardingDelayRef.current);
             clearTimeout(onboardingEndRef.current);
         };

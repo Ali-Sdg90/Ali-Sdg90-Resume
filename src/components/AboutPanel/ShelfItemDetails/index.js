@@ -64,7 +64,7 @@ export const getShelfItemDetailModule = ({ item, section }) => {
 
         return {
             title: careerDetail?.title ?? item.title,
-            subtitle: item.meta,
+            subtitle: [item.meta, item.year].filter(Boolean).join(" · "),
             image: getGenericImage(item, section, careerDetail?.lightboxImage),
             tags: [],
             detail: careerDetail,
