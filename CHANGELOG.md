@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.18.1...v1.18.2) (2026-07-28)
+
+
+### Bug Fixes
+
+* finalize about me text!! , second showcase the project to p-ov ([e663f11](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/e663f11f3111dd1db51076ca7527ab10c0579c04))
+
 ## [1.18.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.18.0...v1.18.1) (2026-07-28)
 
 
