@@ -190,7 +190,7 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
                             lang={isAboutMeFarsi ? "fa" : undefined}
                         >
                             {panelTitle}
-                            {!isShowingDetailModule && (
+                            {/* {!isShowingDetailModule && (
                                 <>
                                     {" "}
                                     <span
@@ -200,7 +200,7 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
                                         *
                                     </span>
                                 </>
-                            )}
+                            )} */}
                         </h2>
                         {selectedModule?.subtitle && (
                             <p className="about-panel-subtitle">
@@ -238,7 +238,7 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
                         <ul
                             className={[
                                 "about-panel-tags",
-                                isAboutMeFarsi ? "is-farsi-text" : "",
+                                // isAboutMeFarsi ? "is-farsi-text" : "",
                             ]
                                 .filter(Boolean)
                                 .join(" ")}
