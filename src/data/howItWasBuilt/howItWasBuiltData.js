@@ -431,7 +431,7 @@ I created the new design image with ChatGPT and started building it.`,
             id: "history-12",
             translations: {
                 en: {
-                    title: "A Strange Tilted Section",
+                    title: "A Strange Section",
                     description: `I built the new section. I named it About Section.
 
 The fact that the text inside it was tilted looked a bit strange to me. It felt strange because this section was meant for reading, and this perspective felt a little tiring and uncomfortable for the eyes.
@@ -441,7 +441,7 @@ I gave myself some time to spend more time with it, maybe I was just being sensi
 I improved the Career cards based on the design. They were no longer just an image with text under it. They became closer to the new design, better, more professional, and prettier.`,
                 },
                 fa: {
-                    title: "سکشن عجیب کج",
+                    title: "سکشن عجیب",
                     description: `سکشن جدید رو ساختم. اسمش رو About Section گذاشتم.
 
 یکم اینکه متن توش کج بود، به چشمم عجیب میومد. این عجیبی به خاطر این بود که این سکشن برای خوندن بود و این پرسپکتیو یکم خسته‌کننده و اذیت‌کننده برای چشم بود.
@@ -827,7 +827,7 @@ This feature might still get lost in the user’s view, but I did not want to ma
             id: "history-24",
             translations: {
                 en: {
-                    title: "Being tall is not always good",
+                    title: "Being Tall is Not Always Good",
                     description: `For the design of the portfolio history page, my first idea was a ladder-like layout. A very long page where images and text sit next to each other, and the user can scroll through it.
 
 After building the first template, I realized it did not have a good user experience. With this design, I would not really stop at each image to carefully look at the text and the image. I just wanted to keep scrolling until I reached the bottom of the page.

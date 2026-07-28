@@ -101,8 +101,8 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
         : "about-me";
     const aboutMeParagraphs =
         activeLanguage === "FA"
-            ? aboutData.paragraphsFA
-            : aboutData.paragraphsEN;
+            ? aboutData.paragraphs.fa
+            : aboutData.paragraphs.en;
     const aboutMeDirection = activeLanguage === "FA" ? "rtl" : "ltr";
     const isAboutMeFarsi = !isShowingDetailModule && activeLanguage === "FA";
     const panelTitle = isShowingDetailModule
@@ -111,11 +111,7 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
           ? titleFa
           : titleEn;
 
-    const visibleTags = isShowingDetailModule
-        ? tags
-        : activeLanguage === "FA"
-          ? aboutData.tagsFA
-          : aboutData.tagsEN;
+    const visibleTags = isShowingDetailModule ? tags : aboutData.tags;
     const languageToggle = (
         <AboutPanelLanguageToggle
             activeLanguage={activeLanguage}
