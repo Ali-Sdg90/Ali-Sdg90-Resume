@@ -127,7 +127,7 @@
             }
 
             .build-gallery__description {
-                font-size: clamp(0.95rem, 1.05vw, 1.05rem);
+                font-size: clamp(1rem, calc(0.84rem + 0.18vw), 1.05rem);
                 font-weight: 400;
                 line-height: 2.05;
                 letter-spacing: 0;
@@ -138,7 +138,7 @@
         }
 
         h2 {
-            margin: 1.5rem 0 1.25rem;
+            margin: 0.5rem 0 1rem;
             font-size: clamp(1.65rem, 2.5vw, 2.8rem);
             font-weight: 620;
             line-height: 1.12;
@@ -148,7 +148,6 @@
 
         &.is-farsi h2 {
             letter-spacing: 0;
-            line-height: 1.4;
         }
     }
 
@@ -178,39 +177,11 @@
     }
 
     &__description {
-        // border: 1px solid red;
         color: #98a2b4;
-        font-size: clamp(0.9rem, 1vw, 1rem);
-        line-height: 1.7;
+        font-size: clamp(0.98rem, calc(0.84rem + 0.16vw), 1rem);
+        line-height: 1.6;
         overflow-wrap: anywhere;
         white-space: pre-line;
-
-        // TODO: Restore the fixed height and scrollbar when description
-        // scrolling is revisited.
-        // max-height: 33rem;
-        // padding-inline-end: 0.65rem;
-        // overflow-x: hidden;
-        // overflow-y: auto;
-        // overscroll-behavior: contain;
-        // scrollbar-color: rgba(143, 172, 255, 0.48) transparent;
-        // scrollbar-width: thin;
-        //
-        // &::-webkit-scrollbar {
-        //     width: 5px;
-        // }
-        //
-        // &::-webkit-scrollbar-track {
-        //     background: transparent;
-        // }
-        //
-        // &::-webkit-scrollbar-thumb {
-        //     border-radius: 999px;
-        //     background: rgba(143, 172, 255, 0.42);
-        // }
-        //
-        // &::-webkit-scrollbar-thumb:hover {
-        //     background: rgba(143, 172, 255, 0.68);
-        // }
     }
 
     &__media-column {

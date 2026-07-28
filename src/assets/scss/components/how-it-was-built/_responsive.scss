@@ -1,5 +1,61 @@
 @use "../../base/variables" as *;
 
+@mixin gallery-description-scrollbar {
+    padding-inline-end: 0.7rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: rgba(143, 172, 255, 0.52) transparent;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border: 2px solid transparent;
+        border-radius: 999px;
+        background: linear-gradient(
+                180deg,
+                rgba(174, 195, 255, 0.76),
+                rgba(105, 129, 224, 0.58)
+            )
+            padding-box;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(
+                180deg,
+                rgba(194, 210, 255, 0.9),
+                rgba(121, 148, 239, 0.76)
+            )
+            padding-box;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1440px) {
+    .build-gallery {
+        &__information {
+            height: calc(
+                clamp(22rem, 42vw, 38rem) + clamp(4.5rem, 7vw, 6.5rem)
+            );
+            overflow: hidden;
+        }
+
+        &__description {
+            @include gallery-description-scrollbar;
+
+            min-height: 0;
+            max-height: none;
+            flex: 1 1 auto;
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     .build-gallery {
         width: min(100% - 3.5rem, 70rem);
@@ -11,6 +67,113 @@
 
         &__media {
             height: clamp(21rem, 45vw, 30rem);
+        }
+
+        &__description {
+            @include gallery-description-scrollbar;
+
+            max-height: clamp(13rem, 38vh, 18rem);
+            max-height: clamp(13rem, 38dvh, 18rem);
+            color: #a6b0c2;
+            font-size: clamp(1rem, calc(0.92rem + 0.18vw), 1.075rem);
+            line-height: 1.75;
+        }
+
+        &__information.is-farsi .build-gallery__description {
+            font-size: clamp(1.025rem, calc(0.94rem + 0.2vw), 1.1rem);
+        }
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+    .build-gallery {
+        &__information {
+            height: calc(clamp(21rem, 45vw, 30rem) + clamp(4.5rem, 7vw, 6rem));
+            overflow: hidden;
+        }
+
+        &__description {
+            min-height: 0;
+            max-height: none;
+            flex: 1 1 auto;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .build-gallery {
+        width: min(100% - 1.5rem, 42rem);
+        padding: 5rem 0;
+
+        &__card {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        &__media {
+            height: min(66vw, 29rem);
+        }
+
+        &__information {
+            min-height: 0;
+            // padding: 2.5rem 1.25rem;
+        }
+
+        &__description {
+            max-height: 15rem;
+            font-size: clamp(0.94rem, calc(0.88rem + 0.25vw), 1.02rem);
+        }
+
+        &__information.is-farsi .build-gallery__description {
+            font-size: clamp(0.97rem, calc(0.9rem + 0.28vw), 1.05rem);
+        }
+
+        &__thumbnail-rail {
+            --thumbnail-gap: 0.35rem;
+            margin-top: 0.5rem;
+        }
+
+        &__thumbnail {
+            padding: 0.14rem;
+            border-radius: 0.4rem;
+
+            img {
+                border-radius: 0.25rem;
+            }
+        }
+
+        .build-gallery__count {
+            // border: 1px solid red !important;
+            margin: 0.75rem 0 0;
+        }
+
+        .build-gallery__information {
+            padding: 0.5rem 0 0 0;
+        }
+
+        .build-gallery__information h2 {
+            margin: 0.25rem 0 0.5rem;
+        }
+
+        .build-gallery__count {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+    .build-gallery {
+        &__information {
+            height: clamp(24rem, 52vh, 30rem);
+            height: clamp(24rem, 52dvh, 30rem);
+            max-height: 30rem;
+            overflow: hidden;
+        }
+
+        &__description {
+            min-height: 0;
+            max-height: none;
+            flex: 1 1 auto;
         }
     }
 }
@@ -52,34 +215,16 @@
     }
 
     .build-gallery {
-        width: min(100% - 1.5rem, 42rem);
-        padding: 5rem 0;
-
-        &__card {
-            grid-template-columns: 1fr;
-            gap: 0;
-        }
-
-        &__media {
-            height: min(66vw, 29rem);
+        &__description {
+            font-size: clamp(0.79rem, calc(0.76rem + 0.14vw), 0.85rem);
         }
 
         &__information {
-            min-height: 22rem;
-            padding: 2.5rem 1.25rem;
+            max-height: 24rem;
         }
 
-        &__thumbnail-rail {
-            --thumbnail-gap: 0.35rem;
-        }
-
-        &__thumbnail {
-            padding: 0.14rem;
-            border-radius: 0.4rem;
-
-            img {
-                border-radius: 0.25rem;
-            }
+        &__information.is-farsi .build-gallery__description {
+            font-size: clamp(0.81rem, calc(0.77rem + 0.16vw), 0.87rem);
         }
     }
 }
