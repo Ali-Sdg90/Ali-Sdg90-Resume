@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.18.0...v1.18.1) (2026-07-28)
+
+
+### Bug Fixes
+
+* improve galley view in mobile devices ([618ee4e](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/618ee4eea14ea5b8b055a574d7011c52ac5b2281))
+
 # [1.18.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.17.0...v1.18.0) (2026-07-27)
 
 
