@@ -1,3 +1,10 @@
+## [1.19.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.19.0...v1.19.1) (2026-07-30)
+
+
+### Bug Fixes
+
+* improve img3 in cs-club-bot, add test ico image for the site, link first 8 images to there gallery in projects cards, add all external links in projects ([75890fe](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/75890fe3bc5a329b343c3c724c51448680a81f34))
+
 # [1.19.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.18.3...v1.19.0) (2026-07-30)
 
 
