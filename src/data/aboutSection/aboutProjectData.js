@@ -1,3 +1,5 @@
+import { projectGalleryImages } from "./projectGalleryData";
+
 export const aboutProjectData = {
     "alis-portfolio": {
         id: "alis-portfolio",
@@ -7,11 +9,12 @@ export const aboutProjectData = {
         // icon: "/images/projects/portfolio-icon.png",
         // image: "/images/projects/portfolio-image.png",
         summary:
-            "A creative personal portfolio built to present my work, skills, and story through an interactive digital shelf instead of a traditional resume layout.",
+            // "A creative personal portfolio built to present my work, skills, and story through an interactive digital shelf instead of a traditional resume layout.",
+            "Placeholder",
         links: [
-            { label: "Live Demo", url: "https://ali-sdg90.github.io/" },
+            { label: "Live Version", url: "https://ali-sdg90.github.io" },
             {
-                label: "GitHub",
+                label: "GitHub Repo",
                 url: "https://github.com/Ali-Sdg90/ali-sdg90.github.io",
             },
         ],
@@ -24,13 +27,8 @@ export const aboutProjectData = {
             "Project detail panel with visual previews and links",
             "Small easter eggs hidden inside the experience",
         ],
-        galleryImages: [
-            "/images/projects/portfolio-1.png",
-            "/images/projects/portfolio-2.png",
-            "/images/projects/portfolio-3.png",
-        ],
-        storyEN:
-            "I built this project because I wanted a more creative and personal way to show who I am and what I've made. The whole experience was designed from scratch, from the core idea and layout experiments to the visual system, interactions, data structure, and final polish.\n\nThe result became a clean, layered, and playful portfolio that feels more like a small digital space than a static page. A big part of the challenge was making sure the layout stays stable across desktop screens and zoom levels without breaking the intended experience.\n\nThere are also a few little easter eggs inside. I hope you enjoy exploring Ali's library of creations :)",
+        galleryImages: projectGalleryImages["alis-portfolio"],
+        storyEN: "placeholder: see the bottom-right corner of the page",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
         relatedLinks: [
@@ -47,12 +45,18 @@ export const aboutProjectData = {
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            {
+                label: "Live Version",
+                url: "https://ali-sdg90.github.io/Spotify-Taste-Timeline",
+            },
+            {
+                label: "Github Repo",
+                url: "https://github.com/Ali-Sdg90/Spotify-Taste-Timeline",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["spot-taste-tracker"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
@@ -69,10 +73,19 @@ export const aboutProjectData = {
         subtitle: "Placeholder",
         year: "20XX",
         summary: "Placeholder",
-        links: [{ label: "Placeholder", url: "" }],
+        links: [
+            {
+                label: "Github Repo",
+                url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama",
+            },
+            {
+                label: "Telegram Bot",
+                url: "https://t.me/FabrexaAIBot",
+            },
+        ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["fabrexa-ai-ollama"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
@@ -90,12 +103,14 @@ export const aboutProjectData = {
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            {
+                label: "Live Version",
+                url: "https://admin.restook.atlon.ir/#/login",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["restook-admin"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
@@ -113,12 +128,14 @@ export const aboutProjectData = {
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            {
+                label: "Lunch Post",
+                url: "https://www.linkedin.com/posts/ali-sdg90_settleitgpt-share-7374421474943700993-_H3R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiHtIwB6ffMAWL0iNc5fSdSRqvEYI6Q2IA",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["settleitgpt-project"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
@@ -129,19 +146,25 @@ export const aboutProjectData = {
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    "path-finder": {
-        id: "path-finder",
+    "cs-queue-calendar": {
+        id: "cs-queue-calendar",
         title: "Placeholder",
         subtitle: "Placeholder",
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            {
+                label: "Live Version",
+                url: "https://cs-internship.github.io/CS-Queue-Calendar",
+            },
+            {
+                label: "Github Repo",
+                url: "https://github.com/cs-internship/CS-Queue-Calendar",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["cs-queue-calendar"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
@@ -152,19 +175,22 @@ export const aboutProjectData = {
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    "tic-tac-toe": {
-        id: "tic-tac-toe",
+    "cs-club-bot": {
+        id: "cs-club-bot",
         title: "Placeholder",
         subtitle: "Placeholder",
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            { label: "Telegram Bot", url: "https://t.me/CSIClubBot" },
+            {
+                label: "Github Repo",
+                url: "https://github.com/cs-internship/CS-Club-Bot",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["cs-club-bot"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
@@ -175,19 +201,22 @@ export const aboutProjectData = {
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    "quick-math": {
-        id: "quick-math",
+    "cs-queue-bot": {
+        id: "cs-queue-bot",
         title: "Placeholder",
         subtitle: "Placeholder",
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            { label: "Telegram Bot", url: "https://t.me/CSQueueBot" },
+            {
+                label: "Github Repo",
+                url: "https://github.com/cs-internship/CS-Queue-Bot",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["cs-queue-bot"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
@@ -198,15 +227,21 @@ export const aboutProjectData = {
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    "gradient-paint": {
-        id: "gradient-paint",
+    "dice-distribution": {
+        id: "dice-distribution",
         title: "Placeholder",
         subtitle: "Placeholder",
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            {
+                label: "Live Version",
+                url: "https://ali-sdg90.github.io/React-Dice-Distribution",
+            },
+            {
+                label: "Github Repo",
+                url: "https://github.com/Ali-Sdg90/React-Dice-Distribution",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
@@ -228,8 +263,14 @@ export const aboutProjectData = {
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            {
+                label: "Live Version",
+                url: "http://ali-sdg.is-a.dev/rps-battle-royale",
+            },
+            {
+                label: "Github Repo",
+                url: "https://github.com/Ali-Sdg90/rps-battle-royale",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
@@ -244,15 +285,21 @@ export const aboutProjectData = {
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    "dice-distribution": {
-        id: "dice-distribution",
+    "gradient-paint": {
+        id: "gradient-paint",
         title: "Placeholder",
         subtitle: "Placeholder",
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            {
+                label: "Live Version",
+                url: "https://ali-sdg90.github.io/Custom-Gradient-Paint",
+            },
+            {
+                label: "Github Repo",
+                url: "https://github.com/Ali-Sdg90/Custom-Gradient-Paint",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
@@ -267,15 +314,21 @@ export const aboutProjectData = {
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    "cs-queue-bot": {
-        id: "cs-queue-bot",
+    "quick-math": {
+        id: "quick-math",
         title: "Placeholder",
         subtitle: "Placeholder",
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            {
+                label: "Live Version",
+                url: "https://ali-sdg90.github.io/Quick-Math",
+            },
+            {
+                label: "Github Repo",
+                url: "https://github.com/Ali-Sdg90/Quick-Math",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
@@ -290,15 +343,21 @@ export const aboutProjectData = {
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    "cs-club-bot": {
-        id: "cs-club-bot",
+    "tic-tac-toe": {
+        id: "tic-tac-toe",
         title: "Placeholder",
         subtitle: "Placeholder",
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            {
+                label: "Live Version",
+                url: "https://ali-sdg90.github.io/Tic-Tac-Toe",
+            },
+            {
+                label: "Github Repo",
+                url: "https://github.com/Ali-Sdg90/Tic-Tac-Toe",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],
@@ -313,15 +372,21 @@ export const aboutProjectData = {
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    "cs-queue-calendar": {
-        id: "cs-queue-calendar",
+    "path-finder": {
+        id: "path-finder",
         title: "Placeholder",
         subtitle: "Placeholder",
         year: "20XX",
         summary: "Placeholder",
         links: [
-            { label: "Placeholder", url: "" },
-            { label: "Placeholder", url: "" },
+            {
+                label: "Live Version",
+                url: "https://ali-sdg90.github.io/Path-Finder",
+            },
+            {
+                label: "Github Repo",
+                url: "https://github.com/Ali-Sdg90/Path-Finder",
+            },
         ],
         tech: ["Placeholder"],
         features: ["Placeholder"],

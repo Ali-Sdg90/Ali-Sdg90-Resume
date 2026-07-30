@@ -12,7 +12,6 @@ import dpaPage1Large from "../../assets/images/gallery-images/large-images/caree
 import dpaPage2Large from "../../assets/images/gallery-images/large-images/career/dpa/page2.png";
 import dpaPage3Large from "../../assets/images/gallery-images/large-images/career/dpa/page3.png";
 import settleitGptImage1Large from "../../assets/images/gallery-images/large-images/career/gpt/img1.jpg";
-// import settleitGptImage2Large from "../../assets/images/gallery-images/large-images/career/gpt/img2.jpg";
 import settleitGptImage3Large from "../../assets/images/gallery-images/large-images/career/gpt/img3.png";
 import settleitGptImage4Large from "../../assets/images/gallery-images/large-images/career/gpt/img4.png";
 import melkRadarChartsLarge from "../../assets/images/gallery-images/large-images/career/mlk/charts.png";
@@ -28,7 +27,6 @@ import dpaPage1Small from "../../assets/images/gallery-images/small-images/caree
 import dpaPage2Small from "../../assets/images/gallery-images/small-images/career/dpa/page2.jpg";
 import dpaPage3Small from "../../assets/images/gallery-images/small-images/career/dpa/page3.jpg";
 import settleitGptImage1Small from "../../assets/images/gallery-images/small-images/career/gpt/img1.jpg";
-// import settleitGptImage2Small from "../../assets/images/gallery-images/small-images/career/gpt/img2.jpg";
 import settleitGptImage3Small from "../../assets/images/gallery-images/small-images/career/gpt/img3.jpg";
 import settleitGptImage4Small from "../../assets/images/gallery-images/small-images/career/gpt/img4.jpg";
 import melkRadarChartsSmall from "../../assets/images/gallery-images/small-images/career/mlk/charts.jpg";
