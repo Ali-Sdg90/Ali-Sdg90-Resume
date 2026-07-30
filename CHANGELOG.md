@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.18.3...v1.19.0) (2026-07-30)
+
+
+### Features
+
+* start working on featured projects texts, improve folder structure in gallery folder, add images for the first 8 cards, after that will connect images to cards ([49dbe97](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/49dbe971f762b2641f3186de4928e25fca7f6953))
+
 ## [1.18.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.18.2...v1.18.3) (2026-07-28)
 
 
