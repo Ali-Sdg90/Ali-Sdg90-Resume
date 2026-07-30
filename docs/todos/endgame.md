@@ -8,8 +8,6 @@
 
 - [ ] Maybe add Agentic browsing and robot file
 
-- [ ] add correct site favicon
-
 - [ ] create makefile files
 
 - [ ] do super dooper checking with agents for project structure and code quality at the end of the project
