@@ -6,7 +6,7 @@
     position: fixed;
     --about-panel-right-offset: max(1rem, #{hero-stage-size(153)});
     right: var(--about-panel-right-offset);
-    bottom: hero-stage-size(96);
+    bottom: calc(hero-stage-size(96) + var(--hero-stage-lift));
     z-index: 4;
     --about-panel-reference-size: #{hero-stage-size(357)};
     --about-panel-size-width: #{hero-stage-size(375)};

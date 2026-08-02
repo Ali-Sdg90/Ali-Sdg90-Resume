@@ -3,8 +3,16 @@
 .page-style {
     position: relative;
     --hero-stage-width: min(75.64vw, calc(105dvh * 1.5));
+    --hero-stage-lift: 0px;
     min-height: 100vh;
     overflow-x: hidden;
+}
+
+// A 16:10 display has 6.25vw more height than a 16:9 display of equal width.
+// Display detection lives in App.jsx because browser chrome changes the viewport ratio.
+.page-style.is-16-10-display {
+    --hero-stage-lift: 1vw;
+    // border: 10px solid red;
 }
 
 .portfolio-hero {

@@ -12,7 +12,7 @@
 
 - [ ] create mobile version :\_(
 
-- [ ] create 16:10 aspect ratio showcase
+- [x] create 16:10 aspect ratio showcase
 
 - [ ] maybe add onboarding animation for moving the cards in shelves?
 
@@ -39,3 +39,17 @@
 - [ ] finalize ico image of the site
 
 - [ ] Maybe test different image color for live version btn in projects about section
+
+- [ ] Fix second img in settleitgpt base sizes
+
+- [ ] Fix third img in cs club bot base sizes
+
+- [ ] Finalize fabrexa bot description and info via bot-father
+
+- [ ] Maybe remove gpt and dpa projects in featured projects?
+
+- [ ] Remove intro animation for gallery section in h.m.p.w.b
+
+- [ ] Finalize intro bottom section spacing
+
+- [ ] Do char-gpt test for about me text

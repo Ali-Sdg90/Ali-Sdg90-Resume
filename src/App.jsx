@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import AboutPanel from "./components/AboutPanel/AboutPanel";
 import Intro from "./components/Intro/Intro";
@@ -14,9 +14,29 @@ import { trackUmamiEvent } from "./utils/analytics";
 
 setDocumentTitle();
 
+const isSixteenTenDisplay = () => {
+    if (typeof window === "undefined") return false;
+
+    const displayRatio = window.screen.width / window.screen.height;
+
+    return Math.abs(displayRatio - 16 / 10) <= 0.03;
+};
+
 const App = () => {
     const [selectedShelfItem, setSelectedShelfItem] = useState(null);
     const [aboutMePulse, setAboutMePulse] = useState(0);
+    const [hasSixteenTenDisplay, setHasSixteenTenDisplay] =
+        useState(isSixteenTenDisplay);
+
+    useEffect(() => {
+        const updateDisplayRatio = () => {
+            setHasSixteenTenDisplay(isSixteenTenDisplay());
+        };
+
+        window.addEventListener("resize", updateDisplayRatio);
+
+        return () => window.removeEventListener("resize", updateDisplayRatio);
+    }, []);
 
     const selectedShelfItemDetail = useMemo(() => {
         if (!selectedShelfItem) return null;
@@ -82,7 +102,9 @@ const App = () => {
             <TemporaryConstructionNotice />
 
             {/* TEMPORARY: Remove this wrapper class with the mobile WIP gate. */}
-            <div className="page-style desktop-experience">
+            <div
+                className={`page-style desktop-experience${hasSixteenTenDisplay ? " is-16-10-display" : ""}`}
+            >
                 <DynamicBackground />
 
                 <main className="portfolio-hero" aria-labelledby="hero-title">

@@ -5,7 +5,7 @@
 .hero-intro {
     position: fixed;
     left: max(1rem, hero-stage-size(85));
-    bottom: hero-stage-size(96);
+    bottom: calc(hero-stage-size(96) + var(--hero-stage-lift));
     z-index: 2;
     width: hero-stage-size(336);
     max-width: none;
