@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.19.1...v1.20.0) (2026-08-02)
+
+
+### Features
+
+* add 16:10 display adjustments, add new todos ([6440200](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/644020061022117f87b7a94e7ab93ecec4dbfe09))
+
 ## [1.19.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.19.0...v1.19.1) (2026-07-30)
 
 
