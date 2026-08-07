@@ -1,8 +1,9 @@
 import { shelfSections } from "../../data/portfolio/shelfSections";
 import useShelfScroll from "../../hooks/useShelfScroll";
+import ShelfInteractionHint from "./ShelfInteractionHint";
 import ShelfSection from "./ShelfSection";
 
-const Shelf = ({ selectedShelfItem, onShelfItemSelect }) => {
+const Shelf = ({ hasInteracted, selectedShelfItem, onShelfItemSelect }) => {
     const {
         scrollState,
         activeDragIndex,
@@ -42,6 +43,8 @@ const Shelf = ({ selectedShelfItem, onShelfItemSelect }) => {
                         onShelfItemSelect={onShelfItemSelect}
                     />
                 ))}
+
+                <ShelfInteractionHint hasInteracted={hasInteracted} />
             </div>
         </section>
     );

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import AboutPanel from "./components/AboutPanel/AboutPanel";
 import Intro from "./components/Intro/Intro";
+import AppVersion from "./components/layout/AppVersion";
 import DynamicBackground from "./components/layout/DynamicBackground";
 import MobileWipNotice from "./components/layout/MobileWipNotice";
 import PortfolioReveal from "./components/PortfolioReveal/PortfolioReveal";
@@ -24,6 +25,7 @@ const isSixteenTenDisplay = () => {
 
 const App = () => {
     const [selectedShelfItem, setSelectedShelfItem] = useState(null);
+    const [hasInteractedWithShelf, setHasInteractedWithShelf] = useState(false);
     const [aboutMePulse, setAboutMePulse] = useState(0);
     const [hasSixteenTenDisplay, setHasSixteenTenDisplay] =
         useState(isSixteenTenDisplay);
@@ -53,6 +55,8 @@ const App = () => {
     }, [selectedShelfItem]);
 
     const handleShelfItemSelect = ({ sectionId, itemId }) => {
+        setHasInteractedWithShelf(true);
+
         const isClosingSelectedItem =
             selectedShelfItem?.sectionId === sectionId &&
             selectedShelfItem?.itemId === itemId;
@@ -100,6 +104,7 @@ const App = () => {
     return (
         <PortfolioReveal>
             <UnderConstructionBadge />
+            <AppVersion />
 
             {/* TEMPORARY: Remove this wrapper class with the mobile WIP gate. */}
             <div
@@ -117,6 +122,7 @@ const App = () => {
 
                     <section className="hero-shelf">
                         <Shelf
+                            hasInteracted={hasInteractedWithShelf}
                             selectedShelfItem={selectedShelfItem}
                             onShelfItemSelect={handleShelfItemSelect}
                         />

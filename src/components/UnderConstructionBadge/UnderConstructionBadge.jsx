@@ -11,7 +11,11 @@ const UnderConstructionBadge = () => {
     if (!SHOW_UNDER_CONSTRUCTION_BADGE) return null;
 
     return (
-        <div className="construction-badge">
+        <div
+            className="construction-badge"
+            tabIndex={0}
+            aria-label="Show project construction status"
+        >
             <span className="construction-badge__tape" aria-hidden="true">
                 <span>Work in progress</span>
             </span>

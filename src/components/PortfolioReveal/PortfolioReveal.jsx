@@ -10,7 +10,8 @@ const HOVER_FOLD = 72;
 const HOVER_DURATION_MS = 340;
 const PEEL_DURATION_MS = 1380;
 const RETURN_DURATION_MS = 1380;
-const ONBOARDING_DELAY_MS = 8000;
+const ONBOARDING_DELAY_MS = 10_000;
+const ONBOARDING_REPEAT_DELAY_MS = 8_000;
 const ONBOARDING_DURATION_MS = 2500;
 
 const easeInOutCubic = (value) =>
@@ -282,7 +283,7 @@ const PortfolioReveal = ({ children }) => {
     useEffect(() => {
         let isDisposed = false;
 
-        const scheduleOnboarding = () => {
+        const scheduleOnboarding = (delay = ONBOARDING_DELAY_MS) => {
             onboardingDelayRef.current = window.setTimeout(() => {
                 if (
                     isDisposed ||
@@ -306,9 +307,9 @@ const PortfolioReveal = ({ children }) => {
 
                     setIsOnboarding(false);
                     animateFoldTo(DEFAULT_FOLD);
-                    scheduleOnboarding();
+                    scheduleOnboarding(ONBOARDING_REPEAT_DELAY_MS);
                 }, ONBOARDING_DURATION_MS);
-            }, ONBOARDING_DELAY_MS);
+            }, delay);
         };
 
         scheduleOnboarding();
