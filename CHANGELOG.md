@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.21.0...v1.22.0) (2026-08-07)
+
+
+### Features
+
+* add AppVersion and ShelfInteractionHint components, enhance interaction hints and styles ([598de8b](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/598de8b877a8565b90b64caae627a58096a680f4))
+
 # [1.21.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.20.0...v1.21.0) (2026-08-07)
 
 
