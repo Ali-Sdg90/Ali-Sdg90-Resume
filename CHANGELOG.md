@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.20.0...v1.21.0) (2026-08-07)
+
+
+### Features
+
+* replace TemporaryConstructionNotice with UnderConstructionBadge and update contact email ([d99c7d4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d99c7d497032d853d417b681a4a8469c8d1161df))
+
 # [1.20.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.19.1...v1.20.0) (2026-08-02)
 
 
