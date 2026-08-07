@@ -164,18 +164,18 @@ export const projectGalleryImages = {
             1280,
         ),
         galleryImage(
-            settleitGptThumbnail2,
-            settleitGptImage2,
-            "SettleitGPT celebrity judge selection",
-            589,
-            1280,
-        ),
-        galleryImage(
             settleitGptThumbnail3,
             settleitGptImage3,
             "SettleitGPT argument history screen",
             438,
             962,
+        ),
+        galleryImage(
+            settleitGptThumbnail2,
+            settleitGptImage2,
+            "SettleitGPT celebrity judge selection",
+            589,
+            1280,
         ),
     ],
     "cs-queue-calendar": [

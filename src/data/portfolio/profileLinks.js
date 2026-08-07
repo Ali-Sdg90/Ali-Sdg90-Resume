@@ -30,16 +30,16 @@ export const contactItems = [
         href: "https://linkedin.com/in/ali-sdg90",
     },
     {
-        id: "telegram",
-        icon: FaTelegram,
-        label: "https://t.me/ali_sdg90",
-        href: "https://t.me/ali_sdg90",
-    },
-    {
         id: "email",
         icon: FaEnvelope,
         label: "ali.sdg.dev90@gmail.com",
         href: "mailto:ali.sdg.dev90@gmail.com",
+    },
+    {
+        id: "telegram",
+        icon: FaTelegram,
+        label: "https://t.me/ali_sdg90",
+        href: "https://t.me/ali_sdg90",
     },
 ];
 

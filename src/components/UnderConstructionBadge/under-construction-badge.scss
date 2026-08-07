@@ -9,6 +9,7 @@
     height: 7rem;
     pointer-events: auto;
     isolation: isolate;
+    user-select: none;
 
     &__tape {
         position: absolute;

@@ -70,6 +70,11 @@ export const shelfSections = [
                 // icon: "/images/projects/portfolio-icon.png",
             },
             {
+                id: "mlk-dvr-receiver",
+                title: "MLK DVR Receiver",
+                meta: "Secure Divar SMS routing from Android to Telegram",
+            },
+            {
                 id: "spot-taste-tracker",
                 title: "Spot Taste Tracker",
                 meta: "Dashboard for analyzing Spotify taste over time",

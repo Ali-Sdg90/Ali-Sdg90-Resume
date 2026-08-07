@@ -38,10 +38,35 @@ export const aboutProjectData = {
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
+    "mlk-dvr-receiver": {
+        id: "mlk-dvr-receiver",
+        title: "MLK DVR Receiver",
+        subtitle: "Secure Divar SMS routing from Android to Telegram",
+        year: "20XX",
+        summary: "Placeholder",
+        links: [
+            {
+                label: "GitHub Repo",
+                url: "https://github.com/Ali-Sdg90/mlk-dvr-receiver",
+            },
+        ],
+        tech: ["Placeholder"],
+        features: ["Placeholder"],
+        galleryImages: [],
+        storyEN: "Placeholder",
+        storyFA: "Placeholder",
+        hasRelatedLinks: true,
+        relatedLinks: [
+            { label: "Placeholder", text: "Placeholder", url: "" },
+            { label: "Placeholder", text: "Placeholder", url: "" },
+            { label: "Placeholder", text: "Placeholder", url: "" },
+            { label: "Placeholder", text: "Placeholder", url: "" },
+        ],
+    },
     "spot-taste-tracker": {
         id: "spot-taste-tracker",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Dashboard for analyzing Spotify taste over time",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -70,7 +95,7 @@ export const aboutProjectData = {
     "fabrexa-ai-ollama": {
         id: "fabrexa-ai-ollama",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Local Telegram AI chatbot powered by Ollama",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -99,7 +124,7 @@ export const aboutProjectData = {
     "restook-admin": {
         id: "restook-admin",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Production admin panel for platform management",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -124,7 +149,7 @@ export const aboutProjectData = {
     "settleitgpt-project": {
         id: "settleitgpt-project",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "iOS app with AI personas and voice generation",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -149,7 +174,7 @@ export const aboutProjectData = {
     "cs-queue-calendar": {
         id: "cs-queue-calendar",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Live calendar for CS Internship session planning",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -178,7 +203,7 @@ export const aboutProjectData = {
     "cs-club-bot": {
         id: "cs-club-bot",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Live Telegram bot for AI-assisted workflows",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -204,7 +229,7 @@ export const aboutProjectData = {
     "cs-queue-bot": {
         id: "cs-queue-bot",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Live Telegram bot for queue management",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -230,7 +255,7 @@ export const aboutProjectData = {
     "dice-distribution": {
         id: "dice-distribution",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Configurable dice probability simulator",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -259,7 +284,7 @@ export const aboutProjectData = {
     "rps-battle-royale": {
         id: "rps-battle-royale",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Rock-paper-scissors battle royale simulator",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -288,7 +313,7 @@ export const aboutProjectData = {
     "gradient-paint": {
         id: "gradient-paint",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Customizable interactive gradient painting canvas",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -317,7 +342,7 @@ export const aboutProjectData = {
     "quick-math": {
         id: "quick-math",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Timed math game with a rotating cube interface",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -346,7 +371,7 @@ export const aboutProjectData = {
     "tic-tac-toe": {
         id: "tic-tac-toe",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Customizable game with multiple play modes",
         year: "20XX",
         summary: "Placeholder",
         links: [
@@ -375,7 +400,7 @@ export const aboutProjectData = {
     "path-finder": {
         id: "path-finder",
         title: "Placeholder",
-        subtitle: "Placeholder",
+        subtitle: "Customizable animated pathfinding sandbox",
         year: "20XX",
         summary: "Placeholder",
         links: [
