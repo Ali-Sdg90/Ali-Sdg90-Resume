@@ -38,8 +38,8 @@ export const contactItems = [
     {
         id: "email",
         icon: FaEnvelope,
-        label: "ali909392@gmail.com",
-        href: "mailto:ali909392@gmail.com",
+        label: "ali.sdg.dev90@gmail.com",
+        href: "mailto:ali.sdg.dev90@gmail.com",
     },
 ];
 

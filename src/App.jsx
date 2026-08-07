@@ -6,7 +6,7 @@ import DynamicBackground from "./components/layout/DynamicBackground";
 import MobileWipNotice from "./components/layout/MobileWipNotice";
 import PortfolioReveal from "./components/PortfolioReveal/PortfolioReveal";
 import Shelf from "./components/Shelf/Shelf";
-import TemporaryConstructionNotice from "./components/TemporaryConstructionNotice/TemporaryConstructionNotice";
+import UnderConstructionBadge from "./components/UnderConstructionBadge/UnderConstructionBadge";
 import { shelfSections } from "./data/portfolio/shelfSections";
 import { getShelfItemId } from "./utils/getShelfItemId";
 import { setDocumentTitle } from "./utils/setDocumentTitle";
@@ -99,7 +99,7 @@ const App = () => {
 
     return (
         <PortfolioReveal>
-            <TemporaryConstructionNotice />
+            <UnderConstructionBadge />
 
             {/* TEMPORARY: Remove this wrapper class with the mobile WIP gate. */}
             <div

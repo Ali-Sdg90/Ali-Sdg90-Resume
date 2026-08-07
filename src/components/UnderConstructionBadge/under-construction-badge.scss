@@ -1,0 +1,155 @@
+@use "../../assets/scss/base/variables" as *;
+
+.construction-badge {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 12.25rem;
+    height: 7rem;
+    pointer-events: none;
+    isolation: isolate;
+
+    &__tape {
+        position: absolute;
+        z-index: 2;
+        top: 0.82rem;
+        left: -4.35rem;
+        width: 16.25rem;
+        height: 1.45rem;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        color: #080906;
+        border-block: 1px solid rgba(255, 239, 118, 0.76);
+        background: repeating-linear-gradient(
+            135deg,
+            #ffd21f 0,
+            #ffd21f 1.15rem,
+            #11120f 1.15rem,
+            #11120f 1.95rem
+        );
+        box-shadow:
+            0 0.22rem 0.65rem rgba(0, 0, 0, 0.38),
+            inset 0 1px rgba(255, 255, 255, 0.34),
+            inset 0 -1px rgba(0, 0, 0, 0.28);
+        transform: rotate(-25deg);
+        transform-origin: center;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.18),
+                transparent 48%,
+                rgba(0, 0, 0, 0.1)
+            );
+        }
+
+        span {
+            position: relative;
+            z-index: 1;
+            padding: 0.13rem 0.4rem;
+            color: #080906;
+            background: #ffd21f;
+            font-size: 0.5rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            line-height: 1;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+    }
+
+    &__hanger {
+        position: absolute;
+        top: 0.65rem;
+        left: 6.35rem;
+        width: 1.1rem;
+        height: 1.55rem;
+        border-left: 1px solid rgba(255, 210, 31, 0.5);
+        border-bottom: 1px solid rgba(255, 210, 31, 0.3);
+        transform: skewX(21deg);
+        transform-origin: top left;
+    }
+
+    &__card {
+        position: absolute;
+        z-index: 1;
+        top: 2rem;
+        left: 6rem;
+        width: 11.25rem;
+        padding: 0.52rem 0.6rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        color: $color-text;
+        border: 1px solid rgba(255, 210, 31, 0.38);
+        border-radius: $radius-sm;
+        background: rgba(10, 16, 20, 0.88);
+        box-shadow: 0 0.65rem 1.8rem rgba(0, 0, 0, 0.34);
+        backdrop-filter: blur(10px);
+        pointer-events: auto;
+        text-decoration: none;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        color: rgba(247, 251, 255, 0.94);
+        font-size: 0.6rem;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        line-height: 1.15;
+        white-space: nowrap;
+
+        > span {
+            width: 0.3rem;
+            height: 0.3rem;
+            flex: 0 0 auto;
+            border-radius: 50%;
+            background: $color-character;
+            box-shadow: 0 0 0.5rem rgba(255, 210, 31, 0.68);
+        }
+    }
+
+    &__meta {
+        margin-top: 0.34rem;
+        padding-top: 0.34rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.32rem;
+        color: rgba(247, 251, 255, 0.54);
+        border-top: 1px solid rgba(247, 251, 255, 0.09);
+        font-size: 0.53rem;
+        font-weight: 600;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    &__repository {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        svg {
+            width: 0.66rem;
+            height: 0.66rem;
+        }
+    }
+
+    &__version {
+        color: $color-character;
+        font-family: "Geist Mono", "SFMono-Regular", Consolas, monospace;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+    }
+
+    &__card:focus-visible {
+        outline: 2px solid $color-character;
+        outline-offset: 2px;
+    }
+}
