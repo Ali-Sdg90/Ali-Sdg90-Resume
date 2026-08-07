@@ -1,3 +1,10 @@
+## [1.22.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.0...v1.22.1) (2026-08-07)
+
+
+### Bug Fixes
+
+* add MLK DVR Receiver project details and update related sections, update gmail address and small improvements ([9076f9d](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/9076f9d7f95415958636724de819ee2c9ce51422))
+
 # [1.22.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.21.0...v1.22.0) (2026-08-07)
 
 
