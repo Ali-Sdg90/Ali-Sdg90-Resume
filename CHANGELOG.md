@@ -1,3 +1,10 @@
+## [1.22.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.3...v1.22.4) (2026-08-10)
+
+
+### Bug Fixes
+
+* add all gallery images for featured projects and improve csi meta, remove unnessery about data ([c449098](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/c4490984493e4c13044bbd81d93a44bcc38d496b))
+
 ## [1.22.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.2...v1.22.3) (2026-08-10)
 
 
