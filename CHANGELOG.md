@@ -1,3 +1,10 @@
+## [1.22.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.1...v1.22.2) (2026-08-10)
+
+
+### Bug Fixes
+
+* add mlk dvr gallery and work on data in featured projects cards ([df470cd](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/df470cdcc69a2dc7f93baa4fb85ec363ad80a25b))
+
 ## [1.22.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.0...v1.22.1) (2026-08-07)
 
 
