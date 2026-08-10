@@ -26,19 +26,33 @@ import fabrexaImage1 from "../../assets/images/gallery-images/large-images/proje
 import fabrexaImage2 from "../../assets/images/gallery-images/large-images/projects/fabrexa/img2.png";
 import fabrexaImage3 from "../../assets/images/gallery-images/large-images/projects/fabrexa/img3.png";
 
-import restookThumbnail1 from "../../assets/images/gallery-images/small-images/career/dpa/page1.jpg";
-import restookThumbnail2 from "../../assets/images/gallery-images/small-images/career/dpa/page2.jpg";
-import restookThumbnail3 from "../../assets/images/gallery-images/small-images/career/dpa/page3.jpg";
-import restookImage1 from "../../assets/images/gallery-images/large-images/career/dpa/page1.png";
-import restookImage2 from "../../assets/images/gallery-images/large-images/career/dpa/page2.png";
-import restookImage3 from "../../assets/images/gallery-images/large-images/career/dpa/page3.png";
+import gradientPaintThumbnail1 from "../../assets/images/gallery-images/small-images/projects/cgp/img1.jpg";
+import gradientPaintThumbnail2 from "../../assets/images/gallery-images/small-images/projects/cgp/img2.jpg";
+import gradientPaintThumbnail3 from "../../assets/images/gallery-images/small-images/projects/cgp/img3.jpg";
+import gradientPaintImage1 from "../../assets/images/gallery-images/large-images/projects/cgp/img1.png";
+import gradientPaintImage2 from "../../assets/images/gallery-images/large-images/projects/cgp/img2.png";
+import gradientPaintImage3 from "../../assets/images/gallery-images/large-images/projects/cgp/img3.png";
 
-import settleitGptThumbnail1 from "../../assets/images/gallery-images/small-images/career/gpt/img1.jpg";
-import settleitGptThumbnail2 from "../../assets/images/gallery-images/small-images/career/gpt/img3.jpg";
-import settleitGptThumbnail3 from "../../assets/images/gallery-images/small-images/career/gpt/img4.jpg";
-import settleitGptImage1 from "../../assets/images/gallery-images/large-images/career/gpt/img1.jpg";
-import settleitGptImage2 from "../../assets/images/gallery-images/large-images/career/gpt/img3.png";
-import settleitGptImage3 from "../../assets/images/gallery-images/large-images/career/gpt/img4.png";
+import quickMathThumbnail1 from "../../assets/images/gallery-images/small-images/projects/math/img1.jpg";
+import quickMathThumbnail2 from "../../assets/images/gallery-images/small-images/projects/math/img2.jpg";
+import quickMathThumbnail3 from "../../assets/images/gallery-images/small-images/projects/math/img3.jpg";
+import quickMathImage1 from "../../assets/images/gallery-images/large-images/projects/math/img1.png";
+import quickMathImage2 from "../../assets/images/gallery-images/large-images/projects/math/img2.png";
+import quickMathImage3 from "../../assets/images/gallery-images/large-images/projects/math/img3.png";
+
+import pathFinderThumbnail1 from "../../assets/images/gallery-images/small-images/projects/path/img1.jpg";
+import pathFinderThumbnail2 from "../../assets/images/gallery-images/small-images/projects/path/img2.jpg";
+import pathFinderThumbnail3 from "../../assets/images/gallery-images/small-images/projects/path/img3.jpg";
+import pathFinderImage1 from "../../assets/images/gallery-images/large-images/projects/path/img1.png";
+import pathFinderImage2 from "../../assets/images/gallery-images/large-images/projects/path/img2.png";
+import pathFinderImage3 from "../../assets/images/gallery-images/large-images/projects/path/img3.png";
+
+import ticTacToeThumbnail1 from "../../assets/images/gallery-images/small-images/projects/xo/img1.jpg";
+import ticTacToeThumbnail2 from "../../assets/images/gallery-images/small-images/projects/xo/img2.jpg";
+import ticTacToeThumbnail3 from "../../assets/images/gallery-images/small-images/projects/xo/img3.jpg";
+import ticTacToeImage1 from "../../assets/images/gallery-images/large-images/projects/xo/img1.png";
+import ticTacToeImage2 from "../../assets/images/gallery-images/large-images/projects/xo/img2.png";
+import ticTacToeImage3 from "../../assets/images/gallery-images/large-images/projects/xo/img3.png";
 
 import queueCalendarThumbnail1 from "../../assets/images/gallery-images/small-images/projects/calendar/img1.jpg";
 import queueCalendarThumbnail2 from "../../assets/images/gallery-images/small-images/projects/calendar/img3.jpg";
@@ -162,52 +176,6 @@ export const projectGalleryImages = {
             2215,
         ),
     ],
-    "restook-admin": [
-        galleryImage(
-            restookThumbnail1,
-            restookImage1,
-            "Restook Admin management page",
-            888,
-            1204,
-        ),
-        galleryImage(
-            restookThumbnail2,
-            restookImage2,
-            "Restook Admin data management view",
-            1224,
-            870,
-        ),
-        galleryImage(
-            restookThumbnail3,
-            restookImage3,
-            "Restook Admin operational dashboard",
-            1064,
-            894,
-        ),
-    ],
-    "settleitgpt-project": [
-        galleryImage(
-            settleitGptThumbnail1,
-            settleitGptImage1,
-            "SettleitGPT argument setup screen",
-            589,
-            1280,
-        ),
-        galleryImage(
-            settleitGptThumbnail3,
-            settleitGptImage3,
-            "SettleitGPT argument history screen",
-            438,
-            962,
-        ),
-        galleryImage(
-            settleitGptThumbnail2,
-            settleitGptImage2,
-            "SettleitGPT celebrity judge selection",
-            589,
-            1280,
-        ),
-    ],
     "cs-queue-calendar": [
         galleryImage(
             queueCalendarThumbnail1,
@@ -275,6 +243,98 @@ export const projectGalleryImages = {
             "CS Queue Bot mobile workflow",
             1048,
             1933,
+        ),
+    ],
+    "gradient-paint": [
+        galleryImage(
+            gradientPaintThumbnail1,
+            gradientPaintImage1,
+            "Gradient Paint canvas with a red radial gradient",
+            1919,
+            1079,
+        ),
+        galleryImage(
+            gradientPaintThumbnail2,
+            gradientPaintImage2,
+            "Gradient Paint canvas and interaction settings",
+            1919,
+            1079,
+        ),
+        galleryImage(
+            gradientPaintThumbnail3,
+            gradientPaintImage3,
+            "Gradient Paint development time-lapse",
+            1919,
+            905,
+        ),
+    ],
+    "quick-math": [
+        galleryImage(
+            quickMathThumbnail1,
+            quickMathImage1,
+            "Quick Math rotating cube game interface",
+            1920,
+            1080,
+        ),
+        galleryImage(
+            quickMathThumbnail2,
+            quickMathImage2,
+            "Quick Math round results with time, lives, and questions",
+            1920,
+            1080,
+        ),
+        galleryImage(
+            quickMathThumbnail3,
+            quickMathImage3,
+            "Quick Math repository and project documentation",
+            1919,
+            904,
+        ),
+    ],
+    "tic-tac-toe": [
+        galleryImage(
+            ticTacToeThumbnail1,
+            ticTacToeImage1,
+            "Tic Tac Toe customizable game board",
+            1920,
+            1080,
+        ),
+        galleryImage(
+            ticTacToeThumbnail2,
+            ticTacToeImage2,
+            "Tic Tac Toe completed match screen",
+            1920,
+            1080,
+        ),
+        galleryImage(
+            ticTacToeThumbnail3,
+            ticTacToeImage3,
+            "Tic Tac Toe development time-lapse",
+            1919,
+            1079,
+        ),
+    ],
+    "path-finder": [
+        galleryImage(
+            pathFinderThumbnail1,
+            pathFinderImage1,
+            "Path Finder weighted route through an obstacle grid",
+            1919,
+            903,
+        ),
+        galleryImage(
+            pathFinderThumbnail2,
+            pathFinderImage2,
+            "Path Finder grid and wall settings",
+            948,
+            902,
+        ),
+        galleryImage(
+            pathFinderThumbnail3,
+            pathFinderImage3,
+            "Path Finder repository overview and examples",
+            924,
+            1064,
         ),
     ],
 };

@@ -55,3 +55,5 @@
 - [ ] Do char-gpt test for about me text
 
 - [ ] Add new MLK DVR Receiver project to the projects section and MLK Card in the career section
+
+- [ ] Improve gallery image orders

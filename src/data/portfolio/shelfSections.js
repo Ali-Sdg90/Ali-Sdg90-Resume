@@ -70,11 +70,6 @@ export const shelfSections = [
                 // icon: "/images/projects/portfolio-icon.png",
             },
             {
-                id: "spot-taste-tracker",
-                title: "Spot Taste Tracker",
-                meta: "Dashboard for analyzing Spotify taste over time",
-            },
-            {
                 id: "mlk-dvr-receiver",
                 title: "MLK DVR Receiver",
                 meta: "Automated Divar SMS forwarding via app and bot",
@@ -95,6 +90,11 @@ export const shelfSections = [
                 meta: "Local Telegram AI chatbot powered by Ollama",
             },
             {
+                id: "spot-taste-tracker",
+                title: "Spot Taste Tracker",
+                meta: "Dashboard for analyzing Spotify taste over time",
+            },
+            {
                 id: "cs-queue-bot",
                 title: "CS Queue Bot",
                 meta: "Live Telegram bot for queue management",
@@ -103,11 +103,6 @@ export const shelfSections = [
                 id: "path-finder",
                 title: "Path Finder",
                 meta: "Customizable animated pathfinding sandbox",
-            },
-            {
-                id: "rps-battle-royale",
-                title: "RPS Battle Royale",
-                meta: "Rock-paper-scissors battle royale simulator",
             },
             {
                 id: "gradient-paint",

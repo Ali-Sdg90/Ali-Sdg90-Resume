@@ -188,56 +188,6 @@ export const aboutProjectData = {
             },
         ],
     },
-    "restook-admin": {
-        id: "restook-admin",
-        title: "Restook Admin",
-        subtitle: "Production admin panel for platform management",
-        year: "20XX",
-        summary: "Placeholder",
-        links: [
-            {
-                label: "Live Version",
-                url: "https://admin.restook.atlon.ir/#/login",
-            },
-        ],
-        tech: ["Placeholder"],
-        features: ["Placeholder"],
-        galleryImages: projectGalleryImages["restook-admin"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-        ],
-    },
-    "settleitgpt-project": {
-        id: "settleitgpt-project",
-        title: "SettleitGPT",
-        subtitle: "iOS app with AI personas and voice generation",
-        year: "20XX",
-        summary: "Placeholder",
-        links: [
-            {
-                label: "Lunch Post",
-                url: "https://www.linkedin.com/posts/ali-sdg90_settleitgpt-share-7374421474943700993-_H3R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiHtIwB6ffMAWL0iNc5fSdSRqvEYI6Q2IA",
-            },
-        ],
-        tech: ["Placeholder"],
-        features: ["Placeholder"],
-        galleryImages: projectGalleryImages["settleitgpt-project"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-        ],
-    },
     "cs-queue-calendar": {
         id: "cs-queue-calendar",
         title: "CS Queue Calendar",
@@ -388,71 +338,6 @@ export const aboutProjectData = {
             },
         ],
     },
-    "dice-distribution": {
-        id: "dice-distribution",
-        title: "Dice Distribution",
-        subtitle: "Configurable dice probability simulator",
-        year: "2023",
-        summary:
-            "A configurable dice simulator that visualizes accumulated roll totals as an animated distribution chart.",
-        links: [
-            {
-                label: "Live Version",
-                url: "https://ali-sdg90.github.io/React-Dice-Distribution",
-            },
-            {
-                label: "Github Repo",
-                url: "https://github.com/Ali-Sdg90/React-Dice-Distribution",
-            },
-        ],
-        tech: ["React", "ApexCharts", "CSS"],
-        features: [
-            "Lets users choose 2 to 30 dice, roll speed, batch size, and continuous mode",
-            "Builds an animated chart that shows the results moving toward a bell curve",
-            "Supports chart zoom and SVG, PNG, or CSV export",
-        ],
-        galleryImages: [],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: false,
-        relatedLinks: [],
-    },
-    "rps-battle-royale": {
-        id: "rps-battle-royale",
-        title: "RPS Battle Royale",
-        subtitle: "Rock-paper-scissors battle royale simulator",
-        year: "2026",
-        summary:
-            "A real-time rock-paper-scissors battle simulator where animated entities move, collide, and compete for dominance.",
-        links: [
-            {
-                label: "Live Version",
-                url: "http://ali-sdg.is-a.dev/rps-battle-royale",
-            },
-            {
-                label: "Github Repo",
-                url: "https://github.com/Ali-Sdg90/rps-battle-royale",
-            },
-        ],
-        tech: ["React 18", "SCSS", "Context API", "Create React App"],
-        features: [
-            "Runs battles when moving rock, paper, and scissors entities meet",
-            "Uses velocity and collision logic to create unscripted battles",
-            "Lets users change population, speed, and detection range while viewing live scores",
-            "Keeps hundreds of entities synchronized on different screen sizes",
-        ],
-        galleryImages: [],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            {
-                label: "Demo",
-                text: "GitHub Pages version",
-                url: "https://ali-sdg90.github.io/PSS-Project/",
-            },
-        ],
-    },
     "gradient-paint": {
         id: "gradient-paint",
         title: "Gradient Paint",
@@ -476,7 +361,7 @@ export const aboutProjectData = {
             "Lets users change grid size, colors, spread distance, borders, and cell numbers",
             "Supports both click painting and continuous drag painting",
         ],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["gradient-paint"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
@@ -511,7 +396,7 @@ export const aboutProjectData = {
             "Shows each question on a different side of a rotating cube",
             "Saves answer hints, color themes, and ready-screen settings in local storage",
         ],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["quick-math"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: false,
@@ -540,11 +425,16 @@ export const aboutProjectData = {
             "Adds challenges that keep progress between game sessions",
             "Saves game settings and changes the background after every move",
         ],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["tic-tac-toe"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
         relatedLinks: [
+            {
+                label: "??",
+                text: "Project interdiction post",
+                url: "https://x.com/Ali_Sdg90/status/1663115176504344576?s=20",
+            },
             {
                 label: "Process",
                 text: "Development time-lapse",
@@ -576,11 +466,16 @@ export const aboutProjectData = {
             "Lets users change grid size, direction weights, colors, speed, and display options",
             "Works on both desktop and mobile screens",
         ],
-        galleryImages: [],
+        galleryImages: projectGalleryImages["path-finder"],
         storyEN: "Placeholder",
         storyFA: "Placeholder",
         hasRelatedLinks: true,
         relatedLinks: [
+            {
+                label: "??",
+                text: "Project interdiction post",
+                url: "https://x.com/Ali_Sdg90/status/1963653671083790650?s=20",
+            },
             {
                 label: "Predecessor",
                 text: "Spread Color, the related grid-propagation project",
