@@ -1,3 +1,10 @@
+## [1.22.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.2...v1.22.3) (2026-08-10)
+
+
+### Bug Fixes
+
+* update MelkRadar showcase and remove 2 projects from featured project, re-order cards in featured projects ([4f9c030](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/4f9c03029d752cdf25afebeee564c99faa0760e7))
+
 ## [1.22.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.1...v1.22.2) (2026-08-10)
 
 
