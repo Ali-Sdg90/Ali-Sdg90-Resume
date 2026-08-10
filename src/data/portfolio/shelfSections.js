@@ -72,7 +72,7 @@ export const shelfSections = [
             {
                 id: "mlk-dvr-receiver",
                 title: "MLK DVR Receiver",
-                meta: "Secure Divar SMS routing from Android to Telegram",
+                meta: "Divar SMS routing from Android to Telegram",
             },
             {
                 id: "spot-taste-tracker",
