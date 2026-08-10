@@ -70,29 +70,14 @@ export const shelfSections = [
                 // icon: "/images/projects/portfolio-icon.png",
             },
             {
-                id: "mlk-dvr-receiver",
-                title: "MLK DVR Receiver",
-                meta: "Divar SMS routing from Android to Telegram",
-            },
-            {
                 id: "spot-taste-tracker",
                 title: "Spot Taste Tracker",
                 meta: "Dashboard for analyzing Spotify taste over time",
             },
             {
-                id: "fabrexa-ai-ollama",
-                title: "Fabrexa AI Ollama",
-                meta: "Local Telegram AI chatbot powered by Ollama",
-            },
-            {
-                id: "restook-admin",
-                title: "Restook Admin",
-                meta: "Production admin panel for platform management",
-            },
-            {
-                id: "settleitgpt-project",
-                title: "SettleitGPT",
-                meta: "iOS app with AI personas and voice generation",
+                id: "mlk-dvr-receiver",
+                title: "MLK DVR Receiver",
+                meta: "Automated Divar SMS forwarding via app and bot",
             },
             {
                 id: "cs-queue-calendar",
@@ -105,14 +90,19 @@ export const shelfSections = [
                 meta: "Live Telegram bot for AI-assisted workflows",
             },
             {
+                id: "fabrexa-ai-ollama",
+                title: "Fabrexa AI Ollama",
+                meta: "Local Telegram AI chatbot powered by Ollama",
+            },
+            {
                 id: "cs-queue-bot",
                 title: "CS Queue Bot",
                 meta: "Live Telegram bot for queue management",
             },
             {
-                id: "dice-distribution",
-                title: "Dice Distribution",
-                meta: "Configurable dice probability simulator",
+                id: "path-finder",
+                title: "Path Finder",
+                meta: "Customizable animated pathfinding sandbox",
             },
             {
                 id: "rps-battle-royale",
@@ -133,11 +123,6 @@ export const shelfSections = [
                 id: "tic-tac-toe",
                 title: "Tic Tac Toe",
                 meta: "Customizable game with multiple play modes",
-            },
-            {
-                id: "path-finder",
-                title: "Path Finder",
-                meta: "Customizable animated pathfinding sandbox",
             },
         ],
     },
@@ -314,7 +299,7 @@ export const shelfSections = [
                 id: "melkradar",
                 title: "MelkRadar",
                 company: "MelkRadar",
-                meta: "Front-End Developer & Reviewer",
+                meta: "Front-End Technical Lead",
                 year: "2023 - 2025",
                 image: melkRadarLogo,
             },

@@ -16,7 +16,10 @@ import settleitGptImage3Large from "../../assets/images/gallery-images/large-ima
 import settleitGptImage4Large from "../../assets/images/gallery-images/large-images/career/gpt/img4.png";
 import melkRadarChartsLarge from "../../assets/images/gallery-images/large-images/career/mlk/charts.png";
 import melkRadarDesignLarge from "../../assets/images/gallery-images/large-images/career/mlk/desing.png";
+import melkRadarKhodroRadarLarge from "../../assets/images/gallery-images/large-images/career/mlk/khd.png";
 import melkRadarMapboxLarge from "../../assets/images/gallery-images/large-images/career/mlk/mapbox.png";
+import melkRadarDvrReceiverAppLarge from "../../assets/images/gallery-images/large-images/projects/dvrbot/img1.jpg";
+import melkRadarDvrReceiverTelegramLarge from "../../assets/images/gallery-images/large-images/projects/dvrbot/img2.png";
 import csiClubBot1Small from "../../assets/images/gallery-images/small-images/career/csi/club-bot1.jpg";
 import csiClubBot2Small from "../../assets/images/gallery-images/small-images/career/csi/club-bot2.jpg";
 import csiContributionSmall from "../../assets/images/gallery-images/small-images/career/csi/conterbution.jpg";
@@ -31,7 +34,10 @@ import settleitGptImage3Small from "../../assets/images/gallery-images/small-ima
 import settleitGptImage4Small from "../../assets/images/gallery-images/small-images/career/gpt/img4.jpg";
 import melkRadarChartsSmall from "../../assets/images/gallery-images/small-images/career/mlk/charts.jpg";
 import melkRadarDesignSmall from "../../assets/images/gallery-images/small-images/career/mlk/desing.jpg";
+import melkRadarKhodroRadarSmall from "../../assets/images/gallery-images/small-images/career/mlk/khd.jpg";
 import melkRadarMapboxSmall from "../../assets/images/gallery-images/small-images/career/mlk/mapbox.jpg";
+import melkRadarDvrReceiverAppSmall from "../../assets/images/gallery-images/small-images/projects/drvbot/img1.jpg";
+import melkRadarDvrReceiverTelegramSmall from "../../assets/images/gallery-images/small-images/projects/drvbot/img2.jpg";
 
 const galleryImage = (src, lightboxSrc) => ({ src, lightboxSrc });
 
@@ -71,9 +77,21 @@ const melkRadarDesign = galleryImage(
     melkRadarDesignSmall,
     melkRadarDesignLarge,
 );
+const melkRadarKhodroRadar = galleryImage(
+    melkRadarKhodroRadarSmall,
+    melkRadarKhodroRadarLarge,
+);
 const melkRadarMapbox = galleryImage(
     melkRadarMapboxSmall,
     melkRadarMapboxLarge,
+);
+const melkRadarDvrReceiverApp = galleryImage(
+    melkRadarDvrReceiverAppSmall,
+    melkRadarDvrReceiverAppLarge,
+);
+const melkRadarDvrReceiverTelegram = galleryImage(
+    melkRadarDvrReceiverTelegramSmall,
+    melkRadarDvrReceiverTelegramLarge,
 );
 
 export const aboutCareerData = {
@@ -189,33 +207,26 @@ Being able to make the program more organized, scalable, automated, and truly mo
         title: "MelkRadar",
         lightboxImage: melkRadarLogoLarge,
         summary:
-            "Front-End Technical Lead across the MelkRadar ecosystem, contributing to 6 internal products, building core front-end structures and reusable components, reviewing production code, mentoring new team members, and working closely with design, product, backend, and front-end teams.",
-        tech: [
-            "React",
-            "JavaScript",
-            "SCSS",
-            "Ant Design",
-            "Chart.js",
-            "Mapbox GL JS",
-            "Git/GitHub",
-            "Code Review",
-            "UI Architecture",
-            "Technical Mentorship",
-            "Product Collaboration",
-            "Frontend Leadership",
-        ],
+            "Front-End Technical Lead across the MelkRadar ecosystem, contributing to 6 products and projects, reviewing production code, onboarding team members, and developing internal tools and automation systems to improve team workflows.",
         featuresTitle: "Focus Areas",
         features: [
-            "Worked across 6 MelkRadar products, including the main platform, extension, KhodroRadar, and external projects.",
-            "Helped shape core structures, reusable components, and design system foundations with high-quality front-end output.",
-            "Served as one of the main front-end code reviewers for 1.5 years, supporting clean and maintainable code.",
+            "Contributed across 6 MelkRadar products and projects, including the main platform, browser extension, KhodroRadar, TonReach, and client-facing projects.",
+            "Built and maintained reusable front-end components and shared UI patterns with a strong focus on maintainability and interface quality.",
+            "Served as one of the main front-end code reviewers for 1.5 years, reviewing and merging production code across the team.",
             "Delivered 50+ production-ready Chart.js visualizations under tight deadlines.",
-            "Integrated Mapbox GL JS and onboarded the front-end team on using it effectively.",
-            "Onboarded 4 front-end engineers, improved the onboarding process, and mentored new teammates.",
-            "Worked closely with design, product, backend, and front-end teams.",
+            "Integrated Mapbox GL JS into the product and helped onboard the front-end team on using it effectively.",
+            "Onboarded 4 front-end engineers, created onboarding resources, and mentored new team members.",
+            "Designed and built MLK DVR Receiver end-to-end, combining an Android app, Node.js backend, and Telegram bot into a reliable internal automation system.",
         ],
         galleryColumns: 3,
-        galleryImages: [melkRadarMapbox, melkRadarCharts, melkRadarDesign],
+        galleryImages: [
+            melkRadarMapbox,
+            melkRadarCharts,
+            melkRadarDesign,
+            melkRadarKhodroRadar,
+            melkRadarDvrReceiverApp,
+            melkRadarDvrReceiverTelegram,
+        ],
         storyTitle: "Story",
         storyEN: `I joined MelkRadar as an intern. My internship ended earlier than planned, and after that, I continued as a full-time team member at the company.
 

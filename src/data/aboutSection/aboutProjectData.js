@@ -44,7 +44,7 @@ export const aboutProjectData = {
     "mlk-dvr-receiver": {
         id: "mlk-dvr-receiver",
         title: "MLK DVR Receiver",
-        subtitle: "Secure Divar SMS routing from Android to Telegram",
+        subtitle: "Automated Divar SMS forwarding via app and bot",
         year: "2026",
         summary:
             "An Android-to-Telegram delivery system that captures Divar verification SMS messages and routes each code privately through a secure Node.js backend.",
