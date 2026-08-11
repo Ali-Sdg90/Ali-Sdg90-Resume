@@ -1,3 +1,10 @@
+## [1.22.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.4...v1.22.5) (2026-08-11)
+
+
+### Bug Fixes
+
+* set accurate dimensions to prevent layout shifts & update some progress todos.md ([0a2ad7a](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/0a2ad7a328bf7aa3d99467620fee040ca0318dbd))
+
 ## [1.22.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.3...v1.22.4) (2026-08-10)
 
 
