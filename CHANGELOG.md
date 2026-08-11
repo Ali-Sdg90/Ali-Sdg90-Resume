@@ -1,3 +1,10 @@
+## [1.22.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.5...v1.22.6) (2026-08-11)
+
+
+### Bug Fixes
+
+* add default size for career gallery images, finalize order of images in about card section ([0baa4ad](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/0baa4ad73b8019e08fa4f0419df2780d2a1b86f7))
+
 ## [1.22.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.4...v1.22.5) (2026-08-11)
 
 
