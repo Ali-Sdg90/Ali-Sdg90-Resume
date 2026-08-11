@@ -18,8 +18,10 @@ const getGenericImage = (item, section, lightboxSrc) => {
             src: item.image,
             lightboxSrc,
             alt: `${item.title} logo`,
-            width: 512,
-            height: 512,
+            width: item.imageWidth ?? 300,
+            height: item.imageHeight ?? 300,
+            lightboxWidth: lightboxSrc ? 600 : undefined,
+            lightboxHeight: lightboxSrc ? 600 : undefined,
             zoom: 1,
         };
     }
@@ -27,8 +29,8 @@ const getGenericImage = (item, section, lightboxSrc) => {
     return {
         src: placeholderImage,
         alt: `${section.label} placeholder`,
-        width: 1024,
-        height: 1024,
+        width: 500,
+        height: 500,
         zoom: 1,
     };
 };
@@ -38,6 +40,7 @@ export const getShelfItemDetailModule = ({ item, section }) => {
 
     if (section.id === "projects") {
         const projectDetail = getAboutProjectById(item.id);
+        const imageSource = projectDetail?.image ?? item.image;
 
         return {
             title: projectDetail?.title ?? item.title,
@@ -45,11 +48,19 @@ export const getShelfItemDetailModule = ({ item, section }) => {
                 ? `${projectDetail.subtitle} · ${projectDetail.year}`
                 : "Project details coming soon",
             image: {
-                src: projectDetail?.image ?? item.image ?? placeholderImage,
+                src: imageSource ?? placeholderImage,
                 lightboxSrc: projectDetail?.lightboxImage,
                 alt: `${projectDetail?.title ?? item.title} project preview`,
-                width: 1280,
-                height: 720,
+                width:
+                    projectDetail?.imageWidth ??
+                    item.imageWidth ??
+                    (imageSource ? 1280 : 500),
+                height:
+                    projectDetail?.imageHeight ??
+                    item.imageHeight ??
+                    (imageSource ? 720 : 500),
+                lightboxWidth: projectDetail?.lightboxWidth,
+                lightboxHeight: projectDetail?.lightboxHeight,
                 zoom: 1,
             },
             tags: [],

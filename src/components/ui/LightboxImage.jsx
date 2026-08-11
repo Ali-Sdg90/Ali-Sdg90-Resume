@@ -78,6 +78,8 @@ const LightboxImage = ({
                                 className={imageClassName}
                                 src={image.src}
                                 alt={image.alt}
+                                width={image.width}
+                                height={image.height}
                                 {...imageProps}
                                 onLoad={(event) => {
                                     imageProps?.onLoad?.(event);

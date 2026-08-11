@@ -14,7 +14,7 @@
 
 - [x] create 16:10 aspect ratio showcase
 
-- [ ] maybe add onboarding animation for moving the cards in shelves?
+- [x] ~~maybe add onboarding animation for moving the cards in shelves?~~
 
 - [ ] fill all of the descriptions!
 
@@ -23,16 +23,17 @@
 - [ ] finalize the resume.pdf file
 
 - [ ] finalize the repos readme that are mentioned in the projects section
-    - [ ] rps-battle-royale
+    - [x] ~~rps-battle-royale~~
+
     - [ ] portfolio
     - [ ] spot tracker
     - [ ] fabrexa
 
-- [ ] add bigger and higher quality images for the about sections for all items.
+- [x] add bigger and higher quality images for the about sections for all items.
     - [x] Part 1, career cards and tech stack
-    - [ ] Part 2, projects cards
+    - [x] Part 2, projects cards
 
-- [ ] add section for showcase the "splash of love" easter egg in the page instead of external link to yt
+- [x] ~~add section for showcase the "splash of love" easter egg in the page instead of external link to yt~~
 
 - [ ] add telegram icon in featured projects about cards
 

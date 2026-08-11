@@ -21,6 +21,8 @@ const ShelfCardImage = ({ item }) => {
             <img
                 src={imageSource}
                 alt={`${item.title} preview`}
+                width={item.imageWidth ?? 300}
+                height={item.imageHeight ?? 300}
                 loading="lazy"
                 decoding="async"
                 draggable="false"

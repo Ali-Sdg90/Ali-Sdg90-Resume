@@ -57,6 +57,8 @@ const ThumbnailRail = ({ chapters, onSelect, selectedIndex }) => {
                     <img
                         src={chapter.image.src}
                         alt=""
+                        width={chapter.image.width}
+                        height={chapter.image.height}
                         loading="lazy"
                         decoding="async"
                         draggable="false"

@@ -113,6 +113,8 @@ const ImageLightbox = ({ image, onClose }) => {
                             className="about-panel-lightbox-image"
                             src={lightboxSrc}
                             alt={image.alt}
+                            width={image.lightboxWidth ?? image.width}
+                            height={image.lightboxHeight ?? image.height}
                             onLoad={(event) => {
                                 const { naturalWidth, naturalHeight } =
                                     event.currentTarget;

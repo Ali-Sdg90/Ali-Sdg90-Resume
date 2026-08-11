@@ -37,6 +37,8 @@ const ShelfInteractionHint = ({ hasInteracted }) => {
                         className="shelf-interaction-hint__icon"
                         src={lightbulbHintIcon}
                         alt=""
+                        width="128"
+                        height="128"
                         aria-hidden="true"
                     />
                     <span>Select a shelf card to explore its details</span>

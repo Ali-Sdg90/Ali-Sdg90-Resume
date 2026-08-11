@@ -27,6 +27,8 @@ const GalleryMedia = ({
             <motion.img
                 src={chapter.image.src}
                 alt={chapter.image.alt}
+                width={chapter.image.width}
+                height={chapter.image.height}
                 key={chapter.id}
                 decoding="async"
                 initial={

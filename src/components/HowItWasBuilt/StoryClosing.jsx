@@ -58,7 +58,13 @@ const StoryClosing = ({ completionElementRef, prefersReducedMotion }) => {
                         ease: [0.34, 1.56, 0.64, 1],
                     }}
                 >
-                    <img src={emojiSignature} alt="" draggable="false" />
+                    <img
+                        src={emojiSignature}
+                        alt=""
+                        width="1024"
+                        height="1024"
+                        draggable="false"
+                    />
                 </motion.div>
             </motion.div>
 

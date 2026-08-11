@@ -75,12 +75,22 @@ import queueBotImage1 from "../../assets/images/gallery-images/large-images/care
 import queueBotImage2 from "../../assets/images/gallery-images/large-images/projects/queue/img1.png";
 import queueBotImage3 from "../../assets/images/gallery-images/large-images/projects/queue/img3.png";
 
-const galleryImage = (src, lightboxSrc, alt, width, height) => ({
+const galleryImage = (
     src,
     lightboxSrc,
     alt,
     width,
     height,
+    lightboxWidth = width,
+    lightboxHeight = height,
+) => ({
+    src,
+    lightboxSrc,
+    alt,
+    width,
+    height,
+    lightboxWidth,
+    lightboxHeight,
 });
 
 export const projectGalleryImages = {
@@ -188,6 +198,8 @@ export const projectGalleryImages = {
             queueCalendarThumbnail3,
             queueCalendarImage3,
             "CS Queue Calendar queue page",
+            640,
+            335,
             2559,
             1340,
         ),
@@ -204,6 +216,8 @@ export const projectGalleryImages = {
             clubBotThumbnail2,
             clubBotImage2,
             "CS Club Bot workflow overview",
+            640,
+            400,
             2559,
             1599,
         ),
@@ -211,6 +225,8 @@ export const projectGalleryImages = {
             clubBotThumbnail1,
             clubBotImage1,
             "CS Club Bot Telegram interface",
+            216,
+            408,
             864,
             1633,
         ),
@@ -218,8 +234,8 @@ export const projectGalleryImages = {
             clubBotThumbnail3,
             clubBotImage3,
             "CS Club Bot conversation flow",
-            1226,
-            3427,
+            2452,
+            1979,
         ),
     ],
     "cs-queue-bot": [
@@ -234,6 +250,8 @@ export const projectGalleryImages = {
             queueBotThumbnail1,
             queueBotImage1,
             "CS Queue Bot command interface",
+            253,
+            227,
             1012,
             909,
         ),
