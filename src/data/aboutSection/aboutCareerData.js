@@ -18,7 +18,7 @@ import melkRadarChartsLarge from "../../assets/images/gallery-images/large-image
 import melkRadarDesignLarge from "../../assets/images/gallery-images/large-images/career/mlk/desing.png";
 import melkRadarKhodroRadarLarge from "../../assets/images/gallery-images/large-images/career/mlk/khd.png";
 import melkRadarMapboxLarge from "../../assets/images/gallery-images/large-images/career/mlk/mapbox.png";
-import melkRadarDvrReceiverAppLarge from "../../assets/images/gallery-images/large-images/projects/dvrbot/img1.jpg";
+import melkRadarDvrReceiverAppLarge from "../../assets/images/gallery-images/large-images/projects/dvrbot/img1.png";
 import melkRadarDvrReceiverTelegramLarge from "../../assets/images/gallery-images/large-images/projects/dvrbot/img2.png";
 import csiClubBot1Small from "../../assets/images/gallery-images/small-images/career/csi/club-bot1.jpg";
 import csiClubBot2Small from "../../assets/images/gallery-images/small-images/career/csi/club-bot2.jpg";
@@ -39,23 +39,101 @@ import melkRadarMapboxSmall from "../../assets/images/gallery-images/small-image
 import melkRadarDvrReceiverAppSmall from "../../assets/images/gallery-images/small-images/projects/drvbot/img1.jpg";
 import melkRadarDvrReceiverTelegramSmall from "../../assets/images/gallery-images/small-images/projects/drvbot/img2.jpg";
 
-const galleryImage = (src, lightboxSrc) => ({ src, lightboxSrc });
+const galleryImage = (
+    src,
+    lightboxSrc,
+    width,
+    height,
+    lightboxWidth,
+    lightboxHeight,
+) => ({
+    src,
+    lightboxSrc,
+    width,
+    height,
+    lightboxWidth,
+    lightboxHeight,
+});
 
-const csiClubBot1 = galleryImage(csiClubBot1Small, csiClubBot1Large);
-const csiClubBot2 = galleryImage(csiClubBot2Small, csiClubBot2Large);
+const csiClubBot1 = galleryImage(
+    csiClubBot1Small,
+    csiClubBot1Large,
+    216,
+    408,
+    864,
+    1633,
+);
+const csiClubBot2 = galleryImage(
+    csiClubBot2Small,
+    csiClubBot2Large,
+    640,
+    400,
+    2559,
+    1599,
+);
 const csiContribution = galleryImage(
     csiContributionSmall,
     csiContributionLarge,
+    171,
+    185,
+    684,
+    738,
 );
-const csiFlowCharts = galleryImage(csiFlowChartsSmall, csiFlowChartsLarge);
-const csiQueueBot1 = galleryImage(csiQueueBot1Small, csiQueueBot1Large);
-const csiQueuePage = galleryImage(csiQueuePageSmall, csiQueuePageLarge);
-const dpaPage1 = galleryImage(dpaPage1Small, dpaPage1Large);
-const dpaPage2 = galleryImage(dpaPage2Small, dpaPage2Large);
-const dpaPage3 = galleryImage(dpaPage3Small, dpaPage3Large);
+const csiFlowCharts = galleryImage(
+    csiFlowChartsSmall,
+    csiFlowChartsLarge,
+    434,
+    171,
+    1736,
+    757,
+);
+const csiQueueBot1 = galleryImage(
+    csiQueueBot1Small,
+    csiQueueBot1Large,
+    253,
+    227,
+    1012,
+    909,
+);
+const csiQueuePage = galleryImage(
+    csiQueuePageSmall,
+    csiQueuePageLarge,
+    640,
+    335,
+    2559,
+    1340,
+);
+const dpaPage1 = galleryImage(
+    dpaPage1Small,
+    dpaPage1Large,
+    222,
+    301,
+    888,
+    1204,
+);
+const dpaPage2 = galleryImage(
+    dpaPage2Small,
+    dpaPage2Large,
+    306,
+    218,
+    1224,
+    870,
+);
+const dpaPage3 = galleryImage(
+    dpaPage3Small,
+    dpaPage3Large,
+    266,
+    224,
+    1064,
+    894,
+);
 const settleitGptImage1 = galleryImage(
     settleitGptImage1Small,
     settleitGptImage1Large,
+    147,
+    320,
+    589,
+    1280,
 );
 // const settleitGptImage2 = galleryImage(
 //     settleitGptImage2Small,
@@ -64,34 +142,66 @@ const settleitGptImage1 = galleryImage(
 const settleitGptImage3 = galleryImage(
     settleitGptImage3Small,
     settleitGptImage3Large,
+    488,
+    305,
+    1952,
+    1220,
 );
 const settleitGptImage4 = galleryImage(
     settleitGptImage4Small,
     settleitGptImage4Large,
+    110,
+    241,
+    438,
+    962,
 );
 const melkRadarCharts = galleryImage(
     melkRadarChartsSmall,
     melkRadarChartsLarge,
+    419,
+    210,
+    1676,
+    841,
 );
 const melkRadarDesign = galleryImage(
     melkRadarDesignSmall,
     melkRadarDesignLarge,
+    200,
+    225,
+    798,
+    900,
 );
 const melkRadarKhodroRadar = galleryImage(
     melkRadarKhodroRadarSmall,
     melkRadarKhodroRadarLarge,
+    687,
+    810,
+    687,
+    810,
 );
 const melkRadarMapbox = galleryImage(
     melkRadarMapboxSmall,
     melkRadarMapboxLarge,
+    480,
+    226,
+    1918,
+    904,
 );
 const melkRadarDvrReceiverApp = galleryImage(
     melkRadarDvrReceiverAppSmall,
     melkRadarDvrReceiverAppLarge,
+    1220,
+    2712,
+    1220,
+    2712,
 );
 const melkRadarDvrReceiverTelegram = galleryImage(
     melkRadarDvrReceiverTelegramSmall,
     melkRadarDvrReceiverTelegramLarge,
+    1053,
+    1477,
+    1053,
+    1477,
 );
 
 export const aboutCareerData = {

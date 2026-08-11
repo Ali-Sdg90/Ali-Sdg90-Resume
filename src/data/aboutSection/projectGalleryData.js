@@ -8,7 +8,7 @@ import portfolioImage3 from "../../assets/images/gallery-images/large-images/pro
 import dvrReceiverThumbnail1 from "../../assets/images/gallery-images/small-images/projects/drvbot/img1.jpg";
 import dvrReceiverThumbnail2 from "../../assets/images/gallery-images/small-images/projects/drvbot/img2.jpg";
 import dvrReceiverThumbnail3 from "../../assets/images/gallery-images/small-images/projects/drvbot/img3.jpg";
-import dvrReceiverImage1 from "../../assets/images/gallery-images/large-images/projects/dvrbot/img1.jpg";
+import dvrReceiverImage1 from "../../assets/images/gallery-images/large-images/projects/dvrbot/img1.png";
 import dvrReceiverImage2 from "../../assets/images/gallery-images/large-images/projects/dvrbot/img2.png";
 import dvrReceiverImage3 from "../../assets/images/gallery-images/large-images/projects/dvrbot/img3.png";
 
@@ -165,13 +165,6 @@ export const projectGalleryImages = {
     ],
     "fabrexa-ai-ollama": [
         galleryImage(
-            fabrexaThumbnail1,
-            fabrexaImage1,
-            "Fabrexa AI Ollama chat interface",
-            1919,
-            1079,
-        ),
-        galleryImage(
             fabrexaThumbnail2,
             fabrexaImage2,
             "Fabrexa AI Ollama Telegram conversation",
@@ -185,15 +178,15 @@ export const projectGalleryImages = {
             1234,
             2215,
         ),
+        galleryImage(
+            fabrexaThumbnail1,
+            fabrexaImage1,
+            "Fabrexa AI Ollama chat interface",
+            1919,
+            1079,
+        ),
     ],
     "cs-queue-calendar": [
-        galleryImage(
-            queueCalendarThumbnail1,
-            queueCalendarImage1,
-            "CS Queue Calendar schedule overview",
-            2559,
-            1599,
-        ),
         galleryImage(
             queueCalendarThumbnail3,
             queueCalendarImage3,
@@ -210,17 +203,15 @@ export const projectGalleryImages = {
             2559,
             1340,
         ),
-    ],
-    "cs-club-bot": [
         galleryImage(
-            clubBotThumbnail2,
-            clubBotImage2,
-            "CS Club Bot workflow overview",
-            640,
-            400,
+            queueCalendarThumbnail1,
+            queueCalendarImage1,
+            "CS Queue Calendar schedule overview",
             2559,
             1599,
         ),
+    ],
+    "cs-club-bot": [
         galleryImage(
             clubBotThumbnail1,
             clubBotImage1,
@@ -237,15 +228,17 @@ export const projectGalleryImages = {
             2452,
             1979,
         ),
+        galleryImage(
+            clubBotThumbnail2,
+            clubBotImage2,
+            "CS Club Bot workflow overview",
+            640,
+            400,
+            2559,
+            1599,
+        ),
     ],
     "cs-queue-bot": [
-        galleryImage(
-            queueBotThumbnail2,
-            queueBotImage2,
-            "CS Queue Bot queue management page",
-            1919,
-            1079,
-        ),
         galleryImage(
             queueBotThumbnail1,
             queueBotImage1,
@@ -261,6 +254,13 @@ export const projectGalleryImages = {
             "CS Queue Bot mobile workflow",
             1048,
             1933,
+        ),
+        galleryImage(
+            queueBotThumbnail2,
+            queueBotImage2,
+            "CS Queue Bot queue management page",
+            1919,
+            1079,
         ),
     ],
     "gradient-paint": [
