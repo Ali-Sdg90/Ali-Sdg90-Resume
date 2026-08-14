@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.6...v1.23.0) (2026-08-14)
+
+
+### Features
+
+* update and finalize project favicon and add project-icon folder with all of my previews designs ([af6ae4d](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/af6ae4da03a62d71b8ea5b6141cf0710fbde9c17))
+
 ## [1.22.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.5...v1.22.6) (2026-08-11)
 
 
