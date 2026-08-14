@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.0...v1.23.1) (2026-08-14)
+
+
+### Bug Fixes
+
+* write MLK DVR Bot description and add its image ([8d97bd4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/8d97bd4366e650f4fc7dfb113be341f429197849))
+
 # [1.23.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.22.6...v1.23.0) (2026-08-14)
 
 
