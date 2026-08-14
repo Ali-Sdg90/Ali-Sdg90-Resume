@@ -85,13 +85,13 @@
   // ======================================
 
   // Enable auto imports and refactoring for JS
-  "javascript.suggest.autoImports": true,
+  "js/ts.suggest.autoImports": true,
 
   // Automatically update imports when moving/renaming files
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
 
   // Disable TypeScript validation (pure JS project)
-  "typescript.validate.enable": false,
+  "js/ts.validate.enable": false,
 
   // Enable Emmet abbreviations in JS files
   "emmet.includeLanguages": {

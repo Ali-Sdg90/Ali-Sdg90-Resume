@@ -19,3 +19,5 @@
 - [ ] maybe add a lower resolution shelf image for initial load?
 
 - [ ] Remove the UnderConstructionBadge
+
+- [ ] Maybe move all stories in separated md file and project read from that md file?

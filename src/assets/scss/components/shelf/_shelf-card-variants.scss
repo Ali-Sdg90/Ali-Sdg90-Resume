@@ -6,7 +6,13 @@ $shelf-card-row-shadow-fallback: shelf-cqw(-3) shelf-cqw(0) 0 shelf-cqw(1)
 
 .shelf-card-projects {
     justify-content: center;
+    gap: shelf-cqw(12);
     text-align: center;
+
+    .shelf-card-image-wrap,
+    .shelf-card-image-fallback {
+        width: shelf-cqw(62);
+    }
 }
 
 .shelf-card-achievements {

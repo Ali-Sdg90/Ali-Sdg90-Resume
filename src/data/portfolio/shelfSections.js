@@ -4,6 +4,7 @@ import csiLogo from "../../assets/images/thumbnails/career/csi_logo.jpg";
 import melkRadarLogo from "../../assets/images/thumbnails/career/melkradar_logo.jpg";
 import dpaLogo from "../../assets/images/thumbnails/career/dpa_logo.jpg";
 import settleitLogo from "../../assets/images/thumbnails/career/settleitgpt_logo.jpg";
+import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import {
     FaCalendarCheck,
     FaChalkboardUser,
@@ -72,7 +73,10 @@ export const shelfSections = [
             {
                 id: "mlk-dvr-receiver",
                 title: "MLK DVR Receiver",
-                meta: "Automated Divar SMS forwarding via app and bot",
+                meta: "Automated and secure Divar verification code delivery",
+                image: mlkDvrBotThumbnail,
+                imageWidth: 1254,
+                imageHeight: 1254,
             },
             {
                 id: "cs-queue-calendar",

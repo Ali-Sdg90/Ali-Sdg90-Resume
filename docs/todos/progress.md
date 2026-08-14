@@ -16,7 +16,11 @@
 
 - [x] ~~maybe add onboarding animation for moving the cards in shelves?~~
 
-- [ ] fill all of the descriptions!
+- [ ] Write all of the descriptions!
+    - [ ] Projects
+    - [ ] Impacts
+    - [ ] Tech Stack
+    - [x] Career
 
 - [ ] create add images for projects i built
 
@@ -58,3 +62,7 @@
 - [ ] Add new MLK DVR Receiver project to the projects section and MLK Card in the career section
 
 - [ ] Improve gallery image orders
+
+- [ ] Add a separated page for stories?
+
+- [ ] Add ability to zoom in lighthouse
