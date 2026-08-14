@@ -123,6 +123,8 @@
   // Custom Title Bar Colors
   // ======================================
 
+  "workbench.experimental.modernUI": false,
+
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#1d2c5ed2",
     "titleBar.activeForeground": "#e7e7e7",
