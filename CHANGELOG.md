@@ -1,3 +1,10 @@
+## [1.23.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.1...v1.23.2) (2026-08-14)
+
+
+### Bug Fixes
+
+* write cs calender details and create logo for it ([91693e9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/91693e9101741688ec1e48f93eaf31b6b1c3b4a0))
+
 ## [1.23.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.0...v1.23.1) (2026-08-14)
 
 
