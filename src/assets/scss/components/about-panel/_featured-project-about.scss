@@ -29,7 +29,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: about-panel-cqw(8);
     padding: about-panel-cqw(9) about-panel-cqw(12);
     border: 1px solid rgba(67, 174, 255, 0.78);
     border-radius: about-panel-cqw(8);
@@ -79,6 +78,14 @@
         cursor: not-allowed;
         transform: none;
     }
+}
+
+.featured-project-link-content {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: about-panel-cqw(8);
 }
 
 .featured-project-tech {

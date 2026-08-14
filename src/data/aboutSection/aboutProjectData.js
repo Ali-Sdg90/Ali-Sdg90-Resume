@@ -1,4 +1,6 @@
+import csCalendarLarge from "../../assets/images/large-images/projects/cs-calender.png";
 import mlkDvrBotLarge from "../../assets/images/large-images/projects/mlk-dvr-bot.png";
+import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
 import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import { projectGalleryImages } from "./projectGalleryData";
 
@@ -203,6 +205,120 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
             },
         ],
     },
+    "cs-queue-calendar": {
+        id: "cs-queue-calendar",
+        title: "CS Queue Calendar",
+        subtitle: "Interactive calendar for coordinating queue sessions",
+        year: "2025",
+        image: csCalendarThumbnail,
+        lightboxImage: csCalendarLarge,
+        imageWidth: 1254,
+        imageHeight: 1254,
+        lightboxWidth: 1254,
+        lightboxHeight: 1254,
+        summary:
+            "A responsive calendar for tracking CS Internship queue meetings, announcements, and events with Persian and Gregorian date support.",
+        links: [
+            {
+                label: "Live Version",
+                url: "https://cs-internship.github.io/CS-Queue-Calendar",
+            },
+            {
+                label: "GitHub Repo",
+                url: "https://github.com/cs-internship/CS-Queue-Calendar",
+            },
+        ],
+        tech: ["React", "Ant Design", "Sass", "Day.js", "Jalali Moment"],
+        features: [
+            "Displays both Jalali and Gregorian dates for scheduled sessions",
+            "Creates ready-to-share weekly announcements for queue admins",
+            "Adds full event details to Google Calendar with one click",
+            "Uses automated tests, coverage reports, releases, deployment, and Telegram build alerts",
+        ],
+        galleryImages: projectGalleryImages["cs-queue-calendar"],
+
+        storyEN: `At CSI, we were redesigning the program's entry process and reached a point where we needed a clear way to show applicants how the onboarding and interview sessions were scheduled and when each session would take place.
+
+We discussed several different ideas. The best solution that came to my mind was to create a calendar inside a web app, so applicants could simply open the page and immediately see which sessions were happening on each day.
+
+Some of the mentors did not agree with the idea at first. Their suggestion was to write the session dates and details inside a README page on GitHub, which they felt was enough for the current need. I thought that approach might work in the short term, but for the future growth of the program and a better applicant experience, having a dedicated and extensible tool would be a better choice.
+
+I discussed the idea with them, explained my reasoning, and eventually convinced the team to move forward with it.
+
+Then it was time to build the application.
+
+From the beginning, I wanted the calendar to stay simple. I had no intention of making it overly busy or complicated. I tested several different libraries, but none of them provided exactly the features I needed for this project.
+
+At the same time, I was working on the project for Dadeh Pardazi Azmoudeh Karan and had gained a lot of experience with Ant Design. When I checked, I found that Ant Design also had a Calendar component. The advantage was that it already handled many of the basic behaviors, animations, and core features, which allowed me to focus on the project-specific behavior, styling, and content.
+
+After several dozen hours of work, I finished the first version.
+
+From the start, I did not want the application to feel visually weak or ordinary. This page was going to be one of the first tools new CSI applicants interacted with, so it mattered to me that they had a good experience from the very beginning.
+
+I spent a lot of time on small details and eventually built something with a simple interface where the important information could be understood very quickly.
+
+I tried to build exactly what I would have wanted if I were an applicant myself: session times, meeting links, study material for each session, and a clear overview of how the sessions were arranged throughout the week and month.
+
+After introducing the application, more than 200 people visited the site and more than 50 joined sessions directly through the calendar. During that initial usage, I did not receive any reports or complaints about the calendar being difficult to use.
+
+The following year, I returned to the project and refined the interface to make it more polished, smoother, and lighter. I added the ability to add events directly to Google Calendar and improved the experience on mobile devices and tablets.
+
+I also added a personal letter somewhere inside the application. I won't say exactly where it is, but it is one of the parts I personally really like :)
+
+Later, I added a modal for generating the weekly session announcement. Every week, one of the program coordinators uses it to prepare the message for the upcoming sessions and send it to the group.
+
+Ease of use and reliability were also my main priorities when building this part, and it ended up working very well in practice.
+
+This project was built with love for the bright future of CSI. It became more mature over time, received a great deal of care in its smallest details, and eventually became one of the important tools used in the program.`,
+
+        storyFA: `در CSI در حال بازطراحی فرایند ورود به برنامه بودیم و به بخشی رسیده بودیم که لازم بود به متقاضی‌ها نشان بدهیم زمان‌بندی جلسات ورود و مصاحبه چطور است و هر جلسه چه زمانی برگزار می‌شود.
+
+ایده‌های مختلفی مطرح شد. بهترین ایده‌ای که به ذهنم رسید این بود که یک تقویم داخل یک وب‌اپ داشته باشیم تا متقاضی‌ها بتوانند خیلی ساده صفحه را باز کنند و ببینند در هر روز چه جلسه‌ای برگزار می‌شود.
+
+بعضی از منتورها با این ایده موافق نبودند. پیشنهادشان این بود که تاریخ و اطلاعات جلسات را داخل یک صفحه README در GitHub بنویسیم و همین برای نیاز فعلی کافی است. من فکر می‌کردم این راه‌حل شاید در کوتاه‌مدت جواب بدهد، اما برای رشد آینده برنامه و تجربه بهتر متقاضی‌ها، داشتن یک ابزار مستقل و قابل توسعه انتخاب بهتری است.
+
+در مورد ایده صحبت کردم، دلایلم را توضیح دادم و در نهایت توانستم تیم را برای ساخت آن قانع کنم.
+
+حالا نوبت ساخت برنامه بود.
+
+از ابتدا می‌خواستم تقویم ساده باشد و اصلاً قصد نداشتم آن را بیش از حد شلوغ یا پیچیده کنم. چند کتابخانه مختلف را بررسی و امتحان کردم، اما هیچ‌کدام دقیقاً قابلیت‌هایی را که برای این پروژه نیاز داشتم ارائه نمی‌دادند.
+
+در همان زمان روی پروژه شرکت داده‌پردازی آزموده‌کاران هم کار می‌کردم و تجربه زیادی با Ant Design پیدا کرده بودم. وقتی بررسی کردم، دیدم Ant Design یک کامپوننت Calendar هم دارد. مزیتش این بود که بسیاری از رفتارها، انیمیشن‌ها و قابلیت‌های پایه را خودش مدیریت می‌کرد و من می‌توانستم تمرکزم را روی رفتارهای موردنیاز پروژه، استایل و محتوای تقویم بگذارم.
+
+بعد از چند ده ساعت کار، توانستم نسخه اولیه را آماده کنم.
+
+از همان ابتدا نمی‌خواستم این برنامه از نظر بصری ضعیف یا معمولی به نظر برسد. این صفحه قرار بود یکی از اولین ابزارهایی باشد که متقاضی‌های تازه‌وارد CSI با آن تعامل می‌کردند، بنابراین برایم مهم بود تجربه خوبی از همان ابتدا داشته باشند.
+
+روی جزئیات کوچک زیادی وقت گذاشتم و در نهایت چیزی ساختم که رابط کاربری ساده‌ای داشت و اطلاعات موردنیاز را می‌شد خیلی سریع از آن دریافت کرد.
+
+سعی کردم چیزی بسازم که اگر خودم جای یک متقاضی بودم، دقیقاً همان اطلاعاتی را که نیاز داشتم در اختیارم قرار دهد: زمان جلسات، لینک ورود به جلسه، محتوای مطالعاتی مربوط به هر جلسه و یک دید کلی از ترتیب جلسات در طول هفته و ماه.
+
+بعد از معرفی برنامه، بیش از ۲۰۰ نفر وارد سایت شدند و بیش از ۵۰ نفر از طریق خود تقویم وارد جلسات شدند. در طول این استفاده اولیه هم هیچ گزارش یا شکایتی درباره دشوار بودن کار با تقویم دریافت نکردم.
+
+سال بعد دوباره به پروژه برگشتم و رابط کاربری آن را کمی حرفه‌ای‌تر، نرم‌تر و سبک‌تر کردم. قابلیت اضافه کردن مستقیم ایونت‌ها به Google Calendar را اضافه کردم و نمایش برنامه روی موبایل و تبلت را هم بهبود دادم.
+
+یک نامه شخصی هم داخل برنامه قرار دادم. نمی‌گم دقیقاً کجاست، ولی یکی از بخش‌هایی است که خودم خیلی دوستش دارم :)
+
+بعدتر یک مودال برای ساخت پیام جلسات هفتگی هم به برنامه اضافه کردم. هر هفته یکی از مسئولان برنامه از آن استفاده می‌کند تا پیام مربوط به جلسات هفته بعد را آماده کند و داخل گروه بفرستد.
+
+در طراحی این بخش هم راحتی استفاده و قابل‌اعتماد بودن برایم اولویت داشت و در عمل هم خیلی خوب جواب داد.
+
+این پروژه با عشق برای آینده روشن CSI ساخته شد. برنامه‌ای که به مرور بالغ‌تر شد، با ظرافت زیادی روی جزئیاتش کار شد و در نهایت به یکی از ابزارهای مهم CSI تبدیل شد.`,
+
+        hasRelatedLinks: true,
+        relatedLinks: [
+            {
+                label: "CI/CD Pipeline",
+                text: "Tests, releases, deployment, and Telegram alerts",
+                url: "https://github.com/cs-internship/CS-Queue-Calendar/blob/main/.github/workflows/ci.yml",
+            },
+            {
+                label: "Release History",
+                text: "Versioned project changelog",
+                url: "https://github.com/cs-internship/CS-Queue-Calendar/blob/main/CHANGELOG.md",
+            },
+        ],
+    },
     "spot-taste-tracker": {
         id: "spot-taste-tracker",
         title: "Spot Taste Tracker",
@@ -216,7 +332,7 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
                 url: "https://ali-sdg90.github.io/Spotify-Taste-Timeline",
             },
             {
-                label: "Github Repo",
+                label: "GitHub Repo",
                 url: "https://github.com/Ali-Sdg90/Spotify-Taste-Timeline",
             },
         ],
@@ -260,7 +376,7 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
             "A self-hosted Telegram chatbot that runs local Ollama models with configurable personalities, persistent memory, and streaming responses.",
         links: [
             {
-                label: "Github Repo",
+                label: "GitHub Repo",
                 url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama",
             },
             {
@@ -297,52 +413,6 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
             },
         ],
     },
-    "cs-queue-calendar": {
-        id: "cs-queue-calendar",
-        title: "CS Queue Calendar",
-        subtitle: "Live calendar for CS Internship session planning",
-        year: "2025",
-        summary:
-            "A responsive calendar for managing CS Internship queue meetings, announcements, and events in both Persian and Gregorian date systems.",
-        links: [
-            {
-                label: "Live Version",
-                url: "https://cs-internship.github.io/CS-Queue-Calendar",
-            },
-            {
-                label: "Github Repo",
-                url: "https://github.com/cs-internship/CS-Queue-Calendar",
-            },
-        ],
-        tech: ["React", "Ant Design", "Sass", "Day.js", "Jalali Moment"],
-        features: [
-            "Shows Jalali and Gregorian dates together in one weekly calendar",
-            "Creates ready-to-share weekly announcements for queue admins",
-            "Adds full event details to Google Calendar with one click",
-            "Uses automated tests, coverage reports, releases, deployment, and Telegram build alerts",
-        ],
-        galleryImages: projectGalleryImages["cs-queue-calendar"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            {
-                label: "Engineering",
-                text: "Test, coverage, semantic release, deployment, and notification pipeline",
-                url: "https://github.com/cs-internship/CS-Queue-Calendar/blob/main/.github/workflows/ci.yml",
-            },
-            {
-                label: "Release History",
-                text: "Versioned project changelog",
-                url: "https://github.com/cs-internship/CS-Queue-Calendar/blob/main/CHANGELOG.md",
-            },
-            {
-                label: "CS Internship",
-                text: "Live Telegram queue group",
-                url: "https://t.me/+5PuhQ2hDIy1lNWRi",
-            },
-        ],
-    },
     "cs-club-bot": {
         id: "cs-club-bot",
         title: "CS Club Bot",
@@ -353,7 +423,7 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
         links: [
             { label: "Telegram Bot", url: "https://t.me/CSIClubBot" },
             {
-                label: "Github Repo",
+                label: "GitHub Repo",
                 url: "https://github.com/cs-internship/CS-Club-Bot",
             },
         ],
@@ -408,7 +478,7 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
         links: [
             { label: "Telegram Bot", url: "https://t.me/CSQueueBot" },
             {
-                label: "Github Repo",
+                label: "GitHub Repo",
                 url: "https://github.com/cs-internship/CS-Queue-Bot",
             },
         ],
@@ -460,7 +530,7 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
                 url: "https://ali-sdg90.github.io/Custom-Gradient-Paint",
             },
             {
-                label: "Github Repo",
+                label: "GitHub Repo",
                 url: "https://github.com/Ali-Sdg90/Custom-Gradient-Paint",
             },
         ],
@@ -495,7 +565,7 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
                 url: "https://ali-sdg90.github.io/Quick-Math",
             },
             {
-                label: "Github Repo",
+                label: "GitHub Repo",
                 url: "https://github.com/Ali-Sdg90/Quick-Math",
             },
         ],
@@ -524,7 +594,7 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
                 url: "https://ali-sdg90.github.io/Tic-Tac-Toe",
             },
             {
-                label: "Github Repo",
+                label: "GitHub Repo",
                 url: "https://github.com/Ali-Sdg90/Tic-Tac-Toe",
             },
         ],
@@ -564,7 +634,7 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
                 url: "https://ali-sdg90.github.io/Path-Finder",
             },
             {
-                label: "Github Repo",
+                label: "GitHub Repo",
                 url: "https://github.com/Ali-Sdg90/Path-Finder",
             },
         ],

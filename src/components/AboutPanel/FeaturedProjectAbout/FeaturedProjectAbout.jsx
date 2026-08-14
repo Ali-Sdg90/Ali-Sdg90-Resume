@@ -62,8 +62,10 @@ const ProjectLinks = ({ links = [], project }) => {
                             type="button"
                             disabled
                         >
-                            <Icon aria-hidden="true" />
-                            <span>{link.label}</span>
+                            <span className="featured-project-link-content">
+                                <Icon aria-hidden="true" />
+                                <span>{link.label}</span>
+                            </span>
                         </button>
                     );
                 }
@@ -83,8 +85,10 @@ const ProjectLinks = ({ links = [], project }) => {
                             })
                         }
                     >
-                        <Icon aria-hidden="true" />
-                        <span>{link.label}</span>
+                        <span className="featured-project-link-content">
+                            <Icon aria-hidden="true" />
+                            <span>{link.label}</span>
+                        </span>
                     </a>
                 );
             })}

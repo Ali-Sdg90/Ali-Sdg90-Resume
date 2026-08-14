@@ -4,6 +4,7 @@ import csiLogo from "../../assets/images/thumbnails/career/csi_logo.jpg";
 import melkRadarLogo from "../../assets/images/thumbnails/career/melkradar_logo.jpg";
 import dpaLogo from "../../assets/images/thumbnails/career/dpa_logo.jpg";
 import settleitLogo from "../../assets/images/thumbnails/career/settleitgpt_logo.jpg";
+import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
 import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import {
     FaCalendarCheck,
@@ -81,7 +82,10 @@ export const shelfSections = [
             {
                 id: "cs-queue-calendar",
                 title: "CS Queue Calendar",
-                meta: "Live calendar for CS Internship session planning",
+                meta: "Interactive calendar for coordinating queue sessions",
+                image: csCalendarThumbnail,
+                imageWidth: 1254,
+                imageHeight: 1254,
             },
             {
                 id: "cs-club-bot",
