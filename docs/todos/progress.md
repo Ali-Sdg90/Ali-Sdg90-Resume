@@ -31,7 +31,7 @@
 
     - [ ] portfolio
     - [ ] spot tracker
-    - [ ] fabrexa
+    - [ ] fabrexa-ollama
 
 - [x] add bigger and higher quality images for the about sections for all items.
     - [x] Part 1, career cards and tech stack
@@ -39,19 +39,19 @@
 
 - [x] ~~add section for showcase the "splash of love" easter egg in the page instead of external link to yt~~
 
-- [ ] add telegram icon in featured projects about cards
+- [x] ~~add telegram icon in featured projects about cards~~
 
-- [ ] finalize ico image of the site
+- [x] finalize ico image of the site
 
 - [ ] Maybe test different image color for live version btn in projects about section
 
-- [ ] Fix second img in settleitgpt base sizes
+- [x] Fix second img in settleitgpt base sizes
 
-- [ ] Fix third img in cs club bot base sizes
+- [x] Fix third img in cs club bot base sizes
 
 - [ ] Finalize fabrexa bot description and info via bot-father
 
-- [ ] Maybe remove gpt and dpa projects in featured projects?
+- [x] Maybe remove gpt and dpa projects in featured projects? -yes
 
 - [ ] Remove intro animation for gallery section in h.m.p.w.b
 
@@ -59,10 +59,12 @@
 
 - [ ] Do char-gpt test for about me text
 
-- [ ] Add new MLK DVR Receiver project to the projects section and MLK Card in the career section
+- [x] Add new MLK DVR Receiver project to the projects section and MLK Card in the career section
 
-- [ ] Improve gallery image orders
+- [x] Improve gallery image orders
 
 - [ ] Add a separated page for stories?
 
 - [ ] Add ability to zoom in lighthouse
+
+- [ ] Double check the MLK DVR Receiver project for L-problems

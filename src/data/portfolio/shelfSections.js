@@ -56,11 +56,6 @@ export const shelfSections = [
         cardWidth: "10.11cqw",
         cardShadow: "shelf-cqw(-3) shelf-cqw(1) 0 shelf-cqw(1) #1c2c45",
         rotation: { y: 10, z: -0.75 },
-
-        // autoScrollSpeed: 10,
-        // doRepeat: true,
-
-        // For test
         autoScrollSpeed: 0,
         doRepeat: false,
 
@@ -98,14 +93,14 @@ export const shelfSections = [
                 meta: "Local Telegram AI chatbot powered by Ollama",
             },
             {
-                id: "spot-taste-tracker",
-                title: "Spot Taste Tracker",
-                meta: "Dashboard for analyzing Spotify taste over time",
-            },
-            {
                 id: "cs-queue-bot",
                 title: "CS Queue Bot",
                 meta: "Live Telegram bot for queue management",
+            },
+            {
+                id: "spot-taste-tracker",
+                title: "Spot Taste Tracker",
+                meta: "Dashboard for analyzing Spotify taste over time",
             },
             {
                 id: "path-finder",
