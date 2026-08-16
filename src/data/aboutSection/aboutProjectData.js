@@ -1,5 +1,15 @@
+import csClubLarge from "../../assets/images/large-images/projects/cs-club.png";
+import csQueueLarge from "../../assets/images/large-images/projects/cs-queue.png";
+import fabrexaLarge from "../../assets/images/large-images/projects/fabrexa.png";
+import portfolioLarge from "../../assets/images/large-images/projects/portfolio.png";
+import spotTasteLarge from "../../assets/images/large-images/projects/spot.png";
 import csCalendarLarge from "../../assets/images/large-images/projects/cs-calender.png";
 import mlkDvrBotLarge from "../../assets/images/large-images/projects/mlk-dvr-bot.png";
+import csClubThumbnail from "../../assets/images/thumbnails/projects/cs-club.jpg";
+import csQueueThumbnail from "../../assets/images/thumbnails/projects/cs-queue.jpg";
+import fabrexaThumbnail from "../../assets/images/thumbnails/projects/fabrexa.jpg";
+import portfolioThumbnail from "../../assets/images/thumbnails/projects/portfolio.jpg";
+import spotTasteThumbnail from "../../assets/images/thumbnails/projects/spot.jpg";
 import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
 import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import { projectGalleryImages } from "./projectGalleryData";
@@ -10,8 +20,12 @@ export const aboutProjectData = {
         title: "Ali's Portfolio",
         subtitle: "Interactive portfolio with a shelf-based experience",
         year: "2026",
-        // icon: "/images/projects/portfolio-icon.png",
-        // image: "/images/projects/portfolio-image.png",
+        image: portfolioThumbnail,
+        lightboxImage: portfolioLarge,
+        imageWidth: 1254,
+        imageHeight: 1254,
+        lightboxWidth: 1254,
+        lightboxHeight: 1254,
         summary:
             "An interactive, shelf-inspired portfolio presenting projects, skills, career milestones, and a bilingual build journal in a focused 3D experience.",
         links: [
@@ -208,7 +222,7 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
     "cs-queue-calendar": {
         id: "cs-queue-calendar",
         title: "CS Queue Calendar",
-        subtitle: "Interactive calendar for coordinating queue sessions",
+        subtitle: "Interactive calendar to coordinate queue sessions",
         year: "2025",
         image: csCalendarThumbnail,
         lightboxImage: csCalendarLarge,
@@ -324,6 +338,12 @@ This project was built with love for the bright future of CSI. It became more ma
         title: "Spot Taste Tracker",
         subtitle: "Dashboard for analyzing Spotify taste over time",
         year: "2026",
+        image: spotTasteThumbnail,
+        lightboxImage: spotTasteLarge,
+        imageWidth: 1254,
+        imageHeight: 1254,
+        lightboxWidth: 1254,
+        lightboxHeight: 1254,
         summary:
             "A browser-based dashboard for exploring how a Spotify collection changes across listening order, mood, genres, artists, and audio features.",
         links: [
@@ -372,6 +392,12 @@ This project was built with love for the bright future of CSI. It became more ma
         title: "Fabrexa AI Ollama",
         subtitle: "Local Telegram AI chatbot powered by Ollama",
         year: "2026",
+        image: fabrexaThumbnail,
+        lightboxImage: fabrexaLarge,
+        imageWidth: 1254,
+        imageHeight: 1254,
+        lightboxWidth: 1254,
+        lightboxHeight: 1254,
         summary:
             "A self-hosted Telegram chatbot that runs local Ollama models with configurable personalities, persistent memory, and streaming responses.",
         links: [
@@ -418,6 +444,12 @@ This project was built with love for the bright future of CSI. It became more ma
         title: "CS Club Bot",
         subtitle: "Live Telegram bot for AI-assisted workflows",
         year: "2025",
+        image: csClubThumbnail,
+        lightboxImage: csClubLarge,
+        imageWidth: 774,
+        imageHeight: 774,
+        lightboxWidth: 774,
+        lightboxHeight: 774,
         summary:
             "An automated Telegram bot for managing CS internship club registration, feedback, messaging, and AI-assisted group workflows.",
         links: [
@@ -473,6 +505,12 @@ This project was built with love for the bright future of CSI. It became more ma
         title: "CS Queue Bot",
         subtitle: "Live Telegram bot for queue management",
         year: "2025",
+        image: csQueueThumbnail,
+        lightboxImage: csQueueLarge,
+        imageWidth: 774,
+        imageHeight: 774,
+        lightboxWidth: 774,
+        lightboxHeight: 774,
         summary:
             "An automated Telegram bot for managing CS Internship queue onboarding, moderation, admin tasks, and Azure DevOps candidate tracking.",
         links: [

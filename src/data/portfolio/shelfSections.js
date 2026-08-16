@@ -4,6 +4,11 @@ import csiLogo from "../../assets/images/thumbnails/career/csi_logo.jpg";
 import melkRadarLogo from "../../assets/images/thumbnails/career/melkradar_logo.jpg";
 import dpaLogo from "../../assets/images/thumbnails/career/dpa_logo.jpg";
 import settleitLogo from "../../assets/images/thumbnails/career/settleitgpt_logo.jpg";
+import csClubThumbnail from "../../assets/images/thumbnails/projects/cs-club.jpg";
+import csQueueThumbnail from "../../assets/images/thumbnails/projects/cs-queue.jpg";
+import fabrexaThumbnail from "../../assets/images/thumbnails/projects/fabrexa.jpg";
+import portfolioThumbnail from "../../assets/images/thumbnails/projects/portfolio.jpg";
+import spotTasteThumbnail from "../../assets/images/thumbnails/projects/spot.jpg";
 import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
 import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import {
@@ -64,7 +69,9 @@ export const shelfSections = [
                 id: "alis-portfolio",
                 title: "Ali's Portfolio",
                 meta: "Interactive portfolio with a shelf-based experience",
-                // icon: "/images/projects/portfolio-icon.png",
+                image: portfolioThumbnail,
+                imageWidth: 1254,
+                imageHeight: 1254,
             },
             {
                 id: "mlk-dvr-receiver",
@@ -77,7 +84,7 @@ export const shelfSections = [
             {
                 id: "cs-queue-calendar",
                 title: "CS Queue Calendar",
-                meta: "Interactive calendar for coordinating queue sessions",
+                meta: "Interactive calendar to coordinate queue sessions",
                 image: csCalendarThumbnail,
                 imageWidth: 1254,
                 imageHeight: 1254,
@@ -86,21 +93,33 @@ export const shelfSections = [
                 id: "cs-club-bot",
                 title: "CS Club Bot",
                 meta: "Live Telegram bot for AI-assisted workflows",
+                image: csClubThumbnail,
+                imageWidth: 774,
+                imageHeight: 774,
             },
             {
                 id: "fabrexa-ai-ollama",
                 title: "Fabrexa AI Ollama",
                 meta: "Local Telegram AI chatbot powered by Ollama",
+                image: fabrexaThumbnail,
+                imageWidth: 1254,
+                imageHeight: 1254,
             },
             {
                 id: "cs-queue-bot",
                 title: "CS Queue Bot",
                 meta: "Live Telegram bot for queue management",
+                image: csQueueThumbnail,
+                imageWidth: 774,
+                imageHeight: 774,
             },
             {
                 id: "spot-taste-tracker",
                 title: "Spot Taste Tracker",
                 meta: "Dashboard for analyzing Spotify taste over time",
+                image: spotTasteThumbnail,
+                imageWidth: 1254,
+                imageHeight: 1254,
             },
             {
                 id: "path-finder",
