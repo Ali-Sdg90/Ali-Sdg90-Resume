@@ -1,3 +1,10 @@
+## [1.23.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.5...v1.23.6) (2026-08-16)
+
+
+### Bug Fixes
+
+* update and finalize fabrexa image ([db01975](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/db01975a5718bf9ee4f278d17688f323a8cee7ce))
+
 ## [1.23.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.4...v1.23.5) (2026-08-16)
 
 
