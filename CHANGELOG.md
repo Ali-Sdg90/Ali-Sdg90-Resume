@@ -1,3 +1,10 @@
+## [1.23.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.3...v1.23.4) (2026-08-16)
+
+
+### Bug Fixes
+
+* add portfolio, cs club, cs queue, fabrexa and spot tracker project images, shorten cs calender meta ([968f846](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/968f846edce52ca31b961654a91be06c64aae39f))
+
 ## [1.23.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.2...v1.23.3) (2026-08-14)
 
 
