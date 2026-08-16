@@ -1,15 +1,23 @@
+import gradientPaintLarge from "../../assets/images/large-images/projects/cgp.png";
 import csClubLarge from "../../assets/images/large-images/projects/cs-club.png";
 import csQueueLarge from "../../assets/images/large-images/projects/cs-queue.png";
 import fabrexaLarge from "../../assets/images/large-images/projects/fabrexa.png";
+import pathFinderLarge from "../../assets/images/large-images/projects/path-finder.png";
 import portfolioLarge from "../../assets/images/large-images/projects/portfolio.png";
+import quickMathLarge from "../../assets/images/large-images/projects/quick-math.png";
 import spotTasteLarge from "../../assets/images/large-images/projects/spot.png";
+import ticTacToeLarge from "../../assets/images/large-images/projects/xo.png";
 import csCalendarLarge from "../../assets/images/large-images/projects/cs-calender.png";
 import mlkDvrBotLarge from "../../assets/images/large-images/projects/mlk-dvr-bot.png";
+import gradientPaintThumbnail from "../../assets/images/thumbnails/projects/cgp.jpg";
 import csClubThumbnail from "../../assets/images/thumbnails/projects/cs-club.jpg";
 import csQueueThumbnail from "../../assets/images/thumbnails/projects/cs-queue.jpg";
 import fabrexaThumbnail from "../../assets/images/thumbnails/projects/fabrexa.jpg";
+import pathFinderThumbnail from "../../assets/images/thumbnails/projects/path-finder.jpg";
 import portfolioThumbnail from "../../assets/images/thumbnails/projects/portfolio.jpg";
+import quickMathThumbnail from "../../assets/images/thumbnails/projects/quick-math.jpg";
 import spotTasteThumbnail from "../../assets/images/thumbnails/projects/spot.jpg";
+import ticTacToeThumbnail from "../../assets/images/thumbnails/projects/xo.jpg";
 import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
 import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import { projectGalleryImages } from "./projectGalleryData";
@@ -560,6 +568,12 @@ This project was built with love for the bright future of CSI. It became more ma
         title: "Gradient Paint",
         subtitle: "Customizable interactive gradient painting canvas",
         year: "2023",
+        image: gradientPaintThumbnail,
+        lightboxImage: gradientPaintLarge,
+        imageWidth: 1254,
+        imageHeight: 1254,
+        lightboxWidth: 1254,
+        lightboxHeight: 1254,
         summary:
             "An interactive grid canvas for painting customizable color gradients through click or drag gestures.",
         links: [
@@ -595,6 +609,12 @@ This project was built with love for the bright future of CSI. It became more ma
         title: "Quick Math",
         subtitle: "Timed math game with a rotating cube interface",
         year: "2023",
+        image: quickMathThumbnail,
+        lightboxImage: quickMathLarge,
+        imageWidth: 1254,
+        imageHeight: 1254,
+        lightboxWidth: 1254,
+        lightboxHeight: 1254,
         summary:
             "A timed arithmetic game that presents three questions through a rotating cube interface with configurable difficulty aids.",
         links: [
@@ -624,6 +644,12 @@ This project was built with love for the bright future of CSI. It became more ma
         title: "Tic Tac Toe",
         subtitle: "Customizable game with multiple play modes",
         year: "2022",
+        image: ticTacToeThumbnail,
+        lightboxImage: ticTacToeLarge,
+        imageWidth: 1254,
+        imageHeight: 1254,
+        lightboxWidth: 1254,
+        lightboxHeight: 1254,
         summary:
             "A customizable Tic-Tac-Toe game with local multiplayer, computer opponents, persistent settings, and unlockable challenges.",
         links: [
@@ -664,6 +690,12 @@ This project was built with love for the bright future of CSI. It became more ma
         title: "Path Finder",
         subtitle: "Customizable animated pathfinding sandbox",
         year: "2025",
+        image: pathFinderThumbnail,
+        lightboxImage: pathFinderLarge,
+        imageWidth: 1254,
+        imageHeight: 1254,
+        lightboxWidth: 1254,
+        lightboxHeight: 1254,
         summary:
             "An interactive pathfinding sandbox that uses weighted randomness to fill a grid while favoring configurable movement directions.",
         links: [

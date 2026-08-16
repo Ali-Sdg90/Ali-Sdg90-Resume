@@ -6,9 +6,13 @@ import dpaLogo from "../../assets/images/thumbnails/career/dpa_logo.jpg";
 import settleitLogo from "../../assets/images/thumbnails/career/settleitgpt_logo.jpg";
 import csClubThumbnail from "../../assets/images/thumbnails/projects/cs-club.jpg";
 import csQueueThumbnail from "../../assets/images/thumbnails/projects/cs-queue.jpg";
+import gradientPaintThumbnail from "../../assets/images/thumbnails/projects/cgp.jpg";
 import fabrexaThumbnail from "../../assets/images/thumbnails/projects/fabrexa.jpg";
+import pathFinderThumbnail from "../../assets/images/thumbnails/projects/path-finder.jpg";
 import portfolioThumbnail from "../../assets/images/thumbnails/projects/portfolio.jpg";
+import quickMathThumbnail from "../../assets/images/thumbnails/projects/quick-math.jpg";
 import spotTasteThumbnail from "../../assets/images/thumbnails/projects/spot.jpg";
+import ticTacToeThumbnail from "../../assets/images/thumbnails/projects/xo.jpg";
 import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
 import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import {
@@ -125,21 +129,33 @@ export const shelfSections = [
                 id: "path-finder",
                 title: "Path Finder",
                 meta: "Customizable animated pathfinding sandbox",
+                image: pathFinderThumbnail,
+                imageWidth: 1254,
+                imageHeight: 1254,
             },
             {
                 id: "gradient-paint",
                 title: "Gradient Paint",
                 meta: "Customizable interactive gradient painting canvas",
+                image: gradientPaintThumbnail,
+                imageWidth: 1254,
+                imageHeight: 1254,
             },
             {
                 id: "quick-math",
                 title: "Quick Math",
                 meta: "Timed math game with a rotating cube interface",
+                image: quickMathThumbnail,
+                imageWidth: 1254,
+                imageHeight: 1254,
             },
             {
                 id: "tic-tac-toe",
                 title: "Tic Tac Toe",
                 meta: "Customizable game with multiple play modes",
+                image: ticTacToeThumbnail,
+                imageWidth: 1254,
+                imageHeight: 1254,
             },
         ],
     },
