@@ -1,3 +1,10 @@
+## [1.23.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.4...v1.23.5) (2026-08-16)
+
+
+### Bug Fixes
+
+* add cgp, path finder, quick math. xo project images, update mlk dvr and fabrexa images ([f58c394](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/f58c3948f6175ea44570b326057c0174068615ac))
+
 ## [1.23.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.3...v1.23.4) (2026-08-16)
 
 
