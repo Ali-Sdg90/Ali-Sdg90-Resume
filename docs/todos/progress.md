@@ -22,7 +22,13 @@
     - [ ] Tech Stack
     - [x] Career
 
-- [ ] create add images for projects i built
+- [x] create add images for projects i built
+
+- [ ] Quick math image need to have more contrast
+
+- [ ] Spot taste tracker and custom gradient paint title need to be changed in title or images
+
+- [ ] Double check the Fabrexa image
 
 - [ ] finalize the resume.pdf file
 
@@ -53,7 +59,7 @@
 
 - [x] Maybe remove gpt and dpa projects in featured projects? -yes
 
-- [ ] Remove intro animation for gallery section in h.m.p.w.b
+- [ ] Maybe Remove intro animation for gallery section in h.m.p.w.b
 
 - [ ] Finalize intro bottom section spacing
 
