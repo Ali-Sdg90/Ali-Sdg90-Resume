@@ -98,6 +98,7 @@ export const aboutProjectData = {
             "Matches each verification code to the correct active requester and keeps codes out of group chats",
             "Creates a traceable history of code requests and delivery outcomes for accountability and auditing",
             "Built for reliable unattended operation with background recovery, authenticated backend communication, and automated delivery",
+            "Automatically delivered 212 codes in its first 14 days, 2.86 times the 74 codes shared manually during the previous 14-day period",
         ],
         galleryImages: projectGalleryImages["mlk-dvr-receiver"],
         storyEN: `Building MLK DVR Receiver was one of the most enjoyable and rewarding programming experiences I have had.
@@ -142,7 +143,7 @@ To make sure using the system would not depend on me either, I recorded a roughl
 
 After that, more people installed the app and the requesters started using the bot as part of their normal workflow.
 
-In the first three days after introducing the final version, the system was used 118 times!
+In its first 14 days, the system automatically delivered 212 Divar verification codes directly to the people who requested them. During the preceding 14-day period, only 74 codes had been shared manually in the group. That meant 2.86 times as many codes were delivered, a 186% increase, while removing the need for people to follow up manually.
 
 What makes this experience even more interesting to me is that the entire process, from identifying the problem and proposing the idea, to building the MVP and getting real user feedback, designing a more secure version, building the backend and bot, testing across different devices, moving the system to the company servers, and finally preparing the video and documentation, all happened within about seven days.
 
@@ -191,7 +192,7 @@ Backend برای حدود دو روز و در مرحله تست روی سیست�
 
 بعد از آن افراد بیشتری برنامه را نصب کردند و درخواست‌کننده‌ها شروع به استفاده روزمره از بات کردند.
 
-در سه روز اول معرفی نسخه نهایی، سیستم ۱۱۸ بار مورد استفاده قرار گرفت!
+در ۱۴ روز اول معرفی نسخه نهایی، سیستم ۲۱۲ کد ورود دیوار را به‌صورت خودکار برای درخواست‌کننده‌ها ارسال کرد. در ۱۴ روز قبل از فعال شدن این فرایند، در مجموع ۷۴ کد به‌صورت دستی داخل گروه ارسال شده بود. یعنی در یک بازه زمانی مشابه، تعداد کدهای ارسال‌شده حدود ۲.۸۶ برابر شد؛ معادل ۱۸۶٪ افزایش، بدون اینکه افراد نیاز به پیگیری دستی داشته باشند.
 
 و چیزی که این تجربه را برای من جذاب‌تر می‌کند این است که تمام این مسیر، از دیدن مشکل و مطرح کردن ایده، ساخت MVP و گرفتن بازخورد واقعی، طراحی نسخه امن‌تر، ساخت backend و بات، تست روی دستگاه‌های مختلف، انتقال به سرورهای شرکت و در نهایت آماده کردن ویدیو و مستندات، همگی در حدود هفت روز انجام شدند.
 
