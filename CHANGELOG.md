@@ -1,3 +1,10 @@
+## [1.23.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.6...v1.23.7) (2026-08-22)
+
+
+### Bug Fixes
+
+* update 14 days data for MLK DVR Receiver ([04eff04](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/04eff04bda871d12d4f664d981a6ba4c04c435f7))
+
 ## [1.23.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.5...v1.23.6) (2026-08-16)
 
 
