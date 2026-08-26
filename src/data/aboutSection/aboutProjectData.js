@@ -203,7 +203,7 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
         relatedLinks: [
             {
                 label: "Telegram",
-                text: "Open the MLK DVR SMS bot",
+                text: "Open the MLK DVR Receiver bot",
                 url: "https://t.me/mlk_dvr_sms_bot",
             },
             {
