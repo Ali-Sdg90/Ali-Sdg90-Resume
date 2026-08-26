@@ -1,3 +1,10 @@
+## [1.23.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.7...v1.23.8) (2026-08-26)
+
+
+### Bug Fixes
+
+* update mlk dvr receiver image and related link bot meta ([5d20613](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/5d20613f414ecea93e40308e018e9144f536c39f))
+
 ## [1.23.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.6...v1.23.7) (2026-08-22)
 
 
