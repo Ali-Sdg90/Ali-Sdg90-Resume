@@ -31,6 +31,7 @@
 - [ ] Double check the Fabrexa image
 
 - [ ] finalize the resume.pdf file
+    - [ ] Add CSI YouTube video link in the resume
 
 - [ ] finalize the repos readme that are mentioned in the projects section
     - [x] ~~rps-battle-royale~~
@@ -74,3 +75,15 @@
 - [ ] Add ability to zoom in lighthouse
 
 - [ ] Double check the MLK DVR Receiver project for L-problems
+
+- [ ] Add Health Data Relay project
+
+- [ ] Update tags in aboutMe section for showcase more builder side of me
+
+- [ ] Maybe add "I let my outputs speak for me" text some where?
+
+- [ ] Finalize sections in the "Impacts" and "Tech Stack" sections
+
+- [ ] Try to fix or add cool animation when aboutSection is change state that text in it don't have seizure
+
+- [ ] Add Notice and other files in the repo
